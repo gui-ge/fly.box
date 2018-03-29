@@ -1,0 +1,322 @@
+
+.f-sbtn
+{
+	border-style:none;
+	background-repeat:no-repeat;
+}
+
+.f-sbtn-hasIcon-16 .f-sbtn-icon
+{
+	width:16px;
+	height:16px;
+}
+
+.f-sbtn-hasIcon-16
+{
+	padding:1px;
+}
+
+
+/* bbtn */
+
+.f-btn  ,.f-bbtn
+{
+	font-size:13px;
+	cursor:default;
+	vertical-align:middle;
+	white-space:nowrap;
+}
+
+.f-bbtn
+{
+	background: transparent none;
+	text-decoration:none;
+	display:inline-block;
+}
+
+.f-bbtn:hover
+{
+	color:Blue;
+}
+
+.f-bbtn:active,.f-bbtn-active
+{
+	color: #006600;
+}
+
+
+.f-bbtn-wrap
+{
+	display:block;
+	height:100%;
+}
+
+.f-b-btn-text
+{
+	padding-left:3px;
+	padding-right:3px;
+}
+
+.f-b-btn
+{
+	display:inline-block;
+	line-height:16px;
+}
+
+.f-hasIcon .f-b-btn
+{
+	padding-left:16px;
+	height:16px;
+	background-repeat:no-repeat;
+}
+
+.f-hasIcon .f-icon-right
+{
+	padding-right:16px;
+	padding-left:0px;
+	background-position-x:right;
+}
+
+.F-IE8 .f-b-btn
+{
+	line-height:17px;
+}
+
+.F-IE6 .f-bbtn
+{
+	width:0px;
+	overflow:visible;
+}
+
+/* rect */
+.f-btn-rect .f-b-btn
+{
+	position:relative;
+	top:7px;
+}
+
+.f-btn-rect
+{
+    padding-left:3px;
+    background-image:url(img/bar-bgs.png);
+    background-position:0px -1084px;
+    height:30px;
+}
+
+.f-btn-rect .f-bbtn-wrap
+{
+    background-image:url(img/bar-bgs.png);
+    background-position:right -1114px;
+    padding-left:12px;
+    padding-right:15px;
+}
+
+.f-btn-rect:hover
+{
+    padding-left:3px;
+    background-image:url(img/bar-bgs.png);
+    background-position:0px -1144px;
+    height:30px;
+}
+
+.f-btn-rect:hover .f-bbtn-wrap
+{
+	background-position:right -1174px;
+}
+
+
+/* size */
+.f-btn-small .f-b-m-c
+{
+	height: 16px;
+}
+
+.f-btn-medium .f-b-m-c
+{
+	height: 24px;
+}
+
+.f-btn-large .f-b-m-c
+{
+	height: 32px;
+}
+
+
+/* button */
+.f-btn 
+{
+	display:inline-block;
+	text-decoration:none;
+	cursor:default;
+}
+
+.f-btn table
+{
+	display:inline-table;
+	vertical-align:middle;
+}
+
+.f-btn td
+{
+	background-image: url(img/btn.gif);
+	background-repeat: repeat-x;
+}
+
+.f-btn-nobg-normal td
+{
+	background-position:1000px 1000px;
+}
+
+.f-b-t-l
+{
+	background-position: 0px 0px;
+	height: 3px;
+	width: 3px;
+}
+
+.f-b-t-c
+{
+	background-position: 0px -6px;
+}
+
+.f-b-t-r
+{
+	background-position: -3px -0px;
+	padding-left:3px;
+}
+
+
+
+.f-b-m-l
+{
+	background-position: 0px -24px;
+	padding-left:3px;
+}
+
+.f-b-m-c
+{
+	background-position: 0px -1096px;
+	white-space:nowrap;
+	text-align:center;
+}
+
+.f-b-m-r
+{
+	background-position: -3px -24px;
+}
+
+
+.f-b-b-l
+{
+	background-position: 0px -3px;
+}
+
+.f-b-b-c
+{
+	background-position: 0px -15px;
+}
+
+.f-b-b-r
+{
+	background-position: -3px -3px;
+	height: 3px;
+	width: 3px;
+}
+
+/*hover*/
+.f-btn:hover .f-b-t-l
+{
+	background-position: -6px 0px;
+}
+
+.f-btn:hover .f-b-t-c
+{
+	background-position: 0px -9px;
+}
+
+.f-btn:hover .f-b-t-r
+{
+	background-position: -9px -0px;
+}
+
+
+
+.f-btn:hover .f-b-m-l
+{
+	background-position: -6px -24px;
+}
+
+.f-btn:hover .f-b-m-c
+{
+	background-position: 0px -2168px;
+}
+
+.f-btn:hover .f-b-m-r
+{
+	background-position: -9px -24px;
+}
+
+
+.f-btn:hover .f-b-b-l
+{
+	background-position: -6px -3px;
+}
+
+.f-btn:hover .f-b-b-c
+{
+	background-position: 0px -18px;
+}
+
+.f-btn:hover .f-b-b-r
+{
+	background-position: -9px -3px;
+}
+
+/* active */
+.f-btn:active .f-b-t-l, .f-btn .f-btn-active .f-b-t-l
+{
+	background-position: -12px 0px;
+}
+
+.f-btn:active .f-b-t-c, .f-btn .f-btn-active .f-b-t-c
+{
+	background-position: 0px -12px;
+}
+
+.f-btn:active .f-b-t-r, .f-btn .f-btn-active .f-b-t-r
+{
+	background-position: -15px -0px;
+}
+
+
+
+.f-btn:active .f-b-m-l, .f-btn .f-btn-active .f-b-m-l
+{
+	background-position: -12px -24px;
+}
+
+.f-btn:active .f-b-m-c, .f-btn .f-btn-active .f-b-m-c
+{
+	background-position: 0px -3240px;
+}
+
+.f-btn:active .f-b-m-r, .f-btn .f-btn-active .f-b-m-r
+{
+	background-position: -15px -24px;
+}
+
+
+.f-btn:active .f-b-b-l, .f-btn .f-btn-active .f-b-b-l
+{
+	background-position: -12px -3px;
+}
+
+.f-btn:active .f-b-b-c, .f-btn .f-btn-active .f-b-b-c
+{
+	background-position: 0px -21px;
+}
+
+.f-btn:active .f-b-b-r, .f-btn .f-btn-active .f-b-b-r
+{
+	background-position: -15px -3px;
+}

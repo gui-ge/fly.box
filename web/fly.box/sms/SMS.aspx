@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SMS.aspx.cs" Inherits="Fly.Box.Web.fly.box.sms.SMS" %>

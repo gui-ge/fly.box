@@ -1,0 +1,199 @@
+﻿.p-index
+{
+    background: url("imgs/bg.jpg") center bottom;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.p-index .f-dialog-title
+{
+    background: url("imgs/bg.jpg") -800px -100px;
+    text-shadow:none;
+    color:White;
+}
+
+.p-index body .f-dialog-close
+{
+    color:White;
+}
+
+.p-index #left-block
+{
+    border-right: 3px solid rgb(23, 49, 77);
+    background-color: transparent;
+}
+
+.p-index body ,.p-index a
+{
+    color:white;
+}
+
+a[href]:hover
+{
+    text-shadow: 0 0 20px red;
+    filter: Glow(Color=red, Strength=1);
+}
+
+.p-index #user-name
+{
+    color:white;
+}
+
+.p-index #top-icon-btns
+{
+    background-color: rgba(255, 255, 255, 0.86);
+    padding-top: 8px;
+    border-radius: 10px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.p-file #show-bar
+{
+    background-color:White;
+}
+
+.p-file #file-list em
+{
+    color: #ccc;
+}
+
+.p-file .node-name
+{
+    color: white;
+    font-size: 110%;
+}
+
+.p-file .node-name:hover
+{
+    color: #CCFFFF;
+}
+    
+.p-file .node-not-end  .node-name
+{
+    color:Red;
+}
+
+.p-file .f-selected .node-name
+{
+    color:#2C4A77;
+}
+    
+.p-file .f-lv-node
+{
+    border-bottom: 1px dotted #494949;
+}
+
+.p-file .f-lv-node:hover
+{
+    background:rgba(64,162,209,.8);
+    filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#a040A2D1, endColorstr=#a040A2D1);
+}
+
+.p-file-info body
+{
+    color:black;
+}
+
+.f-dialog .f-sbtn 
+{
+    color:#1c94c4;
+}
+
+.p-form dl label, .p-form .form-field label
+{
+    color: #CCFFFF;
+}
+
+.p-form ,.p-form input,.p-form textarea
+{
+    color:white;
+    background-color:transparent;
+}
+
+.p-form #content-block
+{
+    background:rgba(64,162,209,.2);
+    filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#3040A2D1, endColorstr=#3040A2D1);
+}
+
+.p-list a[href], .p-form a[href]
+{
+    color: #00CC00;
+}
+
+.p-list,.p-list a
+{
+    color:White;
+}
+
+.f-grid-tr
+{
+    background:rgba(64,162,209,.2);
+    filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#3040A2D1, endColorstr=#3040A2D1);
+}
+
+.f-grid .f-grid-row-alt
+{
+    background:rgba(64,162,209,.3);
+    filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#4540A2D1, endColorstr=#4540A2D1);
+}
+
+.f-grid .f-grid-tr:hover,.f-grid-tree .f-node-el:hover
+{
+    background:rgba(64,162,209,.4);
+    filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#6040A2D1, endColorstr=#6040A2D1);
+}
+
+.button-32 a[href]
+{
+    color:#666;
+}
+
+
+.p-form .tab-panel .tab
+{
+    color:White;
+}
+
+.p-form .tab-panel .current
+{
+    color:white;
+    background:rgb(31,74,96);
+}
+
+.p-list .f-grid-hc
+{
+    color:Black;
+}
+
+.p-work #target-frame
+{
+    background:white;
+    padding:20px 10px;
+}
+
+.p-form .summary-info, .p-form .target-info 
+{
+    color:White;
+}
+
+.p-form .summary-time
+{
+    color: #D2D2D2;
+}
+
+.p-form .f-m-tree
+{
+    color:White;
+}
+
+.setting-store body .header
+{
+    color: #E4E4E4;
+}
+
+#title-block
+{
+    color: #CCFFFF;
+}

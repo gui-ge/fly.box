@@ -1,0 +1,16 @@
+﻿.p-index #top-block
+{
+    background:rgb(53, 75, 102);
+}
+
+.p-index #top-block a
+{
+    color:White;
+}
+
+#logo-div
+{
+    background:white;
+    margin:3px 3px 0px 5px;
+    border-radius:4px;
+}

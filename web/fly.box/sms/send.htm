@@ -1,0 +1,60 @@
+﻿{@#}
+<style>
+    .sending #toolbar
+    {
+        visibility:hidden;
+    }
+    
+    #sending-box
+    {
+        font-size:25px;
+        position:absolute;
+        top:0px;
+        left:0px;
+        right:0px;
+        right:0px;
+    }
+    
+    #sending-time
+    {
+        display:inline-block;
+        min-width:60px;
+        text-align:left;
+        margin-left:5px;
+        color:rgb(0, 255, 133);
+    }
+    
+    #btn-send-sys i,#btn-send-self i
+    {
+        background:url(../themes/base-default/imgs/ico-16.png) -120px -40px;
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        vertical-align: middle;
+        margin-left:3px;
+        margin-top:-2px;
+    }
+    
+    #btn-send-sys:hover i,#btn-send-self:hover i
+    {
+        background-position:-118px -40px;
+    }
+    
+    #btn-edit
+    {
+        margin-left:40px;
+    }
+</style>
+
+{#@}
+<dl>
+    <label>接收号码：</label><br />
+    <div id=to >{sms.ToNumbers}</div>
+</dl>
+<dl>
+    <label>短信内容：</label><br />
+    <div id="content" >{sms.Content}</div>
+</dl>
+<div id='sms-desc'>
+    
+</div>

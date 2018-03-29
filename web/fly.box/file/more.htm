@@ -1,0 +1,89 @@
+﻿<!doctype html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html class='p-file p-file-more'>
+<head>
+    <script src="../../fly.common/fly/fly.js?v2.4.0" type="text/javascript"></script>
+    <script src="../../fly.common/fly.ui/plugins/pager/simple.js?v2.4.0" type="text/javascript"></script>
+    <link href="../../fly.common/fly.ui/plugins/themes/plain/simple-pager.css?v2.4.0" rel="stylesheet"
+        type="text/css" />
+
+    <script src="../../fly.common/fly.ui/fly.ui.js?v2.4.0" type="text/javascript"></script>
+    <script src="../../fly.common/fly.ui/plugins/grid/grid.js?v2.4.0" type="text/javascript"></script>
+    <link href="../../fly.common/fly.ui/plugins/themes/plain/grid.css?v2.4.0" rel="stylesheet"
+        type="text/css" />
+
+    <script src="../common/common.js?v2.4.0" type="text/javascript"></script>
+    <script src="../comment/comment.js?v2.4.0" type="text/javascript"></script>
+    <script src="../../fly.base/user/search-box.js" type="text/javascript"></script>
+
+    <script src="js/more.js?v2.4.0" type="text/javascript"></script>
+    <link href="../themes/box-default/common.css?v2.4.0" rel="stylesheet" type="text/css" />
+    <link href="../themes/box-default/comment.css?v2.4.0" rel="stylesheet" type="text/css" />
+    <link href="../themes/box-default/file/more.css?v2.4.0" rel="stylesheet" type="text/css" />
+    <link href="../themes/base-default/form.css?v2.4.0" rel="stylesheet" type="text/css" />
+
+    <script src="../../fly.common/fly.ui/plugins/input/tags-editor.js?v2.4.0" type="text/javascript"></script>
+    <script src="../../fly.common/fly.ui/plugins/input/empty-box.js?v2.4.0" type="text/javascript"></script>
+    <link href="../../fly.common/fly.ui/plugins/themes/gray/tags-editor.css?v2.4.0" rel="stylesheet"
+        type="text/css" />
+</head>
+<body class='tags' style="height:auto">
+    <div id='top-block'>
+        <div id='top-bar'>
+        </div>
+        <div id='top-right-bar'></div>
+    </div>
+    <div id=close-button title="关闭" >×</div>
+    <a name='page-top' style="position:relative;top:-52px;">&nbsp;</a>
+    <div id='content-blocks'>
+        <div id="general" class="content-block">
+            <ul id='general-group1'>
+                <li id="file-name"></li>
+                <li id="with-size"></li>
+                <li id="with-tags"></li>
+                <li id="with-summary"></li>
+                <li class="only-folder"><label ><input id='fix-to-menu' type="checkbox" />在菜单中显示<span id=fix-to-menu-name ></span></label></li>
+                <li class="only-folder"><label ><input id='default-open' type="checkbox" />进入网盘时默认打开该目录</label></li>
+            </ul>
+            <ul id='general-group2'>
+                <li class="only-folder"><label >打开时自动创建以下目录(每行一个):</label><a href="vars.htm" target=_blank >可使用的变量</a><button id="save-auto-create-dir" class=submit-button style="margin-left:120px;position:absolute;padding:0px 10px;line-height:22px">确定</button><br />
+                    <textarea id="auto-create-dir" rows=5  cols=60  title="每行一个，可以创建多个，建立多级目录，可使用“\”或“/”分隔，如“手足口日报\{月}-{日}”可在“手足口日报”下自动创建当前日期对应的文件夹"></textarea>
+                </li>
+            </ul>
+        </div>
+        <div id="unCompression" class="content-block">
+            <h3>在线解压，可以按照压缩包中所有文件和目录结构，在网盘中1比1创建，简化大批量文件上传的繁杂过程。</h3>
+            <font color=red >注意：如果压缩文件较大，解压可能需要一个较长的过程，请耐心等待，切勿反复尝试！</font>
+        </div>
+        <div id='comment' class="content-block"></div>
+        <div id='tags' class="content-block"><label id=tags-title-label >归档目录：</label><div id=tags-editor ><input class='tags-editor-input'/></div><div id="tags-recommend"></div></div>
+        <div id='summary' class="content-block"><div id=summary-box ></div><div id=summary-preview ></div></div>
+        <textarea id='openMessage' class="content-block"></textarea>
+        <textarea id='dirUploadMessage' class="content-block"></textarea>
+        <div id="acl" class="content-block">
+            <div id=acl-by class=current-only >
+                <input type=radio value=role name=acl-by id=acl-role checked /><label for=acl-role >用户组</label> 
+                <input type=radio value=department name=acl-by id=acl-department /><label for=acl-department >部门</label> 
+                <input type=radio value=user name=acl-by id=acl-user /><label for=acl-user >用户</label> 
+                <input id=filter-acl-obj class=search-input  />
+           </div>
+        </div>
+        <div id='versions' class="content-block"></div>
+        <div id='importFile' class="content-block form">
+            <dl><h3> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 需要先将文件拷贝到服务器某目录下，在下面指定该目录。</h3></dl>
+            <dl>
+                <label for="import-path">导入文件所在目录：</label><input id="import-path" style="width:400px"/> <label title="将文件导入网盘后，是否删除原始。" style="vertical-align:middle"><input id="del-imported" type=checkbox  style="width:auto; vertical-align:top;border-bottom-width:0px"/>导入后删除文件</label>
+            <dl/>
+            <dl>
+                <label for="import-user">文件所属用户：</label><span class='input-list-block'><input id="import-user"/></span><span class="field-des">(输入姓名或登录名查询，导入后文件将归属到该用户下)</span>
+            <dl/>
+            <div id="import-message">
+                <a href="#" onclick="page.loadErrorLog();return false" >查看该目录最近的导入日志</a>
+            </div>
+        </div>
+    </div>
+    <div id='buttons'>
+        <button class='submit-button' id='save' onclick='fileMore.submit()'>保存</button>
+<!--        <button class='submit-button' id='cancel' onclick='frameElement.close()'>取消</button>-->
+    </div>
+</body>
+</html>

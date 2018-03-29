@@ -1,0 +1,31 @@
+﻿{@#}
+    <style>
+        dl input{width:300px;}
+        iframe
+        {
+            border: 0px none;
+            width: 800px;
+            height: 540px;
+        }
+    </style>
+{#@}
+
+<div class=setting-block-title >以下设置适用于手机APP自动绑定服务器地址：</div>
+<dl>
+    <label>外网服务器地址：</label>
+    <input name="im_url_wan" />
+    <label class="on-right" >手机、PC客户端在外网可通过该地址访问云盘（建议配置为公网IP或域名）</label>
+</dl>
+<dl>
+    <label>内网服务器地址：</label>
+    <input name="im_url_lan" />
+    <label class="on-right" >手机、PC客户端在内网可通过该地址访问云盘（建议配置为局域网IP）</label>
+</dl>
+<dl>
+    <label>单位名称：</label>
+    <input name="org_name" disabled />
+    <input type="hidden" name="address" />
+    <input type="hidden" name="address_from_map" />
+    <input type="hidden" name="address_lnglat" />
+</dl>
+<iframe src="../setting/app-setting-select-addr.htm" scrolling=no  frameborder=0  ></iframe>

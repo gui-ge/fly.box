@@ -1,0 +1,379 @@
+﻿.light
+{
+    color: #0099CC;
+}
+
+.gray
+{
+    color:Gray;
+}
+    
+html,body 
+{
+    margin:0px;padding:0px;
+    font-family: Helvetica, sans-serif, Arial;
+    font-size:10pt;
+    color: #134262;
+}
+
+html
+{
+    background:rgb(239, 240, 239) url(imgs/bg-html.png);
+}
+
+body
+{
+    background:url(imgs/bg-body.png) repeat-x center 70px;
+}
+
+
+a
+{    
+    color: #0099CC;
+    text-decoration:none;
+}
+
+a:visited
+{
+    color: #134262;
+}
+
+a:hover
+{
+    color: #009999;
+}
+
+h1
+{
+    font-weight:normal;
+}
+
+.placeholder
+{
+    opacity:.6;
+    filter:alpha(opacity=60);
+}
+
+.page-wrap
+{
+    width:100%;
+    text-align:center;
+}
+
+.page-content
+{
+    width:960px;
+    text-align:left;
+    margin-left:auto;
+    margin-right:auto;
+    position:relative;
+}
+
+.page-inner
+{
+    background:white;
+    width:930px;
+    text-align:left;
+    position:relative;
+    border:1px solid #F5F5F5;
+    margin:15px auto 15px auto;
+    padding:0px 15px;
+    border-radius:5px;
+    box-shadow: rgba(20, 20, 20, 0.05) 0px 2px 20px 0px;
+}
+
+.page-inner .page-content
+{
+    width:auto;
+}
+
+/*空页面信息*/
+.empty-page-msg
+{
+    padding-top:60px;
+    padding-bottom:60px; 
+    text-align:center;
+}
+
+/*header*/
+#header
+{
+    background:url(imgs/bg-header.png) repeat-x center bottom;
+    height:70px;
+    color:White;
+}
+
+#header a
+{
+    color:White;
+}
+
+#header .header-right a:hover
+{
+    color:#0099CC;
+}
+
+.header-right a
+{
+    margin-left:8px;
+}
+
+#header .page-content
+{
+    width:960px;
+}
+    
+#logo-block
+{
+    margin-top:3px;
+    position:absolute;
+    z-index:100;
+    font-family: "Forte","Algerian","Colonna MT","Cooper Black","华文彩云","华文行楷";
+    font-size:38pt;
+    color:white;
+    font-weight:bold;
+    text-shadow: 0px 0px 2px red, 1px 1px 4px rgba(0,0,255,0.7);
+    -webkit-mask-image: url(imgs/mask2.png);
+	-moz-mask-image: url(imgs/mask2.png);
+	-o-mask-image: url(imgs/mask2.png);
+	mask-image: url(imgs/mask2.png);
+}
+    
+#login-block
+{
+    position:absolute;
+    right:10px;
+    top:30px;
+    z-index:1;
+}
+
+#login-block a
+{
+    font-size:13px;
+}
+
+/*menus*/
+#menus a
+{
+    font-family:"幼圆","华文楷体";
+    font-size:14px;
+    color:white;
+    font-weight:bold;
+    margin:20px 0px;
+    line-height:29px;
+    display:inline-block;
+}
+
+#menus a:hover
+{
+    color:rgb(166,166,166);
+    cursor:pointer;
+}
+
+#menus #menu-home
+{
+    margin-left:180px;
+}
+
+
+/*content*/
+#content .page-content
+{
+    margin-top0:20px;
+}
+
+/*fetch,search*/
+#fetch-block
+{
+    text-align:right;
+}
+
+#fetch-block input
+{
+    line-height:26px;
+    height:26px;
+    width:300px;
+    border-radius:5px;
+    font-size:12pt;    
+    text-indent:20px;
+    vertical-align:middle;
+}
+    
+#fetch-block a
+{
+    vertical-align:middle;    
+}
+
+#page-index #fetch-block
+{
+    margin-top:20px;
+}
+
+/*slides*/
+.slides
+{
+    height: 400px;
+}
+
+.slides .summary
+{
+    font-size: 40px;
+    color: #000066;
+    position:absolute;
+    bottom:0px;
+    width:100%;
+    text-align:center;
+    font-style: italic;
+}
+
+body .flexslider .slides img
+{
+    width:auto;
+    margin:20px auto 0px auto;
+}
+
+.slides li
+{
+    text-align:center;
+    height:400px;
+    overflow:hidden;
+}
+
+/*footer*/
+#footer
+{
+    color:#8b949d;
+}
+
+.copyright
+{
+    text-align:center;
+    text-shadow: 0px 0px 2px white, 1px 1px 4px rgba(255,255,255,0.7);
+}
+
+#footer .page-content
+{
+    padding:20px 0px 150px 0px;
+}
+
+#footer a
+{
+     text-decoration:none;
+     color:#8b949d;
+}
+
+#footer a:hover
+{
+    color:White;
+}
+
+#footer label
+{
+    font-weight:bold;
+}
+
+#footer .block
+{
+    padding:10px 0px;
+}
+
+
+/*flexslider*/
+body .flex-control-paging li a,body .flex-control-paging li a:hover
+{
+    background:url(imgs/flexslider/controller1.png) no-repeat center center;
+    border-radius:0px;
+    width:15px;
+    height:15px;
+    border:0px solid gray;
+    box-shadow:none;
+}
+
+body .flex-control-paging li a.flex-active,body .flex-control-paging li a.flex-active:hover
+{
+    background:url(imgs/flexslider/controller2.png) no-repeat center center;
+}
+
+body .flexslider
+{
+    background:none;
+    border-radius:5px;
+    border:0px solid gray;
+    box-shadow:none;
+}
+
+
+
+/*common*/
+.submit-button
+{
+    display:inline-block;
+    background-color:#267BB6;
+    background:-ms-linear-gradient(top,  rgba(38, 123, 182,0.55) 0%,rgb(51, 143, 206) 100%); /* IE10+ */
+    background:-o-linear-gradient(top,  rgba(38, 123, 182,0.55) 0%,rgb(51, 143, 206) 100%); 
+    background:-moz-linear-gradient(top,  rgba(38, 123, 182,0.55) 0%,rgb(51, 143, 206) 100%); 
+    background:-webkit-linear-gradient(top,  rgba(38, 123, 182,0.55) 0%,rgb(51, 143, 206) 100%); 
+    background:linear-gradient(top,  rgba(38, 123, 182,0.55) 0%,rgb(51, 143, 206) 100%); 
+    
+    -ms-filter:progid:DXImageTransform.Microsoft.Shadow(color=#999999,direction=135,strength=1);
+    border: 1px solid rgb(13, 94, 148);
+    border-radius: 5px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 2px 0px;
+    box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 2px 0px;
+    color: white;
+    font-size:13px;
+    padding:5px 15px;
+    font-weight:bold;
+    cursor:pointer;
+    zoom:1;
+}
+
+.submit-button:hover
+{
+    background:linear-gradient(top,  rgba(38, 123, 182,0.8) 0%,rgba(51, 143, 206,.5) 100%); 
+    background:-ms-linear-gradient(top,  rgba(38, 123, 182,0.8) 0%,rgba(51, 143, 206,.5) 100%); 
+    background:-moz-linear-gradient(top,  rgba(38, 123, 182,0.8) 0%,rgba(51, 143, 206,.5) 100%); 
+    background:-o-linear-gradient(top,  rgba(38, 123, 182,0.8) 0%,rgba(51, 143, 206,.5) 100%); 
+    background:-webkit-linear-gradient(top,  rgba(38, 123, 182,0.8) 0%,rgba(51, 143, 206,.5) 100%); 
+        
+    filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#a0267BB6, endColorstr=#4BA0DA);
+    color:#FFFFCC;
+}
+
+
+.focus-box
+{
+    box-shadow:0 0 3px #C6C6C6;
+    -webkit-box-shadow:0 0 3px #C6C6C6;
+    border:1px solid #C6C6C6;
+    padding-left:3px;
+    padding-right:3px;
+}
+
+.focus-box:focus
+{
+    box-shadow:0 0 3px #78A9DA;
+    -webkit-box-shadow:0 0 3px #78A9DA;
+    border:1px solid #78A9DA;
+    outline-width:0px;
+}
+
+
+.user-ico
+{
+    background: no-repeat center center;
+    background-size: contain;
+    width:128px;
+    height:128px;
+    display:inline-block;
+    vertical-align:middle;
+
+    border:1px solid #CECECE;
+    border-radius:5px;
+}
+
+.text-ellipsis
+{
+    text-overflow: ellipsis; 
+    overflow:hidden;
+}

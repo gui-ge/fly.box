@@ -1,0 +1,15 @@
+﻿html, body
+{
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px;
+    color: #666;
+}
+
+#dirs
+{
+    padding:10px;
+    border-bottom:1px dotted gray;
+    margin-bottom:10px;
+}
+

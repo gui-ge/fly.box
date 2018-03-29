@@ -1,0 +1,14 @@
+﻿<dl>
+    <label>标题</label><input id="title" name="title" rule='*' />
+</dl>
+<dl>
+    <label>附件</label>&nbsp;&nbsp;<a id="select-attachment" onclick="page.selectAttachments();return false" href="#">从网盘选择、上传</a>
+    <span id="attachments"></span>
+</dl>
+<dl>
+    <label>内容</label><span><span id="content-file" target=_blank ></span><a id="select-content" onclick="page.selectContentFile();return false" href="#">从网盘选择、上传</a></span>
+        <textarea id="content" name="content" rule='*'></textarea>
+</dl>
+<!--<dl>
+    <label>插入分享（分享、收集文件）</label>
+</dl>-->

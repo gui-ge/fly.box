@@ -1,0 +1,30 @@
+﻿<div class="pager-above" class="pager" style="display:none">
+    <a class='pager-info'></a>
+    <span class='pager-buttons'>
+        <a class='previous-page' title='上一页'>«</a>
+        <span class='pager-pages'></span>
+        <a class='next-page' title='下一页'>»</a>
+    </span>
+</div>
+<div class=comment-list ></div>
+<div style="clear:both"></div>
+<div class="pager-bottom" class="pager" style="display:none">
+    <a class='pager-info'></a>
+    <span class='pager-buttons'>
+        <a class='previous-page' title='上一页'>«</a>
+        <span class='pager-pages'></span>
+        <a class='next-page' title='下一页'>»</a>
+    </span>
+</div>
+<textarea class='txt-comment-content' class="focus-box" maxlength=400 ></textarea>
+<div id='comment-buttons'>
+<button class='submit-button btn-submit-comment'>提交评论</button>
+<button class='submit-button btn-cancel-comment'></button>
+</div>
+
+<script id="comment-item-format" type="template" >
+{@for o as c}
+    <div id=comment-{c.id} class=comment-wrap ><div class=comment-info ><img class=comment-icon src="../do/icon.ashx?u-id={c.uId}" /><span class=comment-time>{c.time.format($.box.dt2Format)}</span> <span class=comment-user >#{c.user}<span><span class=comment-level >{c.level}楼</span></div>
+    <div class=comment-content>{window[o.pageId].HTMLEncode(c.content)}</div><div class=comment-cmds >{@if window.userContext && (userContext.user.isManager || c.uId==userContext.user.id)} <a class=btn-del-comment onclick="{o.pageId}.remove('{c.id}')">删除</a>{if@}</div></div>
+{for@}
+</script>

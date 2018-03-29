@@ -1,0 +1,111 @@
+﻿body
+{
+    padding-top: 100px;
+}
+
+#time-type
+{
+    width: 60px;
+    display: inline-block;
+}
+
+#time
+{
+    display: inline-block;
+    float:left;
+}
+
+
+#time input
+{
+    width: 100px;
+}
+
+.well
+{
+    position: fixed;
+    width: 100%;
+    height: 30px;
+    z-index: 100;
+    top: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-left-width: 0px;
+    border-radius: 0px;
+}
+
+#upload
+{
+}
+
+.chart-box
+{
+    margin-bottom: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1200px;
+    min-width: 500px;
+}
+
+#title-box
+{
+    font-size: 25px;
+    margin-left: 30px;
+    white-space: nowrap;
+    position: absolute;
+    left: 420px;
+    right: 150px;
+    overflow: hidden;
+    height: 35px;
+    margin-top:3px;
+}
+
+#title-box a
+{
+    line-height:25px;
+}
+
+#title-box a:hover
+{
+    text-decoration:none;
+}
+
+.a-details
+{
+    position: absolute;
+    margin: 0px 0px 0px 50px;
+    z-index:2;
+}
+
+.a-details-box 
+{
+    position: absolute;
+    margin: 0px 0px 0px 50px;
+    z-index:2;
+}
+
+.a-details-box  .a-details
+{
+    position:relative;
+    margin:0px 3px 0px 0px;
+}
+
+#txt-user-query-box
+{
+    top: -5px;
+    width:180px;
+    vertical-align:middle;
+}
+
+#txt-user-query
+{
+    width:180px;
+    padding-top:0px;
+    padding-bottom:0px;
+    height:28px;
+}
+
+#txt-user-query-box select
+{
+    width:180px;
+}

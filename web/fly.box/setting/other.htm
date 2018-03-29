@@ -1,0 +1,55 @@
+﻿<dl>
+    <label>标语：</label>
+    <input name="slogan" />
+</dl>
+<dl>
+    <label>Logo图片：</label><input name='logo' /><input name='logo-file' type=file value='上传' style="width:70px;margin-left:20px"/>
+</dl>
+<dl>
+    <label>登录页图片：</label><input name='loginImg' /><input name='login-img-file' type=file value='上传' style="width:70px;margin-left:20px"/>
+</dl>
+<dl>
+    <label>登录页背景图片：</label><input name='loginBackImg' /><input name='login-back-img-file' type=file value='上传' style="width:70px;margin-left:20px"/>
+</dl>
+<div class="form-field">
+    <label></label><input name="openUserSpace"  type="checkbox" checked /><label class='on-right'>开启个人网盘</label>
+</div>
+<div class="form-field">
+    <label></label><input name="allotByRole"  type="checkbox"/><label class='on-right'>按用户组分配个人空间</label>
+</div>
+<div class="form-field">
+    <label></label><input name="canRegistUser" type="checkbox" /><label class='on-right'>开放用户注册</label> 
+</div>
+<div class="form-field">
+    <label></label><input name="registUserNeedAudit" type="checkbox" /><label class='on-right'>注册用户需管理员审核</label>
+</div>
+<div class="form-field">
+    <label></label><input name="modifyUserMainInfoBySelf" type="checkbox" /><label class='on-right'>注册用户自己可修改关键信息</label>
+</div>
+<!--<div class="form-field">
+    <label></label><a class='submit-button' onclick="page.createShareResourceInRoot(this)">在企业网盘根目录创建“常用软件”文件夹</a>
+</div>-->
+<dl>
+    <label>文件评分最高分：</label>
+    <input name="fileMaxScore" />
+</dl>
+<br/>
+<dl><label>服务标识：</label>{lic.serviceNO}    
+{@if lic.sn}
+    <span>@ {lic.sn}</span>
+{if@}</dl>
+
+<!--
+{@if lic.content}
+    <dl><label>授权：</label>{lic.content.replace('\r\n','<br />')}</dl>
+{if@}
+<dl><label></label>
+    {@if lic.content}
+        <a href="../ajax.ashx?$c=lic&m=download">下载授权文件</a>
+    {if@}
+    <input type='file' id='lic-file' name='lic-file' />
+    <a href="">上传授权文件</a>
+    <a href="../ajax.ashx?$c=lic&$m=recheck" target="lic-check">重新检测</a>
+    <iframe name='lic-check' id='lic-check'></iframe>
+</dl>
+-->

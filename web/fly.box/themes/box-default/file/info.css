@@ -1,0 +1,64 @@
+﻿html, body
+{
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px;
+    color: #666;
+}
+
+body
+{
+    padding-top: 8px;
+}
+
+#icon
+{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    background: url(../imgs/file/icons-l/generic.gif) center center no-repeat;
+}
+
+.is-multi #icon
+{
+     background-image: url(../../imgs/file/100/multi-files.gif);
+}
+
+.is-folder #icon
+{
+     background-image:url("../imgs/file/icons-l/folder.png");
+}
+
+#icon img
+{
+    border: 1px solid #eee;
+    background: white;
+}
+
+#fields div
+{
+    margin-top: 10px;
+}
+
+#fields label
+{
+    margin-left: 8px;
+    width: 60px;
+    text-align: right;
+    display: inline-block;
+}
+
+.is-file #file, .is-file #folder
+{
+    display: none;
+}
+
+#tags, #summary
+{
+    display: none;
+}
+
+#fields
+{
+    display: none;
+}

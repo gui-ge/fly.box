@@ -1,0 +1,474 @@
+﻿body, html
+{
+    
+}
+
+#close-button
+{
+     position:absolute;
+     z-index:10;
+     top:5px;
+     right:5px;
+     color:Red;
+     font-size:18px;
+     font-weight:bold;
+     line-height:18px;
+     cursor:pointer;
+     border:1px solid #F3F3F3;
+}
+
+#close-button:hover
+{
+    top:4px;
+    right:6px;
+    border-color:#C5C5C5;
+}
+
+#top-bar
+{
+    padding: 5px 0px 4px 20px;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    height: 20px;
+    z-index: 1;
+}
+
+
+#top-bar span
+{
+    display: inline-block;
+    color: #1a74b0;
+    cursor: pointer;
+    margin: 0px 5px;
+}
+
+#top-bar div
+{
+    display: inline;
+    font-weight:normal;
+}
+
+#top-bar .current-only
+{
+    display:none;
+}
+
+#top-bar .current .current-only
+{
+    display: inline;
+}
+
+#acl-by
+{
+    margin:0px 0px 5px 0px;
+}
+
+#acl-by input
+{
+    position:relative;
+    top:2px;
+}
+
+#top-bar i
+{
+    vertical-align: middle;
+    background: url(../imgs/icons/icons.png) -6px -32px;
+    display: none;
+    width: 24px;
+    height: 24px;
+}
+
+#top-bar .current
+{
+    font-weight: bold;
+    color:Blue;
+}
+
+#top-bar .setted
+{
+    color: #0000FF;
+}
+
+#top-bar .current i
+{
+    display: inline-block;
+}
+
+#a-tags i
+{
+    background-position: -88px -32px;
+}
+
+body #a-comment,body #a-acl
+{
+    display:none;
+}
+
+.can-comment #a-comment,.can-manage #a-acl
+{
+    display:inline;
+}
+    
+#a-comment i
+{
+    background-position: -36px -32px;
+}
+
+#a-acl i
+{
+    background-position: -188px -577px;
+}
+
+#a-dirUploadMessage i
+{
+    background-position: -212px -216px;
+}
+
+#a-openMessage i
+{
+    background-position: -58px -448px;
+}
+
+#a-unCompression i
+{
+    background:url(../imgs/icons/rar-24.png) center -2px no-repeat;
+}
+
+
+#content-blocks
+{
+    border-top:1px solid rgb(200, 207, 243);
+    position: absolute;
+    top: 30px;
+    overflow: auto;
+    bottom: 3px;
+    right: 0px;
+    left: 0px;
+    background-color:White;
+    padding-left:30px;
+}
+
+.content-block
+{
+    display: none;
+}
+
+#content-blocks .current
+{
+    display: block;
+}
+
+#buttons
+{
+    position:absolute;
+    left:30px;
+    right:30px;
+    bottom:8px;
+}
+
+#versions ul
+{
+    margin-top:10px;
+    list-style-type:decimal;
+}
+
+.txt-comment-content
+{
+    height:70px;
+    vertical-align:middle;
+}
+
+#comment
+{
+    margin-bottom:0px;
+}
+
+#no-comment-msg
+{
+    padding:20px 0px;
+}
+
+#comment-buttons
+{
+    display:inline;
+    vertical-align:middle;
+}
+
+.only-folder
+{
+    position:absolute;
+    visibility:hidden;
+}
+
+.f-folder .only-folder
+{
+    position:static;
+    visibility:visible;
+}
+
+#openMessage,#dirUploadMessage
+{
+    width:80%;
+    min-height:60%;
+    position:absolute;
+    top:5px;
+    bottom:35px;
+    left:10px;
+}
+
+
+.with-me #a-comment,.with-me #a-acl,span#a-dirUploadMessage,.with-me #a-openMessage,.with-me body #a-dirUploadMessage
+{
+    display:none;
+}
+
+#acl
+{
+    height:auto;
+    max-height:250px;
+}
+
+.auth-cell
+{
+    text-align:center;
+}
+
+.f-grid-col-0
+{
+    text-align:left;
+}
+
+#filter-acl-obj
+{
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 4px;
+}
+
+#top-right-bar
+{
+    visibility:hidden;
+    position: absolute;
+    right: 20px;
+    top: 8px;
+    z-index:2;
+}
+
+#top-block:hover #top-right-bar
+{
+    visibility:visible;
+}
+
+#top-right-bar *
+{
+    vertical-align:middle;
+}
+
+#importFile
+{
+    height:250px;
+}
+
+#import-message
+{
+    margin:40px 80px;
+}
+
+#general
+{
+    margin-top:10px;
+    font-size: 14px;
+    color: rgb(35, 89, 114);
+    line-height: 25px;
+    padding-left: 30px;
+}
+
+#general a
+{
+    color:Blue;
+    display:none;
+    position:absolute;
+    cursor:pointer;
+    margin-left:15px;
+}
+
+#general li
+{
+    position:relative;
+}
+    
+#general li:hover a
+{
+    display:inline;
+}
+
+#general ul
+{
+    list-style-type:initial;
+    white-space:nowrap;
+}
+
+#tags
+{
+    position:absolute;
+    left:10px;
+    right:10px;
+    top:5px;
+    bottom:25px;
+}
+
+#tags .tags-editor-input
+{
+    display:inline-block;
+    width:200px;
+    text-align:left;
+}
+
+#tags-editor
+{
+    width:40%;
+    float:left;
+    height:85%;
+}
+
+#tags-title-label
+{
+    line-height:35px;
+    float:left;
+    color:rgb(86,212,229);
+    font-weight:bold;
+}
+
+#tags-recommend
+{
+    background-color: rgb(248,248,248);
+    width: 47%;
+    height: 100%;
+    float: right;
+    border-radius: 6px;
+    line-height:25px;
+    padding-left:5px;
+}
+
+#tags-recommend div
+{
+    color:rgb(86, 212, 229);
+    font-weight:bold;
+}
+
+#tags-recommend label
+{
+    margin: 0px 3px;
+    color: #6E6E6E;
+    background: rgb(238, 238, 238);
+    border-radius: 3px;
+    padding: 3px 6px;
+    cursor: pointer;
+}
+
+#tags-recommend .checked
+{
+    color:Blue;
+}
+
+#general-group1
+{
+    float:left;
+    min-width:330px;
+    margin-right:30px;
+}
+
+#general-group2
+{
+    float:left;
+}
+
+.log-list
+{
+    list-style-type: decimal;
+    margin: 5px 0px 0px 0px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    list-style-position: inside;
+    padding: 10px;
+}
+
+#summary label
+{
+    font-weight:bold;
+    margin-top:10px;
+    margin-bottom:5px;
+}
+
+.preview-title
+{
+    display:block;
+}
+
+#summary-preview.has-error
+{
+    color:Red;
+    padding-top:20px;
+    padding-left:20px;
+}
+
+#summary-preview table
+{
+    border-collapse:collapse;
+}
+    
+#summary-preview td
+{
+    border: 1px solid #CDCDCD;
+    padding: 3px;
+}
+
+#summary-box
+{
+    margin-bottom:5px;
+}
+
+#summary-box a
+{   
+    display:inline-block;
+    margin-top:3px;
+    margin-left:20px;
+    padding: 3px 5px;
+}
+
+#summary-box .no-summary
+{
+    float: right;
+    margin-right: 30px;
+}
+
+#file-thumb
+{
+    margin-top:10px;
+}
+
+.f-folder #a-versions,.p-file #a-importFile
+{
+    display:none;
+}
+
+.f-folder #a-importFile,.f-folder #a-dirUploadMessage
+{
+    display:inline-block;
+}
+
+
+.p-file #a-unCompression
+{
+    display:none;
+}
+
+.f-compress #a-unCompression
+{
+    display:inline-block;
+}
+
+.ie-7 #save-auto-create-dir
+{
+    margin-top:-10px;
+}

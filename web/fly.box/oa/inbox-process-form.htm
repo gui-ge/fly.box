@@ -1,0 +1,17 @@
+﻿<div class='oa-target-title'>{title}</div>
+<dl class='work-infos'>
+    <label></label><span >NO.{flowNO}</span><span class=gray >→</span><span>{creator.replace(/→/g,"<span class=gray >→</span>")}</span> <span>{assignTime.format($.box.dt2Format)}</span> 发起
+    {@if proposalCompleteTime}
+        ，建议完成时间：<span>{@js} =proposalCompleteTime.format($.box.dFormat);{js@}</span>
+    {if@}
+    {@if completeTime}
+    ，<span>你于 {completeTime.format($.box.dt2Format)} 已办理</span>
+    {if@}
+</dl>
+<dl class='work-atts'>
+    <label>附件：&nbsp;&nbsp;&nbsp;&nbsp;</label><span id="attachments"></span>
+</dl>
+<dl>
+    <label>事务内容：</label>
+    <div id="content"></div>
+</dl>

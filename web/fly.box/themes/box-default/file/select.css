@@ -1,0 +1,49 @@
+﻿.item-folder-root
+{
+	background-image:url(../imgs/icons/folder.png);
+} 
+
+.item-folder
+{
+	background-image:url(../imgs/icons/folder-blue.png);
+} 
+
+#new-folder
+{
+    display:inline;
+}
+
+#new-folder-input
+{
+    margin-left:30px;
+    border: 1px solid #D2D2D2;
+    width:130px;
+    vertical-align: middle;
+}
+
+#new-folder a
+{
+    background: url(../imgs/file/ico-operate.gif) no-repeat;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #C5C5C5;
+    vertical-align: middle;
+    cursor:pointer;
+}
+
+#new-folder a:hover
+{
+    border-color:Gray;
+}
+    
+a#new-folder-save
+{
+    background-position:-98px 3px;
+    margin-left:5px;
+}
+
+a#new-folder-cancel
+{
+    background-position: -58px -18px;
+}

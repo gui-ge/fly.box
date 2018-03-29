@@ -1,0 +1,46 @@
+﻿{@#}
+<style>
+    #title-block
+    {
+        margin-bottom:0px;
+    }
+    
+    #toolbar
+    {
+        clear:both;
+    }
+    
+    #content-block
+    {
+        margin-top:0px;
+        padding-top:0px;
+        display:block;
+    }
+    
+    #editor-block
+    {
+        float:left;
+        width:420px;
+    }
+    
+    #selector-block
+    {
+        float:left;
+        margin:10px 0px 0px 20px;
+        min-width:250px;
+    }
+</style>
+{#@}
+<div id=editor-block >
+    <dl>
+        <label>接收号码：</label><br />
+        <div id=to ><input class='tags-editor-input'/></div>
+    </dl>
+    <dl>
+        <label>短信内容：</label><br />
+        <textarea id="content" ></textarea>
+    </dl>
+</div>
+<div id=selector-block >
+    <iframe id=user-frame frameborder=0 scrolling=no src="../../fly.base/user/tree.htm?auto-height=1&supper-search=1&supper-role=1&async=0"></iframe>
+</div>

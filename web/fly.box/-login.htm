@@ -1,0 +1,39 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta name="keywords" content="flybox,企业网盘,网络硬盘,网盘,大文件上传,断点续传,分享"/>
+    <meta name="description" content="Fly.Box企业网盘，支持多单位、多用户、断点续传、提取码、分享等" />
+    <link rel="icon" href="../favicon.ico" mce_href="../favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../favicon.ico" mce_href="../favicon.ico" type="image/x-icon">
+    <script src="../fly.common/fly/fly.js?v2.4.0" type="text/javascript"></script>
+    <script>window.needLogin = false</script>
+    <script src="common/common.js?v2.4.0" type="text/javascript"></script>
+    <script src="../fly.common/fly.ui/plugins/input/empty-box.js?v2.4.0" type="text/javascript"></script>
+</head>
+<body>
+    <div id="banner">
+    </div>
+    <div id="center-content">
+        <div id="feature-box">
+        </div>
+        <div id="login-box">
+            <form onsubmit="return false">
+                <span id="account-box" class="empty-box">
+                    <input name="fly-account" emptyvalue="" />
+                </span><span id="password-box" class="empty-box">
+                    <input id="password" name="fly-password" type="password" cssbox='#password-box' emptyvalue="">
+                </span>
+                <div id="login-buttons">
+                    <button type="submit" id="login">。。。</button>
+                </div>
+                <div id="login-other">
+                
+                    <a href="#" class="a-button" id="forget-pwd"></a>
+                    <a href="#" class="a-button" id="regist" ></a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="js/login.js?v2.4.0" type="text/javascript"></script>
+</body>
+</html>

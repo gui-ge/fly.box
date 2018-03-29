@@ -1,0 +1,15 @@
+﻿<div class='oa-target-title'>{title}</div>
+<dl class='work-infos'>
+    <label></label><span >NO.{flowNO}</span><span class=gray >→</span><span>{creator}</span> <span>{createTime.format($.box.dt2Format)}</span> 发起
+    {@if proposalCompleteTime}
+        ，建议完成时间：<span>{@js} =proposalCompleteTime.format($.box.dFormat);{js@}</span>
+    {if@}
+</dl>
+
+<dl>
+    <label>附件：&nbsp;&nbsp;&nbsp;&nbsp;</label><span id="attachments"></span>
+</dl>
+<dl>
+    <label>事务内容：</label>
+    <div id="content"></div>
+</dl>

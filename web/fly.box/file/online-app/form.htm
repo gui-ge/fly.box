@@ -1,0 +1,26 @@
+﻿<dl>
+    <label>文件名:</label>
+    <input name="name" rule="*|2-50|trim|tips:必须输入文件名" />
+</dl>
+<dl>
+    <label>链接地址:</label>
+    <textarea name="url" rule='*' style='width:260px'></textarea>
+</dl>
+<dl>
+    <label>图标:</label>
+    <input name="icon"/>
+</dl>
+<div class="form-field">
+   <label>打开方式:</label>
+    <label class="on-right"><input type="radio" name='openType' value="dialog" rule=* onclick="$('#dialog-setting').css('display',this.checked?'block':'none')" />弹出框</label>
+    <label class="on-right"><input type="radio" name='openType' value="new-page" rule=* onclick="$('#dialog-setting').css('display',this.checked?'none':'block')"  />新页面</label>
+</div>
+<dl id="dialog-setting" style="display:none">
+    <label>弹出框宽:</label>
+    <input name="width" rule="int" style="width:50px"/>
+    
+    <label style="width:40px">高:</label>
+    <input name="height" rule="int" style="width:50px"/>
+</dl>
+
+

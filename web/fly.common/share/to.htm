@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>社交平台分享</title>
+    <script src="../fly/fly.js?v2.4.0" type="text/javascript"></script>
+    <style type="text/css">
+        html, body
+        {
+            margin: 0px;
+            padding: 0px;
+            font-size: 12px;
+        }
+        
+        #weibos a
+        {
+            float: left;
+            line-height: 20px;
+            padding: 3px 2px 0px 22px;
+            margin-left: 5px;
+            background: url(share.png) no-repeat;
+            text-decoration: none;
+        }
+        
+        #weibos a:hover
+        {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div id='weibos'>
+        <a y="115" url='http://service.weibo.com/share/share.php?url={url}&title={title}%0D%0A{summary}'>新浪微博</a>
+        <a y="75" url='http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url={url}&title={title}&summary={summary}&site='>QQ空间</a>
+        <a y="235" url='http://share.v.t.qq.com/index.php?c=share&a=index&url={url}&title={title}%0D%0A{summary}'>腾讯微博</a>
+        <a y="195" url='http://widget.renren.com/dialog/share?resourceUrl={url}&srcUrl={url}&title={title}&description={summary}'>人人网</a>
+        <a y="715" url='http://t.163.com/article/user/checkLogin.do?info={title}%0D%0A{summary}~{url}&togImg=false'>网易微博</a>
+    </div>
+    <script type="text/javascript">
+        var btns = $('#weibos a')
+        window.reset = function () {
+            var title = $.getQuery('title')
+            if (!title)
+                title = frameElement ? frameElement.shareTitle : ''
+
+            var share = {
+                url: encodeURIComponent($.getQuery('url') || location.host),
+                title: encodeURIComponent(title),
+                summary: encodeURIComponent($.getQuery('summary') || '')
+            }
+
+            btns.each(function (a) {
+                var y = a.getAttribute('y');
+                a.target = '_blank';
+                a.style.backgroundPosition = "0px -" + y + "px";
+                a.href = a.getAttribute('url').format(share);
+            })
+        }
+        reset();
+    </script>
+</body>
+</html>

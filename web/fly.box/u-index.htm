@@ -1,0 +1,54 @@
+﻿<!doctype html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html class='p-index' iPath="">
+<head>
+    <script>location.href='index.htm?to=user-space'</script>
+    <link rel="shortcut icon" href="/favicon.ico"/>
+    <link href="themes/box-default/common.css?v2.4.0" rel="stylesheet" type="text/css" />
+    <link href="themes/box-default/index.css?v2.4.0" rel="stylesheet" type="text/css" />
+    <script src="../fly.common/fly/fly.js?v2.4.0" type="text/javascript"></script>
+    <script src="local/langs/lang.js" type="text/javascript"></script>
+    <script src="common/common.js?v2.4.0" type="text/javascript"></script>
+    <script src="../fly.common/fly.ui/plugins/input/empty-box.js?v2.4.0" type="text/javascript"></script>
+    <link rel="icon" href="../favicon.ico" mce_href="../favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../favicon.ico" mce_href="../favicon.ico" type="image/x-icon">
+    <script>$L('<title>我的{mySpaceName} {ver}</title>')</script>
+</head>
+<body>
+    <div id="top-block">
+        <div id='logo-div'><img id='org-logo' src="themes/imgs/logo.png" /></div>
+        <div id='user-info'><a id='user-name'>用户名</a><div><a href="common/form.htm?m=setting" target="f">换肤、设置</a> <a href="#" onclick='indexPage.logout();return false'>退出</a></div></div>
+        <div id="top-right"><!--<a href="ajax.ashx?$c=do&$m=feedback" target="f">反馈建议</a><i></i><a href="ajax.ashx?$c=do&$m=help" target="f">帮助中心</a>--></div>
+        <div id='search-bar'><form id='search-form'><input emptyValue='搜索' id="search" /></form></div>
+        <div id='top-msg-box'></div>
+    </div>
+    <div id="top-line"></div>
+    <div id="left-block">
+        <div id="user-ico"><img src="themes/imgs/user-def-ico-128.png" />&nbsp;</div>
+        <ul id='above-menus' >
+            <li>
+                <div id='space-size-pro'><div></div></div>
+                <div id='space-size'></div>
+            </li>
+            <li id='disk-menu'><a target='f' href="file/manage.htm"><script>$L('diskName')</script></a></li>
+        </ul>
+        <ul id='folder-menus'></ul>
+        <div class='menu-split'></div>
+        <ul id='other-menus'>
+            <li><a target="f" href="file/manage.htm?from-share">Ta 们分享的</a></li>
+            <li><a target="f" href="file/manage.htm?share-to">我分享的</a></li>
+            <li><a target="f" href="common/list.htm?m=tag">我的标签</a></li>
+            <li><a target='f' href="file/manage.htm?recycle">回收站</a></li>
+        </ul>
+        <div class='menu-split'></div>
+        <ul id='other-menus2'>
+            <li><a target="f" href="common/list.htm?m=oa&list=inbox">通知、公告 | 请示、任务</a></li>
+            <li id=li-org-disk-menu ><a href="index.htm"><script>$L('diskFullName')</script></a></li>
+        </ul>
+    </div>
+    <div id="content-block">
+        <iframe id="content-frame" name='f' src="file/manage.htm" frameborder="0" allowTransparency="1"></iframe>
+    </div>
+    <script src="js/index-base.js?v2.4.0" type="text/javascript"></script>
+    <script src="js/index.js?v2.4.0" type="text/javascript"></script>
+</body>
+</html>

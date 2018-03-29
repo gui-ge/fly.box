@@ -1,0 +1,302 @@
+﻿html, body
+{
+    background: rgb(248, 248, 248);
+    font-style:normal;
+    font-variant:normal;
+    font-weight:normal;
+}
+
+#banner
+{
+    background: url("../../do/loginbackimg.ashx?~/fly.box/themes/box-default/imgs/login/banner.jpg") center top repeat-x;
+    width: 100%;
+    height: 495px;
+    position: absolute;
+    left:0px;
+    top:0px;
+    border-bottom: 2px solid #dadada;
+    border-top: 1px solid #dadada;
+}
+
+#feature-box
+{
+    background: url("../../do/loginimg.ashx?~/fly.box/themes/box-default/imgs/login/feature.png") no-repeat center -20px;
+    width: 486px;
+    height: 446px;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+}
+
+#login-box
+{
+    width: 414px;
+    height: 350px;
+    top: 80px;
+    position: absolute;
+    right: 0px;
+    border:1px solid rgb(68, 127,11);
+    border-radius:10px;
+    background:rgba(255,255,255,.8);
+    *background:rgb(233,243,253);
+    _background:rgb(233,243,253);
+    background:rgb(233,243,253)\0;
+}
+
+#center-content
+{
+    width:950px;
+    height:497px;
+    margin:auto;
+    position:relative;
+    top:40px;
+}
+
+#footer
+{
+    width:920px;
+    padding:15px 0px;
+    margin:auto;
+    line-height:1.5;
+    color:#666;
+}
+
+#right-box
+{
+    padding:20px 0px;
+    float:right;
+    line-height:20px;
+    text-align:right;
+}
+
+#clients-box
+{
+    top:9px;
+    position:relative;
+    float:left;
+}
+
+#clients-box a
+{
+    width: 64px;
+    height: 60px;
+    display: inline-block;
+    color: #666;
+    text-decoration: none;
+    text-align: center;
+    opacity: .6;
+    filter: alpha(opacity=60);
+}
+
+#clients-box a:hover
+{
+    opacity:1;
+    filter:alpha(opacity=100);
+}
+
+#clients-box i
+{
+    width:36px;
+    height:36px;
+    margin:auto auto 5px auto;
+    display:block;
+    background:url(imgs/icon-clients.gif) center top no-repeat;
+}
+
+#clients-box .cl-cloud i
+{
+    background-position:left top;
+}
+
+#clients-box .cl-iphone i
+{
+    background-position:-40px top;
+}
+
+#clients-box .cl-ipad i
+{
+    background-position:-80px top;
+}
+
+#clients-box .cl-android i
+{
+    background-position:-160px top;
+}
+#clients-box .cl-wphone i
+{
+    background-position:-200px top;
+}
+
+#clients-box em
+{
+    top:-30px;
+    color:#ccc;
+    display:inline-block;
+    position:relative;
+    font-style: normal;
+}
+
+form
+{
+    position:relative;
+    width:320px;
+    left:58px;
+    top:40px;
+}
+
+.empty-box
+{
+    margin-top:20px;
+}
+
+.empty-box input
+{
+    width:278px;
+}
+
+#login-buttons
+{
+    visibility:hidden;
+}
+
+#login-buttons,#login-other
+{
+    margin-top:20px;
+    font-size:14px;
+    text-align:center;
+}
+
+#login
+{
+    font-size:16px;
+    height:40px;
+    width:120px;
+    color:#fff;
+    border:1px solid #427ac7;
+    background:rgb(80, 145, 233) url(imgs/bar/button-x.png) 0px 0px;
+}
+
+#login-other
+{
+    margin-top:40px;
+}
+
+#login-other a
+{
+    text-decoration:none;
+    margin-left:10px;
+}
+
+#login-other *
+{
+    vertical-align:middle;
+}
+
+#other-links
+{
+    position:absolute;
+    text-align:center;
+    font-size:14px;
+    margin-top:10px;
+}
+
+
+#other-links a
+{
+    font-size: 32px;
+    line-height: 32px;
+    font-family: 幼圆,华文琥珀;
+    color: rgb(4,138,86);
+    background-color: #EFEFEF;
+    padding: 10px;
+    border: 1px solid #E4E4E4;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    overflow:hidden;
+}
+
+#other-links a:hover
+{
+    border-color: #7DFFFF;
+    background-color: #EbEbEb;
+}
+
+#other-links i
+{
+    margin-right:4px;
+    position:relative;
+    top:5px;
+    width:37px;
+    height:32px;
+    display:inline-block;
+    border-right:1px solid #E4E2E3;
+}
+
+#to-share i
+{    
+    background:url(imgs/icons/share-alt.png) no-repeat;
+}
+
+#other-links #down-pc 
+{
+    color:rgb(4,174,214);
+}
+
+#down-pc i
+{    
+    background:url(imgs/icons/OS-windows.png) no-repeat;
+}
+
+#other-links #down-app 
+{
+    color:rgb(4,174,214);
+}
+
+#down-app i
+{    
+    background:url(imgs/icons/OS-Phone.png) no-repeat;
+}
+
+#message-box
+{
+    position: absolute;
+    color: #D5D5D5;
+    width: 350px;
+    text-align: center;
+    margin-top: 265px;
+    margin-left: -30px;
+    font-size: 28px;
+    font-family: "华文彩云" ,Arial Black,"仿宋";
+}
+
+#message-box a
+{
+    text-decoration:none;
+}
+
+.regist-mode #login-box
+{
+    top:20px;
+    height:500px;
+}
+
+#regist-frame
+{
+    background-color:transparent;
+    height:100%;
+    width:80%;
+    margin-left:40px;
+}
+
+#ie6-warning
+{
+    background-color:Yellow;
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    padding:20px 0px ;
+    text-align:center;
+    font-size:14pt;
+}

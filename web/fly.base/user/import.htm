@@ -1,0 +1,45 @@
+﻿<div class="f-notify">
+    <div class="import-title"><span class=warning >********请先看：*********</span></div>
+    <p>导入用户之前，请先 <a href="list.htm?m=department" >初始化部门</a> 。</p>
+    <p>本系统只支持从Excel文件导入 ，请先<a href="../temp/fly-用户导入模版.xls">下载用户导入模版文件</a>，在模版文件中构建用户数据，为了避免<br />导入过程中出现异常，请不要调整模版文件结构，且严格遵循以下规则：
+    </p>
+    <ul class="import-rule">
+    <li>不能修改列头或调整列的顺序。</li>
+    <li>以“*”开头的列为必填信息，缺少将会导入失败。</li>
+    <li>部门中填写的部门名称，必须是在系统中已创建。 </li>
+    <li>用户组中填写的用户组名称，必须是在系统中已创建，如不填写用户组，系统默认分配“普通用户”用户组。 </li>
+    <li>性别必须是“男”或者“女”。</li>
+    <li>邮箱要符合邮件地址规则。</li>
+    <li>生日必须是可识别的日期格式，如“1980-3-10”</li>
+    </ul>
+    <style>
+        body .import-rule
+        {{
+            border:1px dotted #ccc;
+            border-radius:5px;
+            padding:10px;
+            list-style-type:decimal;
+            list-style-position:inside;
+            background-color:#eee;
+        }}
+        
+        .f-notify
+        {{
+            line-height:20px;
+        }}
+        
+        .f-notify a
+        {{
+            font-size:150%;
+            color:Blue;    
+        }}
+        
+        .error-data
+        {{
+            color:Black;
+        }}
+    </style>
+</div>
+<dl>
+    <input id="user-file" name="user-file" type="file" title="导入之前，请仔细阅读上述说明。" style="width:300px;"/>
+</dl>

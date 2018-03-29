@@ -1,0 +1,179 @@
+﻿.p-index
+{
+    background: url(imgs/bg.jpg) center bottom;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.p-index .f-dialog-title
+{
+    background: url("imgs/bg.jpg") -900px -890px;
+    text-shadow:none;
+    color:White;
+}
+
+.p-index body .f-dialog-close
+{
+    color:White;
+}
+
+.p-index #content-frame
+{
+    filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#ff555555, endColorstr=#00ffffff);
+    background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(rgba(255,255,255,0))); 
+    background: -moz-linear-gradient(top, #000000, rgba(255,255,255,0)); 
+}
+
+.p-index #left-block
+{
+    border-right:3px solid rgb(40,85,134);
+    background-color:transparent;
+    filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#ff555555, endColorstr=#00ffffff);
+    background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(rgba(255,255,255,0))); 
+    background: -moz-linear-gradient(top, #000000, rgba(255,255,255,0)); 
+}
+
+.p-index body ,.p-index a
+{
+    color:white;
+}
+
+.p-index #user-name
+{
+    color:white;
+}
+
+.p-index #top-icon-btns
+{
+    background-color: rgba(255, 255, 255, 0.86);
+    padding-top: 8px;
+    border-radius: 10px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.p-file #show-bar
+{
+    background-color:White;
+}
+
+.p-file #file-list em
+{
+    color: gray;
+}
+
+.p-file .node-name
+{
+    color: white;
+    font-size: 110%;
+}
+
+.p-file .node-not-end  .node-name
+{
+    color:Red;
+}
+    
+.p-file .f-lv-node
+{
+    border-bottom: 1px dotted #494949;
+}
+
+.p-file .f-selected .node-name
+{
+    color:#2C4A77;
+}
+
+.p-file-info body
+{
+    color:black;
+}
+
+.f-dialog .f-sbtn 
+{
+    color:#1c94c4;
+}
+
+.p-form dl label, .p-form .form-field label
+{
+    color: #CCFFFF;
+}
+
+.p-form ,.p-form input,.p-form textarea
+{
+    color:white;
+    background-color:transparent;
+}
+
+.p-list a[href], .p-form a[href]
+{
+    color: #00CC00;
+}
+
+.p-list,.p-list a
+{
+    color:White;
+}
+
+.f-grid .f-grid-row-alt
+{
+    color:Black;
+}
+
+.button-32 a[href]
+{
+    color:#666;
+}
+
+.p-form .tab-panel .tab
+{
+    color:White;
+}
+
+.p-form .tab-panel .current
+{
+    color:white;
+    background:rgb(5,7,12);
+}
+
+.p-list .f-grid-tr:hover *,
+.p-list .f-grid-tree .f-node-el:hover *
+{
+    color:Black;
+}
+
+.p-list .f-grid-hc
+{
+    color:Black;
+}
+
+.p-work #target-frame
+{
+    background:white;
+    padding:20px 10px;
+}
+
+.p-form .summary-info, .p-form .target-info 
+{
+    color:White;
+}
+
+.p-form .summary-time
+{
+    color: #D2D2D2;
+}
+
+.p-form .f-m-tree
+{
+    color:White;
+}
+
+.setting-store body .header
+{
+    color: #E4E4E4;
+}
+
+
+#title-block
+{
+    color: #CCFFFF;
+}

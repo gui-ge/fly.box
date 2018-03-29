@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" iPath='../'>
+<head>
+    <link href= "../themes/box-default/common.css" rel="stylesheet" type="text/css" />
+    <link href= "../../fly.common/fly.ui/simple/default.css" rel="stylesheet" type="text/css" />
+    <link href="../themes/box-default/desktop.css" rel="stylesheet"/>
+    <title>我的云桌面</title>
+</head>
+<body>
+    <div id="apps-box" unselectable="on" class="unselectable" ></div>
+
+    <div id=task-bar-warp >
+        <div id="task-bar" unselectable="on" class="unselectable" ><div id=task-bar-back ></div></div>
+        <div id="start-menu-btn" unselectable="on" class="unselectable"><img src="../themes/box-default/imgs/desktop/logo-icon.png" /></div>
+        <div id="toggle-desktop-btn" unselectable="on" class="unselectable"></div>
+    </div>
+    
+    <script src= "../../fly.common/artDialog/artDialog.source.js"></script>
+    <script type="text/javascript" src= "../../fly.common/artDialog/plugins/iframeTools.source.js"></script>
+    <link href="../../fly.common/artDialog/skins/twitter.css" rel="stylesheet" />
+
+    <script src="../../fly.common/fly/fly.js"></script>
+    <script src="../../fly.common/fly.ui/simple/fly-css-ui.js" type="text/javascript"></script>
+    <script src="../common/common.js"></script>
+    <script src="../common/common-box.js"></script>
+    <script src="../js/desktop.js"></script>
+    
+    <ul id="task-item-menu" unselectable="on" class="f-menu unselectable" >
+        <li onclick='desktop.addToStartMenu()'><a>添加到开始菜单</a></li>
+        <li class="divider"></li>
+        <li onclick='desktop.closeOther()'><a>关闭其他</a></li>
+        <li onclick='desktop.closeThis()'><a>关闭</a></li>
+    </ul>
+
+    <ul id="app-icon-menu" unselectable="on" class="f-menu unselectable">
+        <li class='menu-open only-desktop-item only-start-menu' onclick='desktop.openThis()'><a>打开</a></li>
+        <li class='menu-add-to-menu only-desktop-item' onclick='desktop.addToStartMenu()'><a>添加到开始菜单</a></li>
+        <li class='menu-open-rename only-desktop-item only-start-menu' onclick='desktop.renameApp()'><a>重命名</a></li>
+        <li class='menu-delete-desktop only-desktop-item' onclick='desktop.removeApp()'><a>删除</a></li>
+        <li class='menu-delete-start-menu only-start-menu' onclick='desktop.removeApp()'><a>从列表中移除</a></li>
+        <li class='menu-edit' onclick='desktop.editApp()'><a>编辑</a></li>
+        <li class='menu-store only-desktop' onclick='desktop.openApp("appStore")'><a>应用市场</a></li>
+        <li class='menu-add-app only-desktop' onclick='desktop.openApp("addApp")'><a>添加在线应用</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,35 @@
+﻿html, body
+{
+    padding: 0px;
+    margin: 0px;
+    height:100%;
+}
+
+body
+{
+    background:url(../imgs/ajax/loading-128.gif) center center no-repeat;
+    text-align:center;
+}
+
+.img-loaded body
+{
+    background:none;
+}
+
+#img
+{
+    visibility: hidden;
+    position: absolute;
+    top: -10000px;
+    left: -10000px;
+    max-height:100%;
+    max-width:100%;
+}
+
+.img-loaded #img
+{
+    position:relative;
+    visibility: visible;
+    top: 0px;
+    left: 0px;
+}

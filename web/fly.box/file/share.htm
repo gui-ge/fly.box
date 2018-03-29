@@ -1,0 +1,89 @@
+﻿<!doctype html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html class='p-file p-file-share'>
+<head>
+    <script src="../../fly.common/fly/fly.js?v2.4.0" type="text/javascript"></script>
+    <script src="../common/common.js?v2.4.0" type="text/javascript"></script>
+    <script src="../local/langs/lang.js" type="text/javascript"></script>
+    <script src="js/share.js?v2.4.0" type="text/javascript"></script>
+    <link href="../themes/box-default/common.css?v2.4.0" rel="stylesheet" type="text/css" />
+    <link href="../themes/box-default/file/share.css?v2.4.0" rel="stylesheet" type="text/css" />
+    <script defer src="../../fly.common/zeroClipboard/ZeroClipboard.min.js" type="text/javascript"></script>
+    <script src="../../fly.common/fly.ui/plugins/input/tags-editor.js?v2.4.0" type="text/javascript"></script>
+    <script src="../../fly.common/fly.ui/plugins/input/empty-box.js?v2.4.0" type="text/javascript"></script>
+    <link href="../../fly.common/fly.ui/plugins/themes/gray/tags-editor.css?v2.4.0" rel="stylesheet"
+        type="text/css" />
+</head>
+<body>
+    <div class='ajax-loading f-panel-modal'></div>
+    <div id='field-list' class="field">
+        <label>文件：</label>
+        <span></span>
+    </div>
+    <div id='share-nav'>
+        <a class="submit-button" onclick='page.toPublic()'>公开分享</a>
+        <a class="submit-button" onclick='page.toPrivate()'>私密分享</a>
+        <a class="submit-button" onclick='page.toPerson()'>分享给Ta们</a>
+        <!--<a class="submit-button" onclick='page.toUpload()' title="该功能是为了实现数据上报、投稿等类似收集文件的功能而设计，请谨慎使用，开启后，其他用户可以上传文件到分享文件夹。">含上传功能的分享</a>--><br /><br /><br />
+        <a class="submit-button" onclick='page.unShare()' title="管理已创建的分享">取消所有分享</a>
+        <div id="shares-block">
+            <label id='shared-count-tip'></label>
+            <div id="share-list-wrap">
+            </div>
+            <script id="list-template" type="template">
+                <tr><td><a href='../../s.aspx/{share.id}' target=_blank title="{share.title}">{share.title}</a>&nbsp;</td>
+                    <td><a href='../../u-share.aspx/{share.userId}' target=_blank title="{share.userName}">{share.userName}</a></td>
+                    <td>{page.getPowerNames(share.power)}</td>
+                    <td>{share.time.format($.box.dt2Format)}</td>
+                    <td><a href='?id={share.id}'>修改</a></td>
+                </tr>
+            </script>
+        </div>
+    </div>
+    <div id="share-to">
+        <div id="share-block">
+            <label id="to-org-space">“<span id='share-title' title='单击可修改分享标题'></span>”<span class='public-only' >公开分享连接：</span>
+                <span class='private-only'>已分享<span id='link-send-alert'>你可以将分享连接和密码发给你的的好朋友了哦！</span></span>
+            </label>
+            <div><input id="share-link" class='focus-box' onmouseover="this.select()" readonly="readonly" /><span id='copy-link' class='submit-button' ><span id='copy-link-text'>复制连接<span class='private-only'>和密码</span></span></span> <a id='open-share-link' class='submit-button' target=_blank >去看看</a></div>
+            <div id='share-password-block' class='private-only'><label>提取密码：</label><input id='fetch-password' class='focus-box' onmouseover="this.select()" readOnly="readOnly"/></div>
+            <div id="share-power-block">
+                <div id="login-power" class='public-only'><input type='checkbox' id="need-login" name='down' value="64" msg='仅登录用户才能访问' /><label for="need-login" >登录后才能访问？</label></div>
+                <div id='down-power'>
+                    <input type="checkbox" id="can-down" value='1'/><label for="can-down">允许下载？</label>
+                </div>
+                <div id='upload-power'>
+                    <input type="checkbox" id='can-upload' name="upload" value='4'/><label for="can-upload">允许上传？</label>
+                    <div id='dir-power' title="该项设置决定用户上传文件时，是否可以创建文件夹">
+                        <input type="radio" id='no-dir' name='dir' value='4096'/><label for="no-dir">不能创建文件夹</label>
+                        <input type="radio" id='can-dir' name="dir" value='8192'/><label for="can-dir">可创建文件夹</label>
+                        <input type='radio' id="must-dir" name='dir' value='16384'/><label for="must-dir" >必须创建文件夹</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="notify-block">            
+            <a id="btn-show-send-users" class="submit-button" title="通过平台分享给Ta们，Ta们在进入平台时，会收到通知。" onclick='page.notifyBySystem()'>分享给Ta们</a>
+            <div id='share-notify-block'>你可以<a class='submit-button' onclick="page.notifyBySMS()" >发送短信</a><a class='submit-button' onclick='page.notifyByMail()'>发送邮件</a> <a class='submit-button send-by-qqmail' target="_blank">QQ邮箱发送邮件</a> 通知Ta们哦。</div>
+            <div id='share-weibo-block'><label>你还可以分享到：</label><iframe frameborder=0 scrolling=no allowTransparency=1 ></iframe></div>
+        </div>
+    </div>
+    <div id='share-send-users'>
+        <label>分享给Ta们：</label>
+        <div id='user_editor' class='focus-box tags_editor_wrap' ></div>
+        <div id="user-select-box"></div>
+        <div id="share-send-users-buttons" >
+            <a class='submit-button' id="btn-send-to-users" onclick='page.sendToUsers()'>分享</a>
+            <a class='submit-button' onclick='page.closeSendUserBox()'>返回</a>
+        </div>
+    </div>
+    <div id='share-send-mail'>
+        <label>收件人：</label>
+        <div id='mail_editor' class='focus-box tags_editor_wrap' ><input class='tags-editor-input' emptyValue='输入邮箱，多个邮箱以空格或逗号分隔'/></div>
+        <label>邮件内容：</label>
+        <textarea id='mail-body' class='focus-box' ></textarea>
+        <a class='submit-button' onclick='page.sendMail()'>发送</a>
+        <a class='submit-button' onclick='page.closeSendMailBox()'>返回</a>
+        <a class='submit-button send-by-qqmail' target="_blank">用QQ邮箱发送</a>
+    </div>
+</body>
+</html>

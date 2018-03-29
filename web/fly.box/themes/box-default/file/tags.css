@@ -1,0 +1,25 @@
+﻿.node-type-tag .node-icon
+{
+    cursor:pointer;
+    background-image: url(../imgs/file/icons-m/tag.png);
+}
+
+.view-icon .node-type-tag .node-icon
+{
+    background-image: url(../imgs/file/icons-l/tag.png);
+}
+
+.node-user,.node-time,.tags .node-commands,.tags .node-fav,.tags .view-icon .f-lv-node:hover .node-fav,
+.tags .f-checkbox,
+.tags #type-block,
+.tags #mark-block,
+.tags #sort-block
+{
+    display:none;
+}
+
+.tags .frame-page-close
+{
+    top:2px;
+}
+

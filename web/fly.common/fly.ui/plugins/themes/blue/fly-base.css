@@ -1,0 +1,115 @@
+.f-hidden
+{
+    display: none;
+}
+
+body .f-show
+{
+    display: block;
+}
+
+.f-gray
+{
+    color: Gray;
+}
+
+.f-disabled
+{
+    filter: gray;
+}
+
+.f-node
+{
+    cursor: default;
+}
+
+.f-panel img
+{
+    border-width: 0px;
+    vertical-align: bottom;
+}
+
+.F-IE67 img
+{
+    vertical-align: middle;
+}
+
+.f-1618
+{
+    height: 18px;
+    width: 16px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.f-xsplit
+{
+    background: url(img/xsplit.gif) no-repeat center center;
+    display: inline-block;
+    width: 8px;
+    height: 16px;
+}
+
+.f-sbtn
+{
+    cursor: pointer;
+    color: #1c94c4;
+    font-weight: bold;
+    font-size: 14px;
+    outline-style: none;
+    padding: 4px 8px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    display: inline-block;
+    background-color: #f9f9f9;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#f0f0f0');
+    background: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#f0f0f0));
+    background: -moz-linear-gradient(top, #f9f9f9, #f0f0f0);
+}
+.F-IE67 .f-sbtn
+{
+    display: inline;
+    zoom: 1;
+}
+
+.f-sbtn:hover, .f-sbtn-focus
+{
+    color: #F99206;
+    border-color: #fbcb09;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdf9e1', endColorstr='#fdf5ce');
+    background: -webkit-gradient(linear, left top, left bottom, from(#fdf9e1), to(#fdf5ce));
+    background: -moz-linear-gradient(top, #fdf9e1, #fdf5ce);
+}
+
+.f-panel-modal
+{
+    position:fixed;
+    *position: absolute;
+    z-index: 10000;
+    bottom: 0px;
+    right: 0px;
+    left:0px;
+    top:0px;
+    filter: alpha(opacity=20);
+    -moz-opacity: 0.06;
+    opacity: 0.06;
+    display:none;
+    background-color:Black;
+}
+
+body .f-panel .f-loading-16, body .f-panel .f-loading-32, body .f-loading-16, body .f-loading-32, body .f-panel .f-node .f-loading-16
+{
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+body .f-panel .f-loading-16, body .f-loading-16, body .f-panel .f-node .f-loading-16
+{
+    background-image: url(loading/16.gif);
+}
+
+body .f-panel .f-loading-32, body .f-loading-32
+{
+    background-image: url(loading/32.gif);
+}

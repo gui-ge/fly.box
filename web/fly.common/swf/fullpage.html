@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="swfobject.js" chaset="UTF-8"></script>
+    <script src="../fly/fly.js" type="text/javascript"></script>
+    <style type="text/css">
+        /* hide from ie on mac \*/html
+        {
+            height: 100%;
+            overflow: hidden;
+        }
+        #flashcontent
+        {
+            height: 100%;
+        }
+        /* end hide */body
+        {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="flashcontent">
+        <strong>你可能需要升级你的Flash播放器插件。</strong>
+    </div>
+    <script type="text/javascript">
+        var url = $.getQuery("swf");
+        if (url) {
+            url = decodeURIComponent(url);
+            if (window.SWFObject) {
+                var so = new SWFObject(url, "flash", "100%", "100%", "8");
+                so.write("flashcontent");
+            }
+            else {
+                var atts = { id: "flash" };
+                swfobject.embedSWF(url, "flashcontent", "100%", "100%", "8", null, null, {}, atts);
+            }
+        }
+        else {
+            $('#flashcontent').text('');
+        }
+    </script>
+</body>
+</html>

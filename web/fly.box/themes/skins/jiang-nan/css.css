@@ -1,0 +1,102 @@
+﻿.p-index
+{
+    background: url(imgs/bg.jpg) center center;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.p-index .f-dialog-title
+{
+    background: url("imgs/bg.jpg") -600px -400px;
+    text-shadow:none;
+    color:White;
+}
+
+.p-index body .f-dialog-close
+{
+    color:White;
+}
+
+.p-index #content-frame
+{
+    filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#ffffffff, endColorstr=#00000035);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,1)), to(rgba(0,0,55,0))); 
+    background: -moz-linear-gradient(top, rgba(255,255,255,1), rgba(0,0,55)); 
+}
+
+.p-index #left-block
+{
+    border-right:3px solid rgb(40,85,134);
+    background-color:transparent;
+    filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#ffffffff, endColorstr=#00000035);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,1)), to(rgba(0,0,55,0))); 
+    background: -moz-linear-gradient(top, rgba(255,255,255,1), rgba(0,0,55,0)); 
+}
+
+.p-index body ,.p-index a
+{
+    color: #F0FFFF;
+    text-shadow: 0 0 20px red;
+    filter: Glow(Color=red, Strength=1);
+    display:inline-block;
+}
+
+.p-index #user-name
+{
+    color:white;
+}
+
+.p-file #show-bar
+{
+    background-color:White;
+}
+
+.p-file #file-list em
+{
+    color: #00356A;
+}
+
+.p-file .node-name
+{
+    color: black;
+    font-size: 110%;
+    text-shadow: 0 0 2px red;
+    filter: Glow(Color=red, Strength=1);
+    display:inline-block;
+}
+
+.p-file .node-not-end  .node-name
+{
+    color:Red;
+}
+    
+.p-file .f-lv-node
+{
+    border-bottom: 1px dotted #494949;
+}
+
+.p-form .tab-panel .current
+{
+    color:#2c4a77;
+    background:rgb(240,239,237);
+}
+
+.p-form dl label, .p-form .form-field label
+{
+    color: #CCFFFF;
+}
+
+.p-form input,.p-form textarea
+{
+    color:white;
+}
+
+.p-file-info body
+{
+    color:black;
+}
+
+.f-dialog .f-sbtn 
+{
+    color:#1c94c4;
+}

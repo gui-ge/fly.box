@@ -1,0 +1,114 @@
+﻿.page-inner
+{
+    padding-bottom:40px;
+}
+
+.list-block 
+{
+    display:inline-block;
+    -display:inline;
+    -zoom:1;
+    margin-top:30px;
+    line-height:30px;
+}
+
+.list-block ul
+{
+     list-style-type:circle;
+     color:#999;
+}
+
+.list-block div
+{
+    background:no-repeat left 2px;
+    padding-left:30px;
+    font-size:16pt;
+    border-bottom:1px solid #eee;
+    padding-bottom:3px;
+    margin-left:15px;
+    font-family:"华文行楷","华文彩云";
+    color:#134262;
+    text-shadow: 0px 0px 2px rgba(0,0,255,0.3), 1px 1px 4px rgba(0,0,255,0.3);
+}
+
+.list-block span
+{
+    float:right;
+    padding-right:20px;
+    color:#999;
+}
+
+.list-block a
+{
+    -float:left;
+}
+
+#new-shares
+{
+    width:430px;
+}
+
+#new-shares div
+{
+    background-image:url(imgs/icon/new-24.png);
+}
+    
+#new-shares span
+{
+    
+}
+
+
+#hot-shares
+{
+    width:430px;
+    margin-left:20px;
+}
+
+#hot-shares div
+{
+    background-image:url(imgs/icon/hot-24.png);
+}
+        
+#hot-shares span
+{
+    
+}
+
+
+
+#share-users
+{
+    width:880px;
+}
+
+#share-users div
+{
+    background-image:url(imgs/icon/user-24.png);
+}
+        
+#share-users span
+{
+    width:250px;
+}
+
+#share-users li
+{
+    width:420px;
+    float:left;
+}
+
+.slides
+{
+    margin-top: 15px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+}
+
+.slides img
+{
+    width:100%;
+    height:100%;
+    border-radius:5px;
+    max-width:100%;
+}

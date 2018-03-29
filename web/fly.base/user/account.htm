@@ -1,0 +1,25 @@
+﻿<input name="Id" type="hidden"/>
+<dl>
+    <label>密码</label>
+    <input name="Pwd" type="password"/>
+</dl>
+<dl>
+    <label>确认密码</label>
+    <input name="RePwd" type="password" rule="same:$Pwd"/>
+</dl>
+<dl>
+    <label>登录名</label>
+    <input name="LoginName" rule="*|2-50|trim|tips:必须输入单位名称" />
+</dl>
+<dl>
+    <label>昵称</label>
+    <input name="NickName" rule='*'/>
+</dl>
+<dl>
+    <label>邮箱</label>
+    <input name="Email" rule="mail"/>
+</dl>
+<dl>
+    <label>手机</label>
+    <input name="MobilePhone" rule="phone"/>
+</dl>

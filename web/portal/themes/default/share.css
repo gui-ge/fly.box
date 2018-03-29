@@ -1,0 +1,195 @@
+﻿#share .page-content
+{
+    width:auto;
+}
+      
+#top-btns
+{
+    position:absolute;
+    right:20px;
+    top:30px;
+}
+    
+#top-btns a
+{
+    padding:8px 12px 8px 30px;
+    font-weight:normal;
+    margin-left:10px;
+}
+
+#top-btns a i
+{
+    background:url(imgs/file/icon.gif) no-repeat; 
+    padding:9px;
+    margin-left:-18px;
+    position:absolute;
+    margin-top:-1px;
+    font-size:0px;
+}
+
+#top-btns .share-save-to i
+{
+    background-position:-208px -465px;
+}
+
+#top-btns .share-down i
+{
+    background-position:-160px -40px;
+}
+
+#top-btns .share-praise i
+{
+    background-position:-258px -68px;
+}
+
+#top-btns .share-comment i
+{
+    background:url(imgs/icon/comment.gif) no-repeat -31px -1px;
+}
+
+
+#top-btns .share-down:hover i
+{
+    background-position:-183px -39px;
+}
+
+#top-btns .share-praise:hover i,#top-btns .share-praised i
+{
+    background-position:-280px -68px;
+}
+
+#top-btns .share-comment:hover i
+{
+    background:url(imgs/icon/comment.gif) no-repeat -1px 0px;
+}
+
+#top-btns .share-down,#top-btns .share-praise,#top-btns .share-comment
+{
+    background:none;
+    border-color: #666;
+    border-style:none;
+    color: #666;
+    *border:1px solid #666;
+    border:1px solid #aaa\0;
+}
+
+#top-btns .share-down:hover,#top-btns .share-praise:hover,#top-btns .share-comment:hover
+{
+    filter:none;
+    color:#333;
+}
+
+#share-title
+{
+    font-weight:normal;
+    *font-size:18pt;
+    margin-top:17px;
+}
+
+.share-no-exists
+{
+    text-align:center;
+    padding:50px 0px;
+    *font-size:18pt;
+}
+
+.share-files
+{
+    margin-top:20px;
+}
+
+.share-files iframe
+{
+    width:100%;
+    height:300px;
+}
+
+#comment-block
+{
+    border-top:1px dotted #ccc;
+    padding-top:15px;
+    padding-left:30px;
+    margin-top:50px;
+}
+
+
+#comments{}
+
+#txt-comment
+{
+    width:700px;
+    height:100px;
+    display:block;
+    border-radius:5px;
+    border:1px solid #ccc;
+    line-height:20px;
+}
+    
+#btn-comment
+{
+    vertical-align:middle;
+    margin:10px 0px 20px 0px;
+}
+
+.comment-info 
+{
+    color:#666;
+} 
+
+
+.comment-content
+{
+    font-size:16px;
+    line-height:20px;
+    padding:8px 10px 15px 10px;
+    word-break: break-all;
+}
+
+#comment-caption
+{
+    margin:-33px 0px 0px -30px;
+    position:absolute;
+}
+
+.comment-user
+{
+    white-space:nowrap;
+    display:inline-block;
+    min-width:100px;
+    color:#07519a;
+}
+
+body .share-password
+{
+    padding:50px;
+    text-align:center;
+}
+
+.share-password label
+{
+    font-size:12pt;
+    margin-top:20px;
+}
+
+.share-password input
+{
+    height:25px;
+    margin-right:10px;
+    ime-mode:disabled;
+}
+
+.comment
+{
+    position:relative;
+}
+
+.btn-del-comment 
+{
+    visibility:hidden;
+    position:absolute;
+    right:40px;
+    top:10px;
+    cursor:pointer;
+}
+
+.comment:hover .btn-del-comment{visibility:visible;}

@@ -1,0 +1,133 @@
+﻿/* dialog */
+.f-dialog
+{
+	border:1px solid #dddddd;
+	position:absolute;
+	z-index:10010;
+	border-radius:4px;
+	-moz-border-radius: 4px;
+	padding: 2px ;
+	background: #eeeeee url(dialog/dialog-bg.png)  center top repeat-x;
+	box-shadow:0px 0px 20px #eeeeee;
+	-moz-box-shadow:0px 0px 20px #eeeeee;
+	-webkit-box-shadow:0px 0px 20px #eeeeee;
+}
+
+.f-dialog-active
+{
+    z-index:10012;
+}
+
+.f-dialog-body
+{
+	overflow:hidden;
+	position:relative;
+}
+
+.f-dialog-title
+{
+	background:url(dialog/title-bg.png) center center;
+	border-radius:4px;
+	-moz-border-radius: 4px;
+	height:30px;
+	line-height:30px;
+	border:1px solid #e78f08;
+	color:White;
+	padding-left:10px;
+	margin-bottom:5px;
+}
+
+.f-dialog-title-buttons
+{
+	position: absolute; right: 10px; top: 5px;
+}
+
+.f-dialog-title-buttons .f-dialog-close
+{
+	font-family: "华文彩云","Arial Black"; 
+	font-size: 20px; 
+	font-weight: bold;
+	cursor:default;
+	padding-right:1px;
+}
+
+.f-dialog-title-buttons .f-dialog-close:hover
+{
+	font-weight: 100;
+	color: #f00;
+	background-color:White;
+	border-radius:2px;
+	-moz-border-radius: 2px;
+}
+
+.f-dialog-resize-handle
+{
+	cursor:se-resize;
+	position: absolute; 
+	bottom: 3px;
+	right: 0px; 
+	width:14px;
+	height:14px;
+	z-index:10;
+	background:url(../common/imgs/black-icons.png) -84px -224px;
+}
+
+.f-dialog-body iframe
+{
+    height:100%;
+    width:100%;
+    border:0px none;
+    background-color:White;
+}
+
+.f-dialog-loading
+{
+    height:100%;
+    background:url(../common/imgs/lightbox-ico-loading.gif) center center no-repeat;
+}
+
+.f-dialog-bottom-bar
+{
+    border-top: solid 1px #DDDDDD;
+    text-align:right;
+    padding:10px 20px 10px 0px ;
+    margin-top:4px;
+}
+
+.f-dialog-bottom-bar .f-sbtn
+{
+    margin-left:10px;
+}
+
+.fly-moving iframe0
+{
+    visibility:hidden;
+}
+
+.f-frame-cover
+{
+    display:none;
+}
+
+.fly-moving .f-frame-cover
+{
+    position:absolute;
+    height:100%;
+    width:100%;
+    background:white;
+    display:block;
+    opacity:.05;
+    filter:alpha(opacity:5);
+}
+
+.f-dialog-input .f-dialog-body
+{
+    padding:30px 40px;
+    line-height:25px;
+}
+
+.f-dialog-input .f-dialog-body input
+{
+    padding:9px 10px;
+    width:250px;
+}

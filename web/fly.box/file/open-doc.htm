@@ -1,0 +1,39 @@
+﻿<!doctype html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html class='p-file p-file-open-doc'>
+<head>
+    <script src="../../fly.common/fly/fly.js?v2.4.0" type="text/javascript"></script>
+    <script src="../common/common.js?v2.4.0" type="text/javascript"></script> 
+    <script src="../../fly.common/fly.ui/plugins/pager/simple.js?v2.4.0" type="text/javascript"></script>
+    <link href="../../fly.common/fly.ui/plugins/themes/plain/simple-pager.css?v2.4.0" rel="stylesheet"
+        type="text/css" />
+    <script src="../comment/comment.js?v2.4.0" type="text/javascript"></script>   
+    <script src="js/open-doc.js?v2.4.0" type="text/javascript"></script>
+    <link href="../themes/box-default/common.css?v2.4.0" rel="stylesheet" type="text/css" />
+    <link href="../themes/box-default/comment.css?v2.4.0" rel="stylesheet" type="text/css" />
+    <link href="../themes/box-default/file/open-doc.css?v2.4.0" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div id='content-block'>
+        <a id='btn-previous' title="上一个"><i>上一个</i></a>
+        <span id="current-index"></span>
+        <div id="frame-wrap">
+            <div id="loading">文件加载中 。。。</div>
+            <div id="frame-inner" >
+                <iframe scrolling="auto" frameborder="0" allowTransparency=1></iframe>
+            </div>
+        </div>
+        <a id='btn-next' title="下一个"><i>下一个</i></a>
+        <div id="two-dimensional-code-block">
+            <img id="two-dimensional-code" />
+            <div id="two-dimensional-code-tip" >扫描下载到手机</div>
+        </div>
+    </div>
+    <div id="top-bar">
+        <span id='doc-title'></span>
+        <div id='right-bar'><a id="a-score"><i><b></b></i></a><a id="a-down"><i></i><span>下载</span></a><a id="a-praise" onclick="page.praise()" ><i></i><span>赞</span></a><a id="a-fav" onclick="page.fav()"><i></i><span>收藏</span></a><a id="a-comment" href="#to-comment"><i></i><span>评论</span></a><!--<a id="a-edit"><i></i><span>编辑</span></a>--></div>
+    </div>
+    <div id="bottom-block" >
+        <div id="comment-block"></div><a name="to-comment" ></a>
+    </div>
+</body>
+</html>

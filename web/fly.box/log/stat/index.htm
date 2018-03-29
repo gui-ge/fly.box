@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>
+    </title>
+    
+    <script src="../../../fly.common/fly/fly.js?v2.4.0" type="text/javascript"></script>
+    <script src="../../../fly.common/fly.ui/plugins/input/empty-box.js?v2.4.0" type="text/javascript"></script>
+
+    <script src="../../common/common.js?v2.4.0" type="text/javascript"></script>
+    <script src="../../../fly.common/echarts/esl.js" type="text/javascript"></script>
+    
+
+    <link href="../../../fly.common/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="../../../fly.common/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css" />
+    <script src="../../../fly.common/jQuery/jquery.js" type="text/javascript"></script>
+    <script src="../../../fly.common/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../../../fly.common/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
+    
+    <link href="../../themes/box-default/common.css?v2.4.0" rel="stylesheet" type="text/css" />
+    <link href="../../themes/box-default/stat.css?v2.4.0" rel="stylesheet" type="text/css" />
+    <script src="../../base/user/search-box.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="well">
+       <div style="float:left;">
+          <div id="time" class="input-append">
+            <input data-format="yyyy-MM-dd" type="text" ></input>
+            <span class="add-on">
+              <i data-time-icon="icon-time" data-date-icon="icon-calendar">
+              </i>
+            </span>
+          </div>
+          <select id="time-type">
+            <option value="day">天</option>
+            <option value="week">周</option>
+            <option value="month">月</option>
+            <option value="year">年</option>
+          </select>
+          <span id="txt-user-query-box" class="empty-box">
+               <input id="txt-user-query" emptyvalue="请输入帐号/手机/邮箱"  title="请输入帐号/手机/邮箱" cssBox="#txt-user-query-box" />
+          </span>
+      </div>
+      <span id='title-box'></span>
+    </div>
+    <div id="upload" style="height:400px" class="chart-box"></div>
+    <div id="download" style="height:400px" class="chart-box"></div>
+    <div id="interactive" style="height:400px" class="chart-box"></div>
+    <script src="index.js?v2.4.0" type="text/javascript"></script>
+</body>
+</html>

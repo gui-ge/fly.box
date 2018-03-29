@@ -1,0 +1,48 @@
+﻿.p-index
+{
+    background: url(imgs/bg.jpg);
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.p-index #content-frame
+{
+    background:rgb(255,255,255);
+}
+
+.p-index #left-block
+{
+    border-right:3px solid rgb(40,85,134);
+    background-color:rgba(255,255,255,.2);
+}
+
+.p-index.ie-6 #left-block,.p-index.ie-7 #left-block,.p-index.ie-8 #left-block
+{
+    background-color:transparent;
+}
+    
+.p-index a
+{
+    color:white;
+}
+
+
+.p-index #top-icon-btns
+{
+    background-color: rgba(255, 255, 255, 0.86);
+    padding-top: 8px;
+    border-radius: 10px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.p-file #show-bar
+{
+    background-color:White;
+}
+
+
+.p-index .f-sbtn
+{
+    color:#1c94c4;
+}

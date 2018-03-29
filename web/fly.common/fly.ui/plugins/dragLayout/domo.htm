@@ -1,0 +1,235 @@
+﻿<!doctype html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <title></title>
+
+    <script src="../../../fly/fly.js?v2.4.0" type="text/javascript"></script>
+	
+    <script src="fly-drag-layout.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        fly(function()
+        {
+            var fLayout = fly.dragLayout({
+                headerSelector: ".f-dl-head",
+                contentSelector: ".f-dl-content",
+                itemSelector: ".f-dl-item",
+                placeSelector: ".f-dl-place",
+                container: "#fly-dragLayout"
+            });
+            fLayout.onMoveStart(function(item)
+            {
+                return !item.$dom.hasClass("undrag")
+            })
+
+            fLayout.onMovingTo(function(place, ref, pos)
+            {
+                if (pos == "up" && ref.$dom.hasClass("disabledUp"))
+                {
+                    return false;
+                }
+            })
+
+            fLayout.onCloseItem(function(item)
+            {
+                return !item.$dom.hasClass("unclose")
+            })
+
+            fLayout.onCollapseItem('o => !o.$dom.hasClass("uncollapse")')
+
+
+            window.addItem = function()
+            {
+                var itemHtml = '<div class="f-dl-item">'
+						+ '<div class="f-dl-head">Head N</div>'
+						+ '<div class="f-dl-content">新添加的拖动项</div>'
+						+ '</div>'
+
+                fLayout.addItem(itemHtml, ".f-dl-place:eq(1)")
+            }
+
+            window.toggleAll = function()
+            {
+                fLayout.items.each("o=>o.toggle()")
+            }
+
+            var hidden = false
+            window.hideShowAll = function()
+            {
+                if (hidden)
+                {
+                    fLayout.items.each("o=>o.show()")
+                    hidden = false;
+                }
+                else
+                {
+                    fLayout.items.each("o=>o.hide()")
+                    hidden = true;
+                }
+            }
+        });
+		
+
+    </script>
+
+    <style type="text/css">
+        body
+        {
+            font-size: 10pt;
+        }
+        .style1
+        {
+            color: #CC0000;
+        }
+        .fly-dragLayout .f-dl-place
+        {
+            float: left;
+            border: 1px dotted gray;
+            margin-left: 5px;
+        }
+        .fly-dragLayout .f-dl-item
+        {
+            border: 1px solid gray;
+            margin: 3px;
+        }
+        .fly-dragLayout .f-dl-item-temp
+        {
+            border: 1px dashed black;
+            margin: 3px;
+        }
+        .fly-dragLayout .f-dl-draging
+        {
+            border: 1px dotted red;
+            filter: alpha(opacity=50);
+        }
+        .fly-dragLayout .f-dl-head
+        {
+            background-color: gray;
+            color: White;
+            cursor: default;
+            padding: 5px;
+            position: relative;
+        }
+        .fly-dragLayout .f-dl-content
+        {
+            padding: 20px;
+        }
+        .fly-dragLayout .f-dl-close
+        {
+            position: absolute;
+            right: 0px;
+            top: 5px;
+            color: Red;
+        }
+        .fly-dragLayout .f-dl-toggle
+        {
+            position: absolute;
+            right: 30px;
+            top: 5px;
+            color: Red;
+        }
+        body .f-dl-collapse .f-dl-toggle
+        {
+            color: blue;
+        }
+    </style>
+</head>
+<body class="fly-dragLayout">
+    <p class="style1">
+        flyJS 插件</p>
+    <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DragLayout&nbsp; 拖动布局</p>
+    <ul>
+        <li>支持fly和jQuery库</li>
+        <li>可动态添加布局</li>
+        <li>可以一个页面添加多个拖动布局</li>
+    </ul>
+    <table width="100%">
+        <tr>
+            <a href="javascript:addItem()">在第二区域添加拖动项</a> <a href="javascript:toggleAll()">折叠/展开所有</a>
+            <a href="javascript:hideShowAll()">隐藏/显示所有</a>
+        </tr>
+        <tr>
+            <td id="fly-dragLayout">
+                <div>
+                    fly 拖动布局：</div>
+                <div class="f-dl-place" style="width: 30%">
+                    <div class="f-dl-item undrag">
+                        <div class="f-dl-head">
+                            Head 1</div>
+                        <div class="f-dl-content">
+                            不可拖动</div>
+                    </div>
+                </div>
+                <div class="f-dl-place" style="width: 30%">
+                    <div class="f-dl-item unclose uncollapse">
+                        <div class="f-dl-head">
+                            Head 2
+                            <div class="f-dl-toggle">
+                                折叠
+                            </div>
+                            <div class="f-dl-close">
+                                关闭
+                            </div>
+                        </div>
+                        <div class="f-dl-content">
+                            禁止关闭、折叠</div>
+                    </div>
+                </div>
+                <div class="f-dl-place " style="width: 30%;">
+                    <div class="f-dl-item disabledUp">
+                        <div class="f-dl-head">
+                            Head 3<div class="f-dl-toggle">
+                                折叠
+                            </div>
+                            <div class="f-dl-close">
+                                关闭
+                            </div>
+                        </div>
+                        <div class="f-dl-content">
+                            不可拖放到该项上面</div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td id="jQuery-dragLayout">
+                <br />
+                <div>
+                    jQuery 拖动布局：</div>
+                <div class="f-dl-place" style="width: 30%">
+                    <div class="f-dl-item">
+                        <div class="f-dl-head">
+                            Head 1</div>
+                        <div class="f-dl-content">
+                            Context 1</div>
+                    </div>
+                </div>
+                <div class="f-dl-place" style="width: 30%">
+                    <div class="f-dl-item">
+                        <div class="f-dl-head">
+                            Head 2
+                            <div class="f-dl-toggle">
+                                折叠
+                            </div>
+                            <div class="f-dl-close">
+                                关闭
+                            </div>
+                        </div>
+                        <div class="f-dl-content">
+                            Context 2</div>
+                    </div>
+                </div>
+                <div class="f-dl-place" style="width: 30%">
+                    <div class="f-dl-item">
+                        <div class="f-dl-head">
+                            Head 3</div>
+                        <div class="f-dl-content">
+                            Context 3</div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

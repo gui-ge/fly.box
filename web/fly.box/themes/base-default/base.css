@@ -1,0 +1,74 @@
+﻿html, body
+{
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    font-size: 14px;
+    font-family: Tahoma, Geneva, "宋体";
+}
+
+a.nolink,.nolink a,
+a.nolink:hover,.nolink a:hover,
+a[href].nolink:hover,.nolink a[href]:hover
+{
+    text-decoration: none;
+}
+
+.btn-16
+{
+    background: url(imgs/ico-16.png) no-repeat;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+}
+
+.gray
+{
+    color: Gray;
+}
+
+
+.node-org
+{
+    background-image: url(imgs/org-16.png);
+}
+
+.node-dept
+{
+    background-image: url(imgs/dept-16.png);
+}
+
+.node-user
+{
+    background-image: url(imgs/user-16.png);
+}
+
+
+
+.button-32 button, button.button-32,
+.button-32 a, a.button-32
+{
+    margin: 0px 3px;
+    cursor: pointer;
+    color: #666;
+    display: inline-block;
+    height: 32px;
+    line-height: 32px;
+    padding: 0px 8px;
+    background: #EEE url(imgs/bar/button-bg.png) 0px -99px;
+    border: 1px solid rgb(197, 197, 197);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-decoration:none;
+    font-size:12px;
+    padding-left:15px;
+    padding-right:15px;
+}
+
+.button-32 button:hover, button.button-32:hover,
+.button-32 a:hover, a.button-32:hover
+{
+    color: #4682D1;
+}
+
+

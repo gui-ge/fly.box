@@ -1,0 +1,418 @@
+﻿input
+{
+    vertical-align: middle;
+}
+
+#field-list
+{
+    height: 50px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    padding: 10px 0px 3px 0px;
+    border-bottom: 1px solid #E2E2E2;
+}
+
+#share-title.focus-box
+{
+    padding-left:10px;
+    padding-right:15px;
+}
+
+#filed-target
+{
+    margin: 10px 0px 30px 0px;
+}
+
+#field-list span
+{
+    height: 50px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+#field-list a
+{
+    margin: 0px 4px;
+}
+
+#field-list nobr
+{
+    display: inline-block;
+    max-width: 200px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #000048;
+}
+
+#field-list label
+{
+    float: left;
+}
+
+#field-list b
+{
+    position: absolute;
+    background: rgb(249, 249, 249);
+    border-radius: 4px;
+    line-height: 15px;
+    color: Red;
+    border: 1px solid #cccccc;
+    display: none;
+    cursor: pointer;
+    height: 18px;
+    width: 18px;
+    text-align: center;
+}
+
+#field-list a:hover b
+{
+    display: inline-block;
+    font-size: 120%;
+}
+
+.field label
+{
+    width: 70px;
+    display: inline-block;
+    text-align: right;
+    vertical-align: middle;
+}
+
+#summary
+{
+    vertical-align: middle;
+    height: 200px;
+}
+
+#summary, #target
+{
+    width: 100%;
+}
+
+#target
+{
+    padding: 8px 1px;
+}
+
+.field span
+{
+    position: absolute;
+    left: 80px;
+    right: 20px;
+}
+
+#share-block,#notify-block,#share-send-mail
+{
+    padding-left: 40px;
+}
+
+#share-nav
+{
+    position: absolute;
+    top: 70px;
+    background-color: white;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 10;
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+
+#share-to,#share-send-mail,#share-send-users
+{
+    display:none;
+}
+
+.show-share-to #share-nav
+{
+    display: none;
+}
+
+.show-share-to #share-to
+{
+    display: block;
+}
+
+.share-private .public-only
+{
+    display: none;
+}
+
+.share-public .private-only,.share-to-person .private-only
+{
+    display: none; 
+}
+
+.share-by-mail #share-send-mail
+{
+    display:block;
+}
+
+.share-by-mail #share-to,.share-by-users #share-to,
+.share-by-mail .copy-link-swf-wrap,.share-by-users .copy-link-swf-wrap
+{
+    display:none;
+}
+
+.share-by-users #share-send-users
+{
+    display:block;
+}
+
+#to-org-space
+{
+    font-size: 20px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#share-power-block
+{
+    margin-top:20px;
+}
+
+#share-power-block div
+{
+    color:Gray;
+    padding-top:10px;
+}
+
+#share-power-block div.can
+{
+    color:black;
+}
+
+#share-power-block label.yes
+{
+    color:Blue;
+}
+
+#share-power-block .focus-box
+{
+    display:none;
+}
+
+#share-power-block label.yes .focus-box
+{
+    display:inline;
+}
+
+#share-power-block div *
+{
+   vertical-align:middle;
+   margin-bottom:0px;
+}
+
+#share-power-block input
+{
+    position:relative;
+    top:-2px;
+}
+
+#share-power-block .focus-box
+{
+    width: 60px;
+    letter-spacing :4px;
+}
+
+#dir-power
+{
+     visibility:hidden;
+     padding-left:50px;
+     display:inline;
+}
+
+.can #dir-power
+{
+    visibility:visible;
+}
+
+#login-power
+{
+    padding-bottom:10px;
+}
+
+#fetch-password
+{
+    height:25px;
+    width:50px;
+}
+
+#share-link
+{
+    width: 330px;
+    height: 25px;
+}
+
+.share-private #share-link
+{
+    width: 300px;
+}
+
+#share-password
+{
+    width: 60px;
+    height: 25px;
+    letter-spacing :4px;
+}
+
+#link-send-alert
+{
+    display: block;
+    font-size: 12px;
+    padding-top: 10px;
+}
+
+#share-password-block,#share-notify-block
+{
+    margin-top:20px;
+}
+
+#mail_editor
+{
+    width:530px;
+    height:45px;
+    margin-bottom:10px;
+}
+
+#mail-body
+{
+    width:530px;
+    height:130px;
+    margin-bottom:15px;
+}
+
+body .tags-editor-input
+{
+    display:inline;
+    width:200px;
+    text-align:left;
+}
+
+#share-weibo-block
+{
+    margin-top:20px;
+}
+
+#share-weibo-block iframe
+{
+    width:370px;
+    height:25px;
+    vertical-align:middle;
+}
+
+#share-weibo-block label
+{
+    vertical-align:middle;
+}
+
+#notify-block
+{
+    border-top:1px dotted #A2A2A2;
+    margin-top:30px;
+}
+
+#shares-block
+{
+    margin-left:10px;
+    margin-top:40px;
+    text-align:left;    
+}
+
+#shared-count-tip
+{
+    display:block;
+    padding-bottom:5px;
+    color:Gray;
+}
+
+#shared-count-tip b
+{
+    color:Blue;
+}
+
+#share-list
+{
+    border-collapse:collapse;
+    width:560px;
+}
+
+#share-list tr
+{
+    height:25px;
+}
+        
+#share-list td
+{
+    border-bottom: 1px solid #D9D9D9;
+}
+
+#share-list a
+{
+    color: #0099FF;
+    max-width: 180px;
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#share-list-wrap
+{
+    height:210px;
+    overflow:auto;
+}
+
+#btn-show-send-users
+{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 10px 30px;
+    display:none;
+}
+
+.share-to-person #btn-show-send-users
+{
+    display:inline-block;
+}
+
+#user-select-box
+{
+    overflow:hidden;
+    position:absolute;
+    width:300px;
+    height:410px;
+    top:70px;
+    right:0px;
+}
+
+#user-select-box iframe
+{
+    height:410px;
+}
+
+#user_editor
+{
+    width:250px;
+    height:360px;
+}
+
+#share-send-users
+{
+    padding-left:10px;
+}
+
+#share-send-users-buttons
+{
+    position:absolute;
+    bottom:15px;
+}
+
+#share-send-users label,#share-send-mail label
+{
+    display:block;
+    margin-bottom:3px;
+}

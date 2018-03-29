@@ -1,0 +1,64 @@
+﻿html, body
+{
+    overflow: hidden;
+    line-height: 1.5;
+    color: #2c4a77;
+    background-color:transparent;
+}
+
+a
+{
+    color: #2c4a77;
+}
+
+a:hover
+{
+    color: #4682D1;
+}
+
+.empty-box,form div
+{
+    display: block;
+    margin: 18px 0px 0px 0px;
+    overflow:visible;
+}
+
+form div *
+{
+    vertical-align:middle;
+}
+
+.empty-box input
+{
+    width: 100%;
+}
+
+form
+{
+    padding: 0px 10px 0px 10px;
+}
+
+#regist
+{
+    background-color: rgb(66, 122, 199);
+    color: White;
+    width: 120px;
+    height: 40px;
+    border: 1px solid rgb(66, 122, 199);
+    margin:20px auto auto auto;
+    font-size:16px;
+    border-radius:5px;
+}
+
+
+#cancel
+{
+    vertical-align:bottom;
+    margin-left:20px;
+    font-size:16px;
+}
+
+.f-v-msgBox-tips
+{
+     position:absolute;
+}

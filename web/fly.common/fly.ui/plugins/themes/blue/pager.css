@@ -1,0 +1,119 @@
+/* pager icon */
+.f-btn-first
+{
+    background-image:url(img/glyphs.png);
+    background-position:0px -64px;
+}
+
+.f-btn-previous
+{
+    background-image:url(img/glyphs.png);
+    background-position:0px -80px;
+}
+
+.f-btn-next
+{
+    background-image:url(img/glyphs.png);
+    background-position:0px -96px
+}
+
+.f-btn-last
+{
+    background-image:url(img/glyphs.png);
+    background-position:0px -112px;
+}
+
+.f-btn-refresh
+{
+	background:url(img/light-refresh.png) left center;
+}
+
+
+.f-pager-layout
+{
+	font-size:12px;
+	width:100%;
+	text-align:center;
+}
+
+.f-pager .f-pager-current-input
+{
+	border:1px solid gray;
+	width:30px;
+	text-align:center;
+}
+
+.f-pager-info
+{
+	margin-right:20px;
+}
+
+.f-pager .f-bbtn
+{
+	margin:0px 3px ;
+	border:1px solid transparent;
+	border-radius:4px;
+	cursor:pointer;
+	padding:1px;
+}
+
+.F-IE6 .f-pager .f-bbtn
+{
+	border-style:none;
+}
+
+.f-pager .f-bbtn:hover
+{
+	border-color: #C6CDE3;
+}
+
+.f-pager-pageList 
+{
+	background:#F8F8FA;
+	color:#2f4a90;
+}
+
+.f-pager-current-pageList a
+{
+	display:inline-block;
+	font-weight:bold;
+	margin:0px 2px;
+	font-size:13px;
+	font-family:"helvetica neue", arial,sans-serif;
+	cursor:pointer;
+	padding:1px 3px 0px 3px;
+	border:1px solid #F8F8FA;
+}
+
+
+.f-pager-current-pageList a:hover
+{
+	color:Blue;
+}
+
+.f-pager-pageList-button-rect .f-pager-current-pageList a,.f-pager-pageList-button-rect .f-bbtn
+{
+	border:1px solid #e4e8f2;
+	padding:6px 13px;	
+	background:white;
+	border-radius:0px;
+	box-shadow: #EAEDF4 0px 1px 3px;
+	-moz-box-shadow: #EAEDF4 0px 1px 3px;
+	-webkit-box-shadow: #EAEDF4 0px 1px 3px;
+	font-weight:bold;
+}
+
+.f-pager-current-pageList a:hover
+{
+    border-color: #C6CDE3;
+}
+
+.f-pager-current-pageList a.f-pager-current
+{
+	border-color:#071a29;
+	background:rgb(25, 85, 141);
+	color:White;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1F5E91', endColorstr='#103657');
+	background: -webkit-gradient(linear, left top, left bottom, from(#1F5E91), to(#103657));
+	background: -moz-linear-gradient(top, #1F5E91, #103657);
+}

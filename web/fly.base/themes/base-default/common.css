@@ -1,0 +1,400 @@
+﻿@import -"../css/ie6-default.css?v2.4.0";
+
+html, html body
+{
+    margin: 0px;
+    height: 100%;
+    font-size: 12px;
+    font-family:宋体,Tahoma, Geneva;
+}
+
+a[href]
+{
+    text-decoration: none;
+}
+
+
+a[href]:hover
+{
+    text-decoration: underline;
+    cursor:pointer;
+}
+
+a.a-button:hover, .a-button a:hover
+{
+    text-decoration:underline;
+    cursor:pointer;
+}
+
+ul
+{
+    list-style-position: outside;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.empty-box
+{
+    display: inline-block;
+    position: relative;
+    background: rgb(234, 234, 234);
+    padding: 0px 2px 2px 0px;
+    overflow: hidden;
+    box-sizing:border-box;
+}
+
+.empty-box label
+{
+    position: absolute;
+    display: none;
+    color: #999;
+    font-size: 14px;
+    margin: 11px 0px 0px 10px;
+}
+
+.empty-box.f-empty label
+{
+    display: block;
+}
+
+.empty-box input
+{
+    margin: 0px;
+    border: 1px solid #b8b8b8;
+    padding: 11px 9px;
+    box-sizing:border-box;
+}
+
+.f-empty,.f-empty input
+{
+    color: #999;
+}
+
+.tool-block
+{
+    display: inline-block;
+}
+
+.down-arrow .arrow
+{
+    width: 0px;
+    height: 0px;
+    display: inline-block;
+    border-top: 5px solid #d3d3d3;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.f-checkbox
+{
+    background: no-repeat url(imgs/icons/checkbox.gif);
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin-right: 5px;
+    top: 10px;
+    position: relative;
+}
+
+.f-selected .f-checkbox, .f-checkbox.f-selected
+{
+    background-position: -20px 0px;
+}
+
+
+html .f-loading, html.f-loading,
+html .f-v-loading, html.f-v-loading
+{
+    background-color:rgba(0, 0, 0, 0.06);
+    background-image: url(imgs/ajax/loading-64.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: block;
+}
+
+html .f-loading32, html.f-loading32,
+html .f-v-loading32, html.f-v-loading32
+{
+    background-color:rgba(0, 0, 0, 0.06);
+    background-image: url(imgs/ajax/loading-32.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: block;
+}
+
+html .f-loading *, html.f-loading *,
+html .f-loading32 *, html.f-loading32 *
+{
+    visibility: hidden;
+}
+
+.ajax-loading
+{
+    left:0px;
+    right:0px;
+    top:0px;
+    bottom:0px;
+    position:absolute;
+    display:none;
+    z-index:10000;
+}
+
+
+.submit-button
+{
+    -webkit-box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 2px 0px;
+    background-color: #267BB6;
+    background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0.15, rgb(38, 123, 182)), to(rgb(51, 143, 206)));
+    border: 1px solid rgb(13, 94, 148);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 2px 0px;
+    color: white;
+    font-size:13px;
+    padding:5px 15px;
+    font-weight:bold;
+    cursor:pointer;
+    margin-left:5px;
+}
+
+.submit-button:hover
+{
+    background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0.15, rgb(51, 143, 206)), to(rgb(38, 123, 182)));
+    color:#FFFFCC;
+}
+
+.msg-box-auto
+{
+    position: fixed; 
+    top: 35%; 
+    left: 50%; 
+    z-index: 20000; 
+    background-color: yellow; 
+    padding: 10px 30px; 
+    border-radius: 8px; 
+    border:3px solid gray;
+    font-size:14px;
+    opacity:0;
+    filter:alpha(opacity=0);
+}
+
+html body .msg-box-auto{
+    color:Black;
+}
+
+.msg-box-auto-close
+{
+    font-family: "华文彩云","Arial Black";
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    padding-right: 1px;
+    top:0px;
+    right:0px;
+    position:absolute;
+    color:#B0B0B0;
+}
+
+.msg-box-auto:hover .msg-box-auto-close
+{
+    color:Red;
+}
+
+.search-input
+{
+    background:url(imgs/icons/search.png) no-repeat right center;
+}
+
+.focus-box
+{
+    box-shadow:0 0 3px #C6C6C6;
+    -webkit-box-shadow:0 0 3px #C6C6C6;
+    border:1px solid #C6C6C6;
+    padding-left:3px;
+    padding-right:3px;
+}
+
+.focus-box:focus
+{
+    box-shadow:0 0 3px #78A9DA;
+    -webkit-box-shadow:0 0 3px #78A9DA;
+    border:1px solid #78A9DA;
+    outline-width:0px;
+}
+
+.iframe-full
+{
+    background-color:White;
+    position:fixed;
+    _position:absolute;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    z-index:100000;
+}
+
+.iframe-full iframe
+{
+    width:100%;
+    height:100%;
+    border-style:none;
+}
+
+.doc-iframe-full html,.doc-iframe-full body
+{
+    overflow:hidden;
+}
+
+#toolbar .input-append
+{
+    position:relative;
+    top:3px;
+}
+
+.mask-wrap
+{
+    position:fixed;
+    top:0px;left:0px;bottom:0px;right:0px;
+    background:rgba(0,0,0,.6);
+    color: rgb(213, 211, 211);
+    font-size:20px;
+    z-index: 1000000;
+    padding-top: 20%;
+    text-align: center;
+}
+
+.mask-close
+{
+    color: white;
+    cursor: default;
+    display: inline;
+    font-family: 华文彩云, 'Arial Black';
+    font-size: 20px;
+}
+
+.mask-close:hover
+{
+    color:Red;
+    font-weight: 100;
+    text-decoration:none;
+}
+
+label input
+{
+    position:relative;
+    margin-top:-2px;
+}
+
+.import-title
+{
+    padding-bottom:20px;
+    border-bottom: 1px solid rgb(241, 231, 231);
+    font-size:200%
+}
+
+.warning
+{
+    background-color:Yellow;
+    color:Black;   
+    padding:10px;
+    border-radius:5px;
+}
+
+
+/* grid */
+.f-grid-h
+{
+    height:22px;
+}
+
+.f-grid-h-outer 
+{
+    border-top:1px solid #fff;
+    background-color:rgb(242, 244, 246);
+    filter:none;
+}
+
+.f-grid-c a
+{
+    text-decoration: none;
+}
+
+.f-grid-hc
+{
+    text-align: left;
+}
+
+.f-grid-hc-text
+{
+    font-weight: normal;
+}
+
+.f-sm .f-grid-hc-text
+{
+    padding-left: 0px;
+}
+
+.f-sm
+{
+    text-align: center;
+}
+
+.f-grid-c, .f-grid-hc
+{
+    padding-left: 10px;
+}
+
+.btn-edit
+{
+    background-position: -180px 0px;
+}
+
+.btn-edit:hover
+{
+    background-position: -180px -20px;
+}
+
+.btn-delete
+{
+    background-position: -160px 0px;
+}
+
+.btn-delete:hover
+{
+    background-position: -160px -20px;
+}
+
+.btn-send,.btn-re-send
+{
+    background-position:-120px -20px;
+}
+
+.btn-send:hover,.btn-re-send:hover
+{
+    background-position:-120px -40px;
+}
+/* grid end */
+
+.f-ok-color
+{
+    color:Blue;
+}
+
+.f-error-color
+{
+    color:Red;
+}
+
+.f-gray-color
+{
+    color:Gray;
+}
+
+.text-ellipsis
+{
+    text-overflow: ellipsis; 
+    overflow:hidden;
+}

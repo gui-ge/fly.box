@@ -1,0 +1,95 @@
+﻿<!DOCTYPE HTML>
+<html class='p-index' iPath="">
+<head>
+    <link rel="shortcut icon" href="/favicon.ico"/>
+    <link href="themes/box-default/common.css?v2.4.0" rel="stylesheet" type="text/css" />
+    <link href="themes/box-default/index.css?v2.4.0" rel="stylesheet" type="text/css" />
+    <script src="../fly.common/fly/fly.js?v2.4.0" type="text/javascript"></script>
+    <script src="local/langs/lang.js" type="text/javascript"></script>
+    <script src="common/common.js?v2.4.0" type="text/javascript"></script>
+    <script src="../fly.common/fly.ui/plugins/input/empty-box.js?v2.4.0" type="text/javascript"></script>
+    <link rel="icon" href="../favicon.ico" mce_href="../favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../favicon.ico" mce_href="../favicon.ico" type="image/x-icon">
+    <script>$L('<title>{name} {ver}</title>')</script>
+</head>
+<body>
+    <div id="top-block">
+        <div id='logo-div'><img id='org-logo' src="themes/imgs/logo.png" /></div>
+        <div id='user-info'><span id='user-name'>用户名</span><div><a href="common/form.htm?$with-org=1&m=setting" target="f" id='btn-setting'>换肤、设置</a> <a href="#" onclick='indexPage.logout();return false'>退出</a></div></div>
+        <div id="top-right"><!--<a href="ajax.ashx?$c=do&$m=feedback" target="f">反馈建议</a><i></i><a href="ajax.ashx?$c=do&$m=help" target="f">帮助中心</a>--></div>
+        <div id='search-bar'><form id='search-form' title="请输入关键字，回车搜索" ><input emptyValue='搜索' id="search"  title="请输入关键字，回车搜索" /></form></div>
+        <div id='top-msg-box'></div>
+    </div>
+    <div id="top-line"></div>
+    <div id="left-block">
+        <div id="top-icon-btns">
+            <span class="recycle" >
+                <a title="回收站" target='f' href="file/manage.htm?recycle"></a>
+            </span>
+            <span class="tag">
+                <a title="归档目录（标签）" target="f" href="file/manage.htm?tags"></a>
+            </span>
+            <span class="fav">
+                <a  title="收藏夹" target="f" href="file/manage.htm?fav=1"></a>
+            </span>
+            <span class="sms">
+                <a  title="手机短信" target="f" href="common/form.htm?m=sms&form=edit"></a>
+            </span>
+            <span class="notify" >
+                <a title="通知公告" target="f" href="common/list.htm?m=oa&list=inbox"></a>
+            </span>
+            <span class="share-to">
+                <a  title="我分享的" target="f" href="file/manage.htm?share-to"></a>
+            </span>
+                <!--<a class="share-from" title="Ta 们分享的" target="f" href="file/manage.htm?from-share"></a>-->
+        </div>
+
+        <ul id='above-menus' >
+            <li id='disk-menu'>
+                <a target='f' href="file/manage.htm?$with-org=1"><script>$L('diskFullName')</script></a>
+                <i id="btn-toggle-org-tree" class="btn-toggle-tree" title="显示目录结构" onclick="indexPage.toggleOrgTree()"></i>
+            </li>
+            <li>
+                <div id='space-size-pro' class="space-size-pro"><div></div></div>
+                <div id='space-size' class="space-size"></div>
+            </li>
+        </ul>
+        <div id='shortcut-menu-block'>
+            <ul id='folder-menus'>
+            </ul>
+            <!--<div class='menu-split'></div>
+            <ul id='other-menus'>
+                <li><a id="tags-menu" target="f" href="file/manage.htm?tags">归档目录</a></li>
+                <li><a target="f" href="file/manage.htm?fav=1">我的收藏夹</a></li>
+                <li><a target="f" href="file/manage.htm?share-to">我分享的</a></li>
+                <li><a target="f" href="file/manage.htm?from-share">Ta 们分享的</a></li>            
+                <li><a target='f' href="file/manage.htm?recycle">回收站</a></li>
+                <li><a target="f" href="log/stat/index.htm">统计</a></li>
+                <li><a target="f" href="common/form.htm?m=sms&form=edit">手机短信</a> <a target="f" href="common/list.htm?m=oa&list=inbox">通知公告</a></li>
+            </ul>-->
+        </div>
+        <div  id='tree-menu-block-org'></div>
+        <div id=user-space >
+            <div class='menu-split'></div>
+            <ul id='other-menus2' >
+                <li id='li-user-disk-menu'>
+                    <a href="file/manage.htm" target="f" title="我的个人空间（属于个人独有的，他人不能访问）">
+                        <script>$L('我的{mySpaceName}')</script>
+                    </a>
+                    <i id="btn-toggle-my-tree"  class="btn-toggle-tree" title="显示目录结构"  onclick="indexPage.toggleMyTree()"></i>
+                </li>
+                <li>
+                    <div id='user-space-size-pro' class="space-size-pro"><div></div></div>
+                    <div id='user-space-size' class="space-size"></div>
+                </li>
+            </ul>
+        </div>
+        <div id='tree-menu-block-my'></div>
+    </div>
+    <div id="content-block">
+        <iframe id="content-frame" name='f' src="file/manage.htm?$with-org=1" frameborder="0" allowTransparency="1"></iframe>
+    </div>
+    <script src="js/index-base.js?v2.4.0" type="text/javascript"></script>
+    <script src="js/o-index.js?v2.4.0" type="text/javascript"></script>
+</body>
+</html>

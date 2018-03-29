@@ -1,0 +1,24 @@
+﻿.tab-panel
+{
+    font-size: 12px;
+}
+
+.tab-panel .tab
+{
+    color: white;
+    vertical-align:middle;
+    cursor:pointer;
+    display:inline-block;
+    padding: 5px 5px;
+    margin: 0px 10px;
+}
+
+.tab-panel .current
+{
+    font-size: 140%;
+    color: #2c4a77;
+    padding: 5px 5px;
+    margin-bottom: -8px;
+    background: white;
+    border-radius: 5px 5px 0px 0px;
+}

@@ -1,0 +1,27 @@
+﻿.p-index
+{
+    background: url(imgs/bg.jpg);
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.p-index #content-frame
+{
+    background:rgb(255,255,255);
+}
+
+.p-index #left-block
+{
+    border-right:3px solid rgb(40,85,134);
+    background-color:rgba(245,245,245,.8);
+}
+
+.p-index a
+{
+    color0:white;
+}
+
+.p-file #show-bar
+{
+    background-color:White;
+}

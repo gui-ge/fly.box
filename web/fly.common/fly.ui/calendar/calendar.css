@@ -1,0 +1,101 @@
+html{overflow-x: hidden;overflow-y:auto;}
+.f-un-select
+{
+    moz-user-select: -moz-none;
+    -moz-user-select: none;
+    -o-user-select:none;
+    -khtml-user-select:none;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+.f-calendar{width:460px;height:365px;overflow:hidden; margin:0px auto;display:inline-block;position:relative;border:2px solid rgb(87, 171, 255); padding-left:2px;font-family:arial;cursor:default;}
+
+.f-calendar-msg-box a{display:block;font-size:12px;color:#09F;text-decoration:none;text-align:center;padding-top:12px;background:#ededed;width:48px;height:37px;position:absolute;top:13px;right:15px;z-index:9999;}
+
+.f-calendar-controls {height: 22px; padding:3px 0px; text-align: center;}
+
+.f-calendar-left,.f-calendar-right{ display:inline-block;vertical-align:top;height:340px;}
+.f-calendar-left{width:340px;height:100%;float:left}
+.f-calendar-right
+{ 
+    width:120px;
+    height:100%;
+    float:left;
+    text-align:center;line-height:25px; color:White;font-size:13px; 
+    background:rgb(87, 171, 255);
+    background:-webkit-gradient(linear, 0 0, 0 100%, from(rgb(85, 170, 255)), to(rgb(115, 185, 255)));
+}
+
+.f-calendar-week{line-height:26px;border-top:1px solid rgb(85,170,255);}
+.f-calendar-week span{display:inline-block;width:46px;height:20px;margin-left:1px;font-size:14px;line-height:20px;}
+
+.f-calendar-days,.f-calendar-week{text-align:center;}
+.f-calendar-day,.f-calendar-no-day{overflow:hidden; border:3px solid transparent; display:inline-block;width:40px;margin-left:1px;vertical-align:middle;border-color:white}
+.f-calendar-day-current,.f-calendar-day:hover{border:3px solid rgb(255,187,0);cursor:pointer;}
+.f-calendar-day-g{display:block;font-size:18px;font-weight:bold;}
+.f-calendar-day-l{display:block;width:100%;font-size:12px;color:#5F6583; white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.f-calendar-today{ background-color:rgb(255,187,0);}
+.f-calendar-today .f-calendar-day-g{ color:White;}
+
+.f-calendar-day-line{border-top:1px solid rgb(236, 236, 236);}
+
+.f-calendar-holiday .f-calendar-day-l{color:red;}
+.f-calendar-holiday-24 .f-calendar-day-l{color:rgb(224, 45, 45);}
+
+.f-calendar-day-0,.f-calendar-day-6,.f-calendar-week-6,.f-calendar-week-0{opacity:.4;}
+.f-calendar-current-title{line-height:40px;text-align:center;}
+.f-calendar-current-day{position: relative;width: 75px;height: 75px;margin: 0 auto;line-height: 76px;font-size: 52px;background: #fb0;border-radius: 3px;box-shadow: 1px 2px 5px rgba(0,0,0,.1),-1px 2px 5px rgba(0,0,0,.1);}
+.f-calendar-current-day-l{line-height:30px;}
+
+.f-calendar-current-day-detail{border-top:2px solid rgb(148, 201, 255);margin-top:3px;padding-top:3px;}
+.f-calendar-controls *{ vertical-align:middle;}
+.f-calendar-controls select{height:22px;margin:0px;border: 1px solid #CECECE;}
+.f-calendar-controls a
+{
+    padding:0px 6px;
+    display:inline-block;
+    border: 1px solid #CECECE;
+    border-bottom-color: #d8d8d8;
+    background: #fafafa;
+    text-align: center;
+    line-height: 20px;
+    _line-height: 19px;
+    text-decoration: none;
+    color: #7a7a7a;
+    font-size:16px;
+    font-family: Simsun,Simhei,sans-serif;
+    cursor:pointer;
+}
+.f-calendar-controls a:hover{color:rgb(56, 156, 255);border-color:rgb(56, 156, 255);}
+.f-calendar .f-calendar-previous-month ,.f-calendar .select-month{border-right-color:rgb(216, 216, 216);border-bottom-color:#EEE;}
+.f-calendar .f-calendar-next-month,.f-calendar .select-month{border-left-color:rgb(216, 216, 216);border-bottom-color:#EEE;}
+
+.f-calendar .select-month{margin-left:-1px;margin-right:-20px;_margin-right:0px;}
+
+.f-calendar-m{padding-left:0px;}
+.f-calendar-m,.f-calendar-m .f-calendar-left{width:296px;}
+.f-calendar-m .f-calendar-day, .f-calendar-m .f-calendar-no-day{border-width:2px;width:37px;}
+.f-calendar-m .f-calendar-week span{width:41px;}
+.f-calendar-m .f-calendar-day-g{font-size:16px; line-height:22px; padding-top:2px;}
+.f-calendar-current-none .f-calendar-right{display:none;}
+.f-calendar-current-bottom .f-calendar-right{height:78px;position: absolute;bottom: 2px;right: 2px;left: 2px;width: auto;}
+.f-calendar-current-bottom .f-calendar-left{height:320px;}
+.f-calendar-current-bottom ,.f-calendar-current-top{height:400px;}
+.f-calendar-current-bottom .f-calendar-current-day,.f-calendar-current-top .f-calendar-current-day{left: 2px;top: 2px;position:absolute;height:74px;}
+.f-calendar-current-bottom .f-calendar-current-title,.f-calendar-current-top .f-calendar-current-title{position: absolute;left: 83px;line-height:26px;}
+.f-calendar-current-bottom .f-calendar-current-day-l,.f-calendar-current-top .f-calendar-current-day-l{ position:absolute;left:83px;margin-top:20px;}
+.f-calendar-current-bottom .f-calendar-current-day-ly,.f-calendar-current-top .f-calendar-current-day-ly{ position:absolute;left:83px;margin-top:38px;}
+.f-calendar-current-bottom .f-calendar-current-day-lmd,.f-calendar-current-top .f-calendar-current-day-lmd{ position:absolute;left:83px;margin-top:55px;}
+.f-calendar-current-bottom .f-calendar-current-day-detail,.f-calendar-current-top .f-calendar-current-day-detail{ position:absolute;left:200px;right:2px;border-width:0px;}
+
+.f-calendar-current-top .f-calendar-left{margin-top:80px;height:320px;}
+.f-calendar-current-top .f-calendar-right{height:78px;position: absolute;top: 2px;right: 2px;left: 2px;width: auto;}
+
+.f-calendar-no-lunar .f-calendar-day-l{ display:none;}
+.f-calendar-no-lunar .f-calendar-left{height:220px;}
+.f-calendar-no-lunar{}
+.f-calendar-no-lunar.f-calendar-current-bottom, .f-calendar-no-lunar.f-calendar-current-top{height:305px;}
+
+.f-calendar-no-lunar .f-calendar-day-g{ font-weight:normal;}
+.has-event .f-calendar-day-g{font-weight:bold;color:Red;}

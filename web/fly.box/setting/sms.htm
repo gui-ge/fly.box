@@ -1,0 +1,9 @@
+﻿<dl>
+    <label>短信账户密钥：</label>
+    <span id='old-key' >{key||'未绑定'}</span>
+    {@if key} <button onclick="page.unBind();return false;">解除绑定</button>{if@}
+</dl>
+<dl>
+    <label>重置密钥：</label>
+    <textarea id='txtKey' name="new-key" rule="*" ></textarea> <a target=_blank href="http://i.flyui.net/help/get-key.htm">如何获取密钥？</a>
+</dl>

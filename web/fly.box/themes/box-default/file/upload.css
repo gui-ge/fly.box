@@ -1,0 +1,202 @@
+﻿html, body
+{
+    font-size: 14px;
+}
+
+#upload-button
+{
+    overflow: hidden;
+    position: absolute;
+    line-height: 30px;
+    top: 0px;
+    right: 0px;
+    background-image: url('../imgs/file/add-file.png');
+    width: 101px;
+    height: 30px;
+}
+
+
+
+#upload-button:hover
+{
+    background-position: 0px 0px;
+}
+
+
+#upload-button object
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#file-list
+{
+    height: 270px;
+}
+
+
+.f-grid .file-name
+{
+    position: absolute;
+    z-index: 10;
+    left: 0px;
+    top: 10px;
+    overflow: hidden;
+    width: 90%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 12px;
+    padding-left: 5px;
+}
+
+.F-IE8 .f-grid-body .f-grid-c-first
+{
+    padding-top: 34px;
+}
+
+.f-grid .upload-progress
+{
+    border-radius:4px;
+    border: 1px dotted rgb(191, 220, 148);
+    position: absolute;
+    height: 25px;
+    background: rgb(224,238,203);
+    z-index: 0;
+    left: 0px;
+    top: 3px;
+}
+
+.F-FF .f-grid .file-name
+{
+    position:relative;
+}
+    
+.F-FF .f-grid .upload-progress
+{
+    position:relative;
+    margin-top:-15px;
+    margin-bottom:8px;
+}
+
+#percent-head
+{
+    margin-left:5px;
+    font-size:14px;
+    border-radius:4px;
+    border: 1px dotted rgb(191, 220, 148);
+    background: rgb(224,238,203);
+    padding:2px 4px 1px 0px;
+}
+
+.uploaded
+{
+    color: Blue;
+    font-weight:bold;
+}
+
+.f-grid-col-0
+{
+    position: relative;
+}
+
+.f-grid .f-grid-hc-text
+{
+    float: left;
+    font-weight: normal;
+}
+
+.delete-button
+{
+    display: inline-block;
+    background-image: url('../imgs/file/ico-operate.gif');
+    width: 14px;
+    height: 12px;
+    background-position: -60px 0px;
+}
+
+.delete-button:hover
+{
+    background-position: -60px -20px;
+}
+
+.delete-button.deleting
+{
+    color: Gray;
+}
+
+#title-bar
+{
+    position: relative;
+    height: 30px;
+}
+#title-bar #path
+{
+    line-height: 30px;
+    color: #8a806d;
+}
+
+
+
+
+
+#file-list
+{
+    margin-top: 10px;
+}
+.f-grid-wrap
+{
+    border-width: 0px;
+    border-color: #f0f2f6;
+}
+.f-grid-h-outer
+{
+    color: #999;
+    border-top: 1px solid #f0f2f6;
+    border-bottom-color: #f0f2f6;
+}
+.f-grid-h-outer table tr td
+{
+    background-color: #ffffff;
+    border: 0px;
+    color: #999999;
+    font-size: 12px;
+}
+.f-grid-body table
+{
+    border: 0px;
+}
+.f-grid-body table tr td
+{
+    border-width: 0px;
+}
+
+.f-grid-body table tr .f-grid-col-2
+{
+    color: #999999;
+    font-size: 12px;
+}
+
+.can-h5 .f-grid-body 
+{
+    background:url(../imgs/file/upload-u-tip-h5.gif) no-repeat center center;
+    opacity:.40;
+}
+
+.is-pc .f-grid-body 
+{
+    background:url(../imgs/file/upload-u-tip-pc.gif) no-repeat center center;
+    opacity:.40;
+}
+
+.file-added .f-grid-body 
+{
+    background-image:none;
+    opacity:1;
+}
+
+
+.state-error
+{
+    color:Red;
+}

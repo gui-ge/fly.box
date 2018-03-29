@@ -1,0 +1,38 @@
+﻿.f-dialog-title {
+    background:url(imgs/bar/dialog-bg.png) 0px -80px repeat-x;
+    height:40px;
+    padding:0 10px;
+	line-height:45px;
+	font-size:16px;
+	font-weight:bold;
+	color:#333;
+	border-width:0px;
+	border-bottom:1px solid #D2D2D2;
+	border-radius:5px 5px 0 0;
+	margin:-3px -3px 0px -3px;
+	text-shadow: 1px 1px #FFF;
+}
+
+.f-dialog {
+	border:1px solid #BCBCBC;
+	border-radius:5px;
+	background:#FFF;
+	box-shadow:0 1px 10px rgba(0, 0, 0, 0.4);
+	overflow:hidden;
+}
+
+.f-dialog-title-buttons
+{
+    top:-2px;
+}
+
+.f-dialog-title-buttons .f-dialog-close
+{
+    color:Gray;
+    font-weight:normal;
+}
+
+.f-dialog-title-buttons .f-dialog-close:hover
+{
+    background:none;
+}

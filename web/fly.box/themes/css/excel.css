@@ -1,0 +1,4 @@
+﻿body{text-align:center;}
+table{text-align:left;margin:auto;}
+td{border-width:1px;border-style:solid;}
+.tr-hidden td{visibility:hidden;}

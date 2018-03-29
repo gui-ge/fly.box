@@ -1,0 +1,39 @@
+﻿<!doctype html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html class='base-index-page'>
+<head>
+    <title></title>
+    <link rel="shortcut icon" href="/favicon.ico"/>
+    <link href="themes/base-default/common.css?v2.4.0" rel="stylesheet" type="text/css" />
+    <link href="themes/base-default/index.css?v2.4.0" rel="stylesheet" type="text/css" />
+    
+    <script src="../fly.common/fly/fly.js?v2.4.0" type="text/javascript"></script>
+    <script src="common/common.js?v2.4.0" type="text/javascript"></script>
+    <script src="../fly.common/fly.ui/plugins/input/empty-box.js?v2.4.0" type="text/javascript"></script>
+</head>
+<body>
+    <div id="top-block">
+        <div id='logo-div'><img id='user-ico' src="themes/imgs/logo.png" /></div>
+        <div id='user-info'><a id='user-name'>用户名</a><div><a href="common/form.htm?m=user&form=account" target='f'>设置</a> <a href="logout.htm">退出</a></div></div>
+        <div id="top-right"><!--<a href="feedback.htm">反馈建议</a><i></i><a href="help.htm">帮助中心</a>--></div>
+        <div id='search-bar'><form id='search-form'><input emptyValue='搜索' id="search" /></form></div>
+    </div>
+    <div id="top-line"></div>
+    <div id="left-block">
+        <ul id='above-menus' >
+        </ul>
+        <ul id='folder-menus'>
+            <li><a target='f' href="common/list.htm?m=org">单位</a></li>
+            <li><a target="f" href="common/list.htm?m=department">部门</a></li>
+            <li><a target="f" href="common/list.htm?m=role">用户组</a></li>
+            <li><a target="f" href="common/list.htm?m=user">用户</a></li>
+        </ul>
+        <div class='menu-split'></div>
+        <ul id='other-menus'>
+        </ul>
+    </div>
+    <div id="content-block">
+        <iframe id="content-frame" name='f' src="welcome.htm" frameborder="0" allowTransparency=1></iframe>
+    </div>
+    <script src="common/index.js?v2.4.0" type="text/javascript"></script>
+</body>
+</html>

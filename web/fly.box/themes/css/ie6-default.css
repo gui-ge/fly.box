@@ -1,0 +1,218 @@
+﻿a
+{
+    text-decoration:none;
+}
+
+a:hover
+{
+    text-decoration:underline;
+}
+    
+.p-index #top-block
+{
+    overflow:hidden;
+}
+    
+.p-index #left-block
+{
+    height:expression(window.unExpression?null:(document.body.clientHeight-this.offsetTop));
+}
+
+.p-index #content-block
+{
+    height:expression(window.unExpression?null:(document.body.clientHeight-this.offsetTop));
+    width:expression(window.unExpression?null:(document.body.clientWidth-this.offsetLeft));
+}
+
+.p-index .space-size
+{
+    color:White;
+    filter: Glow(Color=black, Strength=1);
+    zoom:1;
+}
+
+.p-index .space-size-pro div
+{
+    font-size:0px;
+}
+
+.p-index #top-line
+{
+    width:100%;
+}
+
+.p-file-open-doc #content-block
+{
+    height:expression(window.unExpression?null:(document.body.clientHeight-this.offsetTop));
+    width:expression(window.unExpression?null:(document.body.clientWidth-this.offsetLeft));
+}
+
+.p-file-open-doc #frame-wrap
+{
+    height:expression(window.unExpression?null:(document.body.clientHeight-45));
+    width:expression(window.unExpression?null:(document.body.clientWidth-200));
+}
+
+
+
+.p-file #cmds-menu
+{
+    position:absolute;
+}
+
+.p-file #select-all
+{
+    top:0px;
+}
+    
+.p-file .down-arrow .arrow
+{
+    border-top: 5px solid #d3d3d3;
+    border-left: 5px solid white;
+    border-right: 5px solid white;
+    position:relative;
+    top:10px;    
+    left:3px;
+}
+
+.p-file .down-arrow 
+{
+    overflow:hidden;
+    zoom:1;
+    height:20px;
+    position:relative;
+    line-height:20px;
+}
+
+.p-file .tool-block
+{
+    padding-top:5px;
+}
+
+.p-file .right-block
+{
+    height:27px;
+}
+
+.p-file #sort-block
+{
+    padding-top:0px;
+}
+
+.p-file .f-menu
+{
+    padding:5px 8px;
+}
+
+.p-file .f-lv-node .node-commands
+{
+    visibility:visible;
+}
+
+.p-file #file-list
+{
+   width:expression(window.unExpression?null:(document.body.clientWidth-this.offsetLeft)); 
+   height:expression(window.unExpression?null:(document.body.clientHeight-this.offsetTop-((document.getElementById('more-box')||{}).offsetHeight||0 ) )); 
+}
+
+.p-file .view-icon .node-thumb
+{
+    
+}
+
+.p-file .view-icon .node-thumb
+{
+    width:expression((this.clientWidth >= 100) ? "100px" : "auto" );
+    height:expression((this.clientHeight >= 100) ? "100px" : "auto" );
+}
+
+.p-file #btn-show-more-box
+{
+    position:absolute;
+}
+
+.p-file .node-icon font
+{
+    display:none;
+}
+
+.p-file .view-icon .f-lv-node
+{
+    border-color:white;
+}
+
+.p-file .view-icon .node-name
+{
+    width:90%;
+}
+
+.p-file #upload-btn
+{
+    margin-top:3px;
+}
+
+.p-file #show-bar
+{
+    width:100%;
+}
+
+.p-file .view-icon .node-icon
+{
+    zoom:94%;
+}
+
+.p-file .view-icon .node-name
+{
+    top:105px;
+}
+
+.p-form .skin-item
+{
+    border-width:0px;
+}
+
+.p-form .skin-item.current
+{
+    border-width:1px;
+    margin:9px;
+}
+
+.F-IE6 #top-empty
+{
+    display:none;
+}
+
+.F-IE6 #setting-content
+{
+    height:expression(window.unExpression?null:(document.body.clientHeight-this.offsetTop));
+}
+
+.p-form #content-block
+{
+    width:92%;
+}
+
+.p-form .tab-panel .current
+{
+    border-bottom-width:0px;
+}
+
+.base-index-page #content-block
+{
+    height:expression(window.unExpression?null:(document.body.clientHeight-this.offsetTop));
+}
+
+.base-index-page #menus
+{
+    width:100%;
+}
+
+body .msg-box-auto
+{
+    position:absolute;
+}
+
+.p-index #org-logo,#feature-box,.node-icon,#upload-btn i,#new-btn i,#path-bar a 
+{
+     _azimuth:expression(this.pngSet?1:(this.nodeName == "IMG" && this.src.toLowerCase().indexOf('.png')>-1?(this.runtimeStyle.backgroundImage = "none",this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.src + "', sizingMethod='image')",this.src = "http://www.flyui.net/s.gif"):(this.origBg = this.origBg? this.origBg :this.currentStyle.backgroundImage.toString().replace('url("','').replace('")',''),this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.origBg + "', sizingMethod='crop')",this.runtimeStyle.backgroundImage = "none")),this.pngSet=true);
+}

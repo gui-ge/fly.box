@@ -1,0 +1,46 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <title>用户注册 2.4.0</title>
+    <link href="themes/base-default/common.css?v2.4.0" rel="stylesheet" type="text/css" />
+    <link href="themes/base-default/regist.css?v2.4.0" rel="stylesheet" type="text/css" />
+    <script src="../fly.common/fly/fly.js?v2.4.0" type="text/javascript"></script>
+    <script>window.needLogin = false</script>
+    <script src="common/common.js?v2.4.0" type="text/javascript"></script>
+    <script src="../fly.common/fly.ui/plugins/input/empty-box.js?v2.4.0" type="text/javascript"></script>
+    
+    <script src="../fly.common/fly.ui/plugins/validate/validate.js?v2.4.0" type="text/javascript"></script>
+    <link href="../fly.common/fly.ui/plugins/themes/common/validate/validate.css?v2.4.0" rel="stylesheet" type="text/css" />
+    
+    <script src="js/regist.js?v2.4.0" type="text/javascript"></script>
+</head>
+<body>
+     <form>
+         <div id="mobile-phone" class="empty-box">
+             <input name="MobilePhone" emptyvalue="手机号" rule="*|trim|phone::手机号不正确|tips:请填写有效的手机号码"  />
+         </div>
+         <div id="email" class="empty-box">
+             <input name="Email" emptyvalue="邮箱" rule="*|mail|tips:请填写有效的电子邮箱" />
+         </div>
+         <div id="login-name" class="empty-box">
+             <input name="LoginName" emptyvalue="登录名" rule="*|reg:/^[\da-z]{2,20}$/i|trim|tips:登录名至少2个数字或字母" />
+         </div>
+         <div id="password" class="empty-box" >
+             <input name="pwd" emptyvalue="密码" type="password" cssBox='#password' rule="*|4-32|tips:请输入密码，至少4个字符"/>
+         </div>
+         <div id="re-password" class="empty-box">
+             <input name="re-pwd" emptyvalue="确认密码" type="password" cssBox='#re-password' rule="same:$pwd|tips:两次密码要输入一致"/>
+         </div>
+         <div id="nick-name" class="empty-box">
+             <input name="NickName" emptyvalue="真实姓名" rule="*|tips:请输入真实姓名"/>
+         </div>
+         <div>
+            <label>性别：</label>
+            <input type=radio name=Sex id='sex-man' value='男' rule='*::请选择性别' /><label for='sex-man'>男</label>
+            <input type=radio name=Sex id='sex-woman' value='女'/><label for='sex-woman'>女</label>
+         </div>
+
+         <button id=regist >注册</button><a target="_top" id="cancel">返回</a>
+     </form>
+</body>
+</html>

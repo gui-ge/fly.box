@@ -1,0 +1,140 @@
+﻿
+.comment-list
+{
+    min-height: 50px;
+    position: relative;
+}
+
+#no-comment-msg
+{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: none;
+}
+
+#no-comment-msg label
+{
+    color: Blue;
+    cursor: pointer;
+}
+
+.no-comments #no-comment-msg
+{
+    display: block;
+}
+
+.comment #content-blocks
+{
+    height: auto;
+}
+
+#comment
+{
+    overflow: visible;
+    margin-bottom: 150px;
+    height: auto;
+    background-color: White;
+}
+
+.txt-comment-content
+{
+    width: 80%;
+    height: 100px;
+    border: 1px solid #E2E2E2;
+    border-radius: 5px;
+    overflow: auto;
+    padding: 4px;
+}
+
+
+.comment-wrap
+{
+    border-bottom: 1px dotted #eee;
+    clear: both;
+    padding-bottom: 30px;
+    margin-bottom: 8px;
+}
+
+.comment-info
+{
+    color: #666;
+}
+
+.comment-icon
+{
+    height: 64px;
+    float: left;
+    margin-right: 10px;
+    border-radius: 4px;
+    border: 1px solid #f5f5f5;
+}
+
+.comment-time
+{
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.comment-content
+{
+    margin-top: 10px;
+    font-size: 13pt;
+    padding-left: 100px;
+    word-break: break-all;
+}
+
+.comment-level
+{
+    float: right;
+    margin-right: 30px;
+    font-size: 16pt;
+    font-weight: bold;
+    color: #ddd;
+    font-style: italic;
+}
+
+.pager
+{
+    font-size: 16px;
+    text-align: right;
+}
+
+.pager-above
+{
+    border-bottom: 1px dotted #eee;
+    padding-bottom: 5px;
+    margin-bottom: 8px;
+}
+
+
+.comment-cmds
+{
+    text-align: right;
+    position: absolute;
+    right: 25px;
+    display: none;
+}
+
+.comment-wrap:hover .comment-cmds
+{
+    display: block;
+}
+
+.btn-del-comment
+{
+    color: Blue;
+    cursor: pointer;
+}
+
+#comment-buttons
+{
+    margin-top: 10px;
+}
+
+.btn-cancel-comment
+{
+    display: none;
+}
+

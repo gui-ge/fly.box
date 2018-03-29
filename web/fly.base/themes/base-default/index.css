@@ -1,0 +1,167 @@
+﻿html, body
+{
+    overflow: hidden;
+    line-height: 1.5;
+    color: #2c4a77;
+}
+
+a
+{
+    color: #2c4a77;
+}
+
+a:hover
+{
+    color: #4682D1;
+}
+
+#top-block
+{
+    height: 50px;
+    left: 0px;
+    right: 0px;
+    border-bottom: 1px solid #eee;
+    position: absolute;
+}
+
+#left-block
+{
+    width: 188px;
+    top: 50px;
+    bottom: 0px;
+    border-right: 1px solid #e2e2e2;
+    background-color: rgb(245, 245, 245);
+    position: absolute;
+    z-index: 1;
+    line-height: 25px;
+}
+
+#content-block
+{
+    position: absolute;
+    top: 50px;
+    bottom: 0px;
+    left: 189px;
+    right: 0px;
+}
+
+#content-frame
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#logo-div
+{
+    width: 128px;
+    height: 50px;
+    overflow: hidden;
+    float: left;
+}
+
+#user-name
+{
+    margin-top: 10px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+#user-info
+{
+    float: left;
+    margin-left: 10px;
+}
+
+#top-right
+{
+    margin: 3px 10px 0px 0px;
+    float: right;
+}
+
+#search-bar
+{
+    position: absolute;
+    right: 0px;
+    top: 22px;
+    border-radius: 4px 0px 0px 0px;
+    background: #E7E7E7;
+    border-top: 1px solid #E0E0E0;
+    border-left: 1px solid #E0E0E0;
+    padding: 4px 8px 0px 4px;
+}
+#search-bar form
+{
+    border-radius: 4px 0px 0px 0px;
+    border-left: 1px solid #d0d0d0;
+    border-top: 1px solid #d0d0d0;
+    background: white url(imgs/icons/search.png) no-repeat 6px 2px;
+    padding-left: 30px;
+}
+
+#search-bar input
+{
+    width: 200px;
+    border-width:0px;
+    height:21px;
+}
+
+#top-line
+{
+    border-top: 2px solid #677E9B;
+    border-bottom: 2px solid #285586;
+    position: absolute;
+    top: 47px;
+    left: 0px;
+    right: 0px;
+    z-index: 11;
+    font-size:0px;
+}
+
+#top-right i
+{
+    overflow: hidden;
+    font-size: 90%;
+    border-right: 1px solid #8AA3BF;
+    border-left: 1px solid #B2A3A4;
+    margin: 0px 6px;
+}
+
+#left-block ul
+{
+    margin-left:  20px;
+}
+
+#above-menus
+{
+    margin-top:10px;
+}
+
+#folder-menus li
+{
+    display:inline-block;
+    *display:inline;
+    margin-right: 10px;
+}
+
+#folder-menus a
+{
+    white-space: nowrap;
+}
+
+.menu-split
+{
+    margin:10px 0px;
+    clear:both;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+#disk-menu a
+{
+    font-weight: bold;
+    background-image: url(imgs/icons/disk.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding: 3px 0px 3px 25px;
+}
+

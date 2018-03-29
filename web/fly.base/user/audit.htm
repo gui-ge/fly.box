@@ -1,0 +1,16 @@
+﻿<input name="Id" type="hidden"/>
+
+<dl><label>被审核用户：</label><span id='user-info' title='被审核用户'></span> <a href='form.htm?m=user&id={Id}'>修改用户信息</a></dl>
+<div class="form-field">
+    <label></label>
+    <input type="radio" name="Status" id='wait-audit' value='16' rule='*|tips:请选择审核状态' /><label id='wait-audit-label' class='on-right' disabled >未审核</label>
+    <input type="radio" name="Status" id='audit-pass' value='1' /><label class='on-right'>审核通过</label>
+    <input type="radio" name="Status" id='audit-not-pass' value='32'/><label class='on-right'>审核不通过</label>
+</div>
+<dl>
+    <label>备注</label>
+    <textarea name="Reason" title="审核不通过，建议填写不通过的原因。" ></textarea>
+</dl>
+<dl id='audit-log-block' style="visibility:hidden">
+    <label>上次审核：</label><span id='audit-log'></span>
+</dl>

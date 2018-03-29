@@ -1,0 +1,176 @@
+﻿#setting-content
+{
+    position: absolute;
+    top: 70px;
+    bottom: 0px;
+    left: 1px;
+    right: 1px;
+}
+.setting-index
+{
+    overflow: hidden;
+}
+
+#setting-content iframe
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/*********************      store       ****************************/
+.setting-store .header
+{
+    padding: 0px 0px 3px 10px;
+    color: #2c4a77;
+    border-bottom: 1px dotted #CECECE;
+    margin: 0px 0px 5px 20px;
+}
+
+.setting-store span
+{
+    display: inline-block;
+}
+
+.setting-store .size, .setting-store .used
+{
+    width: 150px;
+}
+
+.setting-store .f-m-tree
+{
+    padding: 0px 10px;
+}
+
+.setting-store #toolbar
+{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.setting-store #add-button-div
+{
+    margin: 10px 0px 0px 30px;
+}
+
+.setting-store #content-block
+{
+    display: none;
+    background-color: rgb(245, 245, 245);
+    min-width: 450px;
+    color: Black;
+}
+
+.setting-store #content-block label
+{
+    color: Gray;
+}
+
+.setting-store #content-block input
+{
+    color: Black;
+}
+
+/**********************     Skin    *************************/
+.skin-item
+{
+    width: 100px;
+    height: 100px;
+    float: left;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+    margin: 10px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.skin-item img
+{
+    height: 64px;
+    margin: 10px auto;
+    border-radius: 4px;
+}
+
+.skin-item.current
+{
+    border: 1px solid #C8C8C8;
+    background: url(imgs/icons/yes.png) no-repeat right bottom;
+}
+
+/*personal*/
+#page-left-block
+{
+    width: 188px;
+    top: 0px;
+    bottom: 0px;
+    border-right: 1px solid #e2e2e2;
+    background-color: rgba(150, 150, 150,.1);
+    position: absolute;
+    z-index: 1;
+    line-height: 25px;
+}
+
+#page-content-block
+{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 189px;
+    right: 0px;
+}
+
+#page-content-frame
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#page-left-block ul
+{
+    margin-top: 40px;
+    list-style: none;
+}
+
+#page-left-block li
+{
+    padding: 8px;
+}
+
+#page-left-block li a
+{
+    text-decoration: none;
+}
+
+#page-left-block li a:hover
+{
+    text-decoration: underline;
+}
+
+#icon-preview
+{
+    background-position: center center;
+    background-repeat: no-repeat;
+    width:128px;
+    height:128px;
+    border:1px solid #888;
+    border-radius:5px;
+    margin:-20px 0px 0px 120px;
+}
+
+
+#other-links
+{
+    margin:30px;
+}
+
+.setting-block-title
+{
+    background-color: #EFEFEF;
+    margin-top: -20px;
+    margin-right: -20px;
+    padding: 10px;
+    font-size: 16px;
+    border-bottom: 1px solid #E6E6E6;
+}

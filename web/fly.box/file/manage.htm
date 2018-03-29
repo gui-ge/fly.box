@@ -1,0 +1,137 @@
+﻿<!doctype html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html class='p-file'>
+<head>
+    <script src="../../fly.common/fly/fly.js?v2.4.0" type="text/javascript"></script>
+    <script src="../../fly.common/fly.ui/plugins/selection/selection.js?v2.4.0" type="text/javascript"></script>
+    <script src="../../fly.common/fly.ui/plugins/list-view/list-view.js?v2.4.0" type="text/javascript"></script>
+    <script src="../../fly.common/fly.ui/simple/fly-css-ui.js?v2.4.0" type="text/javascript"></script>
+
+    <script src="../common/common.js?v2.4.0" type="text/javascript"></script>
+    <script src="../common/common-box.js?v2.4.0" type="text/javascript"></script>
+    <script src="../local/langs/lang.js" type="text/javascript"></script>
+    <script src="js/manage.js?v2.4.0" type="text/javascript"></script>
+    
+    <link href="../themes/box-default/common.css?v2.4.0" rel="stylesheet" type="text/css" />
+    <link href="../themes/box-default/file/file.css?v2.4.0" rel="stylesheet" type="text/css" />
+    
+    
+    <link href="../../fly.common/fly.ui/simple/default.css?v2.4.0" rel="stylesheet" type="text/css" />
+    <link href="../../fly.common/fly.ui/plugins/themes/blue/fly-base.css?v2.4.0" rel="stylesheet" type="text/css" />
+    <link href="../../fly.common/fly.ui/plugins/themes/common/dialog.css?v2.4.0" rel="stylesheet" type="text/css" />
+    <link href="../themes/box-default/dialog.css?v2.4.0" rel="stylesheet" type="text/css" />
+    <script src="../../fly.common/fly.ui/plugins/pager/simple.js?v2.4.0" type="text/javascript"></script>
+    <link href="../../fly.common/fly.ui/plugins/themes/plain/simple-pager.css?v2.4.0" rel="stylesheet"
+        type="text/css" />
+</head>
+<body class="a-button">
+    <script id="nodeTemplate" type="template">
+        <li id='{node.id}' class='f-lv-node node-type-{node.type} {manager.getFixCss(node)} ex-{node.ex} {node.fav?'node-faved':''} {@if node.type!='folder' && node.uploaded<node.size} node-not-end {if@} {@if ((node.acl||page.dirSetting.acl) & fly.box.ACL.comment)==fly.box.ACL.comment } node-can-comment {if@} {node.cc?"node-has-comment":""}'>
+            <div class=f-checkbox ></div>
+            <a class=node-icon {@if node.share}title='已分享 {node.share}'{if@} {@if node.url} {manager.getOpen(node)} {@else} ondblclick="manager.open('{node.id}')" {if@} >{@if node.share}<i class=share></i>{if@}</a>
+            <div class=node-infos >
+                <div>
+                    <a class=node-name title='{node.name} {@if node.type!='folder' &&  node.uploaded<node.size} (已上传 {$.sizeFormat(node.uploaded)}) {if@}' {@if node.url} {manager.getOpen(node)} {@else} href='javascript:;' onclick="manager.open('{node.id}');return false;" {if@} >{node.name}</a>
+                    <a class='node-fav' href='javascript:;' onclick="manager.fav('{node.id}')" title="{node.fav?'取消收藏':'收藏'}"><i></i></a>
+                    <a class='node-comment' href='javascript:;' onclick="manager.comment(this,'{node.id}')" title="{node.cc?node.cc+'条':""}评论"><i></i><span>{node.cc||''}</span></a>
+                </div>
+                <em class=node-time >{node.time && node.time.format($.box.dt2Format)}</em>
+                <a class='node-user' href='../../u-share.aspx/id-{node.userId}' target=blank title="{node.userName} 上传，单击可打开{node.userName}分享中心。"><em>{node.userName}</em></a>
+                <em class=node-size {@if node.type!='folder' &&  node.uploaded<node.size} title="已上传 {$.sizeFormat(node.uploaded)}" {if@}>{node.sizeDes || $.sizeFormat(node.size)}</em>
+            </div>
+            <div class=node-commands >
+                {@if node.type!='folder'}<a class=node-cmd-down href='javascript:;' title='下载文件(选中可以打包下载文件，速度更快。)' onclick="manager.down('{node.id}')"></a>
+                <a class=node-cmd-open href='javascript:;' title='浏览' onclick="manager.open('{node.id}')"></a>{if@}
+                <a class=node-cmd-edit href='javascript:;' title='编辑' onclick="manager.edit('{node.id}')"></a>
+                <a class=node-cmd-share href='javascript:;' title='分享文件' onclick="manager.doShare('{node.id}')"></a>
+                <!-- <a class=node-cmd-fix href='javascript:;' title='固定到菜单' onclick="manager.fixFolder('{node.id}')"></a> -->
+                <a class=node-cmd-more href='javascript:;' title='更多' onclick="manager.showMore(this,'{node.id}')"></a>
+            </div>
+        </li>
+    </script>
+    <div id="pager">
+        <a id='pager-info'></a>
+        <span id='pager-buttons'>
+            <a id='previous-page' title='上一页'>«</a>
+            <span id='pager-pages'></span>
+            <a id='next-page' title='下一页'>»</a>
+        </span>
+    </div>
+    <div id='cmd-bar'>
+        <span id="add-buttons">
+            <button id='upload-btn'><i></i><span></span></button>
+            <div id='add-menus' class="f-menu">
+                <button id='add-app'><i></i><span>添加在线应用</span></button>
+                <button id='add-url'><i></i><span>添加网址</span></button>
+                <!--<button id='down-cloud'><i></i><span>云端下载</span></button>-->
+            </div>
+        </span>
+        <span id='new-menu'>
+            <button id='new-folder' class='down-arrow' onclick='manager.newFolder()'><i></i>创建文件夹<!--<b class='arrow f-menu-toggle'></b>--></button>
+           <!-- <ul class="f-menu" style="z-index:10000">
+                <li onclick='manager.newFolder()'><a>文件夹</a></li>
+                <li class="divider"></li>
+                <li><a>网页文档</a></li>
+                <li><a>Word 文档</a></li>
+                <li><a>Excel 文档</a></li>
+            </ul>-->
+         </span>
+         <a id='to-parent' onclick="manager.toParent(this)"></a>
+    </div>
+    <div id='path-bar'>
+        <span id='paths'></span><a id='path-end'></a>
+    </div>
+    <div id='show-bar' class="show-bar">
+        <div class="left-block">
+            <span class="tool-block"><div id='select-all' class='f-checkbox' oncontextmenu='return false' title='全选、右击反选'></div></span>
+            <span id='type-block' class="tool-block">
+                <a id='show-all' class='f-checked' title="显示全部"><i></i>全部</a>
+                <a id='only-doc' title="仅文档"><i></i>文档</a>
+                <a id='only-image' title="仅图片"><i></i>图片</a>
+                <a id='only-audio' title="仅音乐"><i></i>音乐</a>
+                <a id='only-video' title="仅视频"><i></i>视频</a>
+                <a id='only-compress' title="仅压缩文件"><i></i>压缩</a>
+                <a id='only-app' title="仅应用"><i></i>应用程序</a>
+            </span>
+            <!--<span id="mark-block" class="tool-block">
+                <a id='only-fav'><i></i>收藏</a>
+                <a id='only-share'><i></i>分享</a>
+            </span>-->
+        </div>
+        <div class='right-block'>      
+            <span id='sort-block' class="tool-block" >
+                <a class='down-arrow f-menu-toggle'><span>时间 • 新到旧</span><b class='arrow'></b></a>
+                <ul class="f-menu" style="z-index:10000">
+                    <li sort="Time" desc="1"><a>时间 • 新到旧</a></li>
+                    <li sort="Time"><a>时间 • 旧到新</a></li>
+                    <li class="divider"></li>
+                    <li sort="Name"><a>文件名 • 顺序</a></li>
+                    <li sort="Name" desc="1"><a>文件名 • 倒序</a></li>
+                    <li class="divider"></li>
+                    <li sort="Size" desc="1"><a>文件 • 大到小</a></li>
+                    <li sort="Size"><a>文件 • 小到大</a></li>
+                </ul>
+            </span>
+            <span id="view-block" class="tool-block">
+                <a id='is-list'><i></i>列表</a>
+                <a id='is-tile'><i></i>平铺</a>
+                <a id='is-icon'><i></i>图标</a>
+            </span>
+        </div>
+    </div>
+    <div id="cmds-menu" class="a-button">
+        <a id="menu-open" class='single' onclick='manager.openByMenu()'>打开</a>
+        <a id="menu-down" class='single' onclick='manager.down()'>下载</a> 
+        <a id="menu-comp-down" onclick='manager.compDown()' title="打包下载，速度更快！">打包下载</a>
+        <a id="menu-share" onclick='manager.doShare()'>分享</a>
+        <a id="menu-send-ta" onclick='manager.sendToTa()'>发送给Ta们</a>
+        <a id="menu-send-mail" onclick='manager.sendByMail()'>发送到邮箱</a>
+        <a id="menu-copy" onclick='manager.copy()'>复制</a>
+        <a id="menu-move" onclick='manager.move()'>剪切</a>
+        <a id="menu-rename" onclick='manager.rename()'>重命名</a>
+        <a id="menu-delete" onclick='manager.remove()'>删除</a>
+    </div>
+    <div class='list-loading'></div>
+    <ul id="file-list">
+    </ul>
+</body>
+</html>

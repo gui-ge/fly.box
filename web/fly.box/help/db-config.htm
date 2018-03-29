@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+<h3>数据库安装配置说明</h3>
+    <p>一、请采用SQL SERVER 2005或以上版本。</p>
+    <p>二、采用以下两种方式中任一种安装数据库
+        <p>&nbsp;&nbsp;&nbsp; 1、附加数据库：将安装包db目录中 Fly.Box.mdf 附加到SQL SERVER中，如附加出错，可在安装包《数据库附件失败.doc》中查找解决办法。</p>
+        <p>&nbsp;&nbsp;&nbsp; 2、还原数据库：将安装包db目录中 Fly.box-*****.bak 还原到SQL SERVER中，<a href="http://wenku.baidu.com/link?url=940TIUd-MxNgXM99hd9opHbwHY42AaWjtyFLks-skJYFsWvI01obJfI69TLcb8zHwpRvEq3yueFx5qzbykbftst4wZGma0J8pYHdzykW2Ei" target="_blank">点击查看还原方法</a>。</p>
+    </p>
+    <p>
+    三、网盘配置
+        <p>&nbsp;&nbsp;&nbsp; 
+            要将网盘和数据库联系起来，必须要在网盘配置文件中修改数据库连接字符串，配置文件是安装目录中的Web.Config文件，可以直接用记事本编辑。数据库连接字符串格式如下：<p 
+        style="margin-left: 40px">&lt;add 
+            name=&quot;fly-box&quot; connectionString=&quot;data source=数据库服务器;initial 
+            catalog=数据库名称;persist security info=True;user id=数据库用户;password=数据库密码;Connect 
+            Timeout=6;multipleactiveresultsets=True;App=EntityFramework;&quot; /&gt;</p>
+    <p style="margin-left: 40px">
+        只要将中文部分修改成对应的值即可，其中“数据库服务器”是安装SQL SERVER的计算机IP或名称，如果SQL 
+        SERVER和网盘安装在同一台计算机，可以直接使用“localhost”或者“.”。</p>
+</body>
+</html>

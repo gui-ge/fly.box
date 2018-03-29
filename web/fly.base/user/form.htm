@@ -1,0 +1,41 @@
+﻿{@if !page.isAdd}
+<dl>
+    <label></label><a href='form.htm?m=user&form=audit&id={Id}'>审核用户“{LoginName}（{NickName}）”</a>
+</dl>
+{if@}
+
+<dl>
+    <label>所属部门</label>
+    <input name="DepartmentName" rule='*|tips:请选择所属部门' readonly="1" />
+    <input name="DepartmentId" type="hidden" />
+</dl>
+<dl>
+    <label>登录名</label>
+    <input name="LoginName" rule="*|2-|trim" />
+</dl>
+<dl>
+    <label>名字/昵称</label>
+    <input name="NickName" rule="*|1-50|trim" />
+</dl>
+<div class="form-field">
+    <label>性别</label>
+    <input type=radio name=Sex id='sex-man' value='男' rule='*|tips:请选择性别' /><label for='sex-man' class='on-right'>男</label>
+    <input type=radio name=Sex id='sex-woman' value='女'/><label for='sex-woman' class='on-right'>女</label>
+</div>
+<dl>
+    <label>手机</label>
+    <input name="MobilePhone" rule='phone' />
+</dl>
+<dl>
+    <label>邮箱</label>
+    <input name="Email" rule='mail' />
+</dl>
+<dl>
+    <label>初始密码</label>
+    <input name="pwd" rule="{@if page.isAdd}*::请输入正确的初始密码{if@}"  />
+</dl>
+<!--<div class="form-field">
+    <label></label>
+    <input name="IsManager" type="checkbox" />
+    <label class='on-right'>是否后台管理员</label>
+</div>-->

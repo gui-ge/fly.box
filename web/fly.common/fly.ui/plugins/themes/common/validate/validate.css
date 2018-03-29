@@ -1,0 +1,38 @@
+﻿
+
+
+html body .f-v-error
+{
+	border:1px dotted red;
+}
+
+.f-v-msgBox
+{
+	font:12px/1.5 Tahoma, Arial, "宋体", sans-serif;
+	background:url(icon.gif) no-repeat -100px;
+	padding-left:15px;
+	display:inline-block;
+}
+
+.f-v-msgBox-error
+{
+	color:Red;
+	background-position: left -67px;
+}
+
+
+.f-v-msgBox-tips
+{
+    color: #666666;
+    background-position:left -209px;
+}
+
+.f-v-msgBox-right
+{
+    background-position:left -279px;
+}
+
+.f-ime-d
+{
+	ime-mode:disabled
+}

@@ -1,0 +1,118 @@
+﻿<!doctype html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html class='base-index-page' style="overflow:hidden">
+<head>
+    <title></title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <style type="text/css">
+        html, body
+        {
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        #content-block
+        {
+            position: absolute;
+            top: 25px;
+            bottom: 0px;
+            width: 100%;
+            right: 0px;
+        }
+        
+        #content-frame
+        {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+        
+        #menus
+        {
+            padding: 0px 0px 5px 5px;
+            border-bottom: 1px solid #dddddd;
+            border-radius: 8px 0px 0px 8px;
+            position: absolute;
+            left: 75px;
+            right: 0px;
+            background: white;
+        }
+        
+        #menus li
+        {
+            float: left;
+            margin-left: 10px;
+            margin-top: 5px;
+        }
+        .menu-start
+        {
+            background-color: #dddddd;
+            position: absolute;
+            line-height: 22px;
+            color: #2c4a77;
+            font-weight: bold;
+            padding: 2px 40px 0px 10px;
+            border-bottom: 1px solid #dddddd;
+        }
+    </style>
+    <link href="../../themes/base-default/common.css?v2.4.0" rel="stylesheet" type="text/css" />
+    <script src="../../../fly.common/fly/fly.js?v2.4.0" type="text/javascript"></script>
+    <script src="../../../fly.base/common/common.js?v2.4.0" type="text/javascript"></script>
+</head>
+<body>
+    <div class='menu-start'>
+        基础资料</div>
+    <ul id='menus'>
+        <li><a id="org" target='base-f' href="../../../fly.base/common/list.htm?m=org">单位</a></li>
+        <li><a id="department" target="base-f" href="../../../fly.base/common/list.htm?m=department">
+            部门</a></li>
+        <li><a id="role" target="base-f" href="../../../fly.base/common/list.htm?m=role">用户组</a></li>
+        <li><a id="user" target="base-f" href="../../../fly.base/common/list.htm?m=user">用户</a></li>
+        <li><a id="account" person="1" target="base-f" href="../../../fly.base/common/form.htm?m=user&form=account">
+            帐号</a></li>
+    </ul>
+    <div id="content-block">
+        <iframe id="content-frame" name='base-f' frameborder="0" allowTransparency=1 ></iframe>
+    </div>
+    <script>
+        !function () {
+            var $ = fly;
+            window.indexPath = '../../../fly.base/'
+            var menuItems = $('#menus a');
+            if (!parent.fly.box.isWithOrg) {
+                menuItems.where('o=>o.getAttribute("person")!="1"').remove();
+                menuItems = $('#menus a');
+            }
+
+            var p = $.getQuery('page');
+            $('#content-frame').attr('src', p ? $('#' + p).attr('href') : menuItems[0].href);
+            fly.base.Index = $.Class({
+                constructor: function () {
+                    this.createMembers();
+                    this.getLoginInfo();
+                },
+                loginInfo: { folderMenus: {} },
+                getLoginInfo: function () {
+                    var me = this;
+                    $.base.getUserContext(function () {
+                        me.init(window.userContext);
+                    });
+                },
+                init: function (data) {
+                    this.loginInfo = data
+                },
+                createMembers: function () {
+                    this.contentFrame = $('#content-frame');
+                }
+            });
+
+            window.index = new fly.base.Index();
+            window.search = function (key) {
+                try {
+                    document.getElementsByTagName("iframe")[0].contentWindow.search(key);
+                } catch (e) { }
+            }
+        } ()
+
+    </script>
+</body>
+</html>

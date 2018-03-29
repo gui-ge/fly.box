@@ -1,0 +1,192 @@
+﻿body
+{
+    padding: 0px 8px;
+}
+
+#top-empty
+{
+    display:inline-block;
+}
+
+
+#title-block
+{
+    font-size:14px;
+    color:#2c4a77;
+    font-weight:bold;
+    padding:15px 0px 5px 5px; 
+}
+
+#title-block *
+{
+    vertical-align:middle;    
+}
+
+#toolbar
+{
+    background:url(imgs/bar/toolbar-bg.gif);
+    height:35px;
+    line-height:30px;
+    padding-left:5px;
+    border-bottom:0px solid #c8cfda;
+}
+
+#toolbar a
+{
+    cursor:pointer;
+    text-decoration:none;
+    background-color:White;
+    color: Black;
+    padding: 0px 12px;
+    line-height: 23px;
+    border: 1px solid #657674;
+    border-radius: 4px;
+    display: inline-block;
+    
+}
+
+#toolbar>*,#toolbar .right-block>*
+{
+    vertical-align:middle;
+    margin-right:5px;
+    margin-top:5px;
+    *margin-top:3px;
+}
+
+#toolbar .right-block
+{
+    margin-top:0px;
+}
+
+#toolbar input
+{
+    vertical-align:middle;
+}
+
+#toolbar a:active
+{
+    color:#4682D1;
+    background-image: -webkit-linear-gradient(top, rgb(243, 243, 243) 0%, rgb(235, 235, 235) 90%, rgb(255, 255, 255) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ECECEC',endColorstr='#ffffff',GradientType=0 );
+}
+
+#toolbar a:hover,#toolbar select:hover
+{
+    color:#4682D1;
+}
+
+#toolbar .split i
+{
+    border-left: 1px solid #A7A7A7;
+    position: relative;
+    top: 3px;
+    padding-top: 2px;
+}
+
+#toolbar .right-block
+{
+    float:right;
+}
+
+#list-container
+{
+    height0: 100%;
+}
+
+
+#left-container
+{
+    clear:both;
+    float: left;
+    width: 200px;
+    height: 80%;
+    border-right: 1px solid #BEBEBE;
+    border-top: 1px solid #BEBEBE;
+    overflow:auto;    
+}
+
+#right-container
+{
+    clear:both;
+    float: right;
+    width: 200px;
+    height: 80%;
+    border-left: 1px solid #BEBEBE;
+    border-top: 1px solid #BEBEBE;
+    overflow:auto;
+}
+
+
+
+#toolbar .form-control
+{
+    display:inline-block;
+    margin-top:3px;
+    vertical-align:top;
+}
+
+#toolbar select
+{
+    height:25px;    
+}
+
+.F-WebKit #toolbar select,.F-Gecko #toolbar select
+{
+    border-radius: 4px;
+    border:1px solid rgb(101, 118, 116);
+}
+
+/******** grid ********/
+
+.f-grid-wrap
+{
+    border-left-width:0px;
+    border-right-width:0px;
+}
+
+.f-grid-t 
+{
+    border-bottom-width:0px;
+}
+
+
+.f-pager
+{
+    display: none;
+}
+
+.f-pager-more,.f-more-page .f-pager
+{
+    display: block;
+}
+
+.btn-authority
+{
+    background-position: -100px 0px;
+}
+
+.btn-authority:hover
+{
+    background-position: -100px -20px;
+}
+
+.btn-manageUser
+{
+    background-position: 0px 0px;
+}
+
+.btn-manageUser:hover
+{
+    background-position: 0px -20px;
+}
+
+.list-loading
+{
+    position:absolute;
+    top:60px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    z-index:10;
+    display:none;
+}

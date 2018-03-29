@@ -1,0 +1,28 @@
+﻿<dl>
+    <label>上级部门</label>
+    <input name="ParentName" rule='*|tips:请选择上级单位' readonly="1" />
+    <input name="ParentId" type="hidden" />
+</dl>
+<dl>
+    <label>名称</label>
+    <input name="Name" rule="*|2-50|trim|tips:必须输入部门名称" />
+</dl>
+{@if !page.isAdd}
+<dl>
+    <label>部门主管</label>
+    <input name="ManagerName" readonly="1" />
+    <input name="ManagerUserId" type="hidden" />
+</dl>
+{if@}
+<dl>
+    <label>联系人</label>
+    <input name="ContactPerson" />
+</dl>
+<dl>
+    <label>联系电话</label>
+    <input name="Phone" rule="phone"/>
+</dl>
+<dl>
+    <label>地址</label>
+    <input name="Address"/>
+</dl>

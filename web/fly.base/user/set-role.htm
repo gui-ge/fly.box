@@ -1,0 +1,9 @@
+﻿<dl>
+    <label style="width:auto;">用户：</label>
+    <input value="{o.users.select('o=>o.name').join(',')}" disabled />
+</dl>
+<dl>
+    <fieldset >
+        <legend>用户组</legend><div id="treeContainer" style="min-height:200px;max-height:400px;overflow:auto"></div>
+    </fieldset>
+</dl>

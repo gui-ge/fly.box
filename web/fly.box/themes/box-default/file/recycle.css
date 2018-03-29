@@ -1,0 +1,52 @@
+﻿/*.with-share #cmd-bar, .from-share #mark-block, .share-to #only-share
+{
+    display: none;
+}
+
+.from-share #menu-delete, .from-share #menu-rename, .from-share #menu-move
+{
+    display: none;
+}
+
+.from-share #path-root
+{
+    background: url(../imgs/file/ico-operate.gif) -176px -16px no-repeat;
+}
+*/
+.recycle #only-share,
+.recycle #upload-btn,.recycle #new-menu,.recycle #menu-copy,.recycle #menu-move, .recycle #menu-rename,
+.recycle #menu-open,.recycle #menu-share, .recycle #menu-down ,.recycle #menu-send-ta ,.recycle #menu-send-mail,.recycle #menu-comp-down
+.recycle .node-commands a
+{
+    display: none;
+}
+
+.recycle .node-commands .node-cmd-restore
+{
+    display:inline-block;
+}
+
+.node-commands .node-cmd-restore
+{
+    background-position: -400px 0px;
+}
+
+.node-commands .node-cmd-restore:hover
+{
+    background-position: -400px -20px;
+}
+
+#clear-recycle 
+{
+    font-weight:bold;
+}
+
+#clear-recycle i
+{
+    background:url(../imgs/file/list-opt.png) -160px 0px;
+}
+
+#clear-recycle:hover i
+{
+    background-position:-160px -20px;
+}

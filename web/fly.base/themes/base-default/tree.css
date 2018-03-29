@@ -1,0 +1,49 @@
+﻿html body
+{
+    height:auto;
+}
+
+#tree-container
+{
+    margin-top:10px;
+    overflow:auto;
+}
+    
+#search-box
+{
+    height:25px;
+    width: 250px;
+    border: 0px solid white;
+    border-bottom: 1px solid #9F9F9F;
+    vertical-align: middle;
+    line-height:25px;
+    background-color:transparent;
+}
+
+.tree-node-search
+{
+    background-image:url(imgs/icons/search.png);
+}
+
+.tree-node-org
+{
+    background-image:url(imgs/icons/tree/org-16.png);
+}
+
+.tree-node-department
+{
+    background-image:url(imgs/icons/tree/depart-16.png);
+}
+
+
+.tree-node-user
+{
+    background-image:url(imgs/icons/tree/user-16.png);
+}
+
+.role-select
+{
+    position: absolute;
+    top: 27px;
+    right: 0px;
+}

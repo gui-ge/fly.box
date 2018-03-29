@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        body
+        {
+            font-size:14px;
+            line-height:25px;
+            }
+    </style>
+</head>
+<body>
+    
+    <h4>在Fly.Box自动创建文件夹时，可使用以下动态变量：</h4>
+    <ul>
+        <li>{姓名}：当前登录用户的姓名</li>
+        <li>{登录名}：当前登录用户的登录名</li>
+        <li>{部门名称}：当前登录用户所在部门的名称</li>
+        <li>{年}：当前年份</li>
+        <li>{月}：当前月份</li>
+        <li>{日}：当前日</li>
+        <li>{时}：当前时</li>
+        <li>{分}：当前分</li>
+        <li>{秒}：当前秒</li>
+        <li>{周}：星期几</li>
+    </ul>
+    <div>如需要建立多级目录，可使用“\”或“/”分隔</div>
+    <div>
+        如：<br />
+        1.需要按自动创建文件夹“工作日报”，在工作日报目录下按日期自动创建目录，则可使用表达式“工作日报\{年}-{月}-{日}”<br />
+        2.需要学生在交作业时按自己名称加日期创建文件夹，则可使用表达式“{姓名}\{年}-{月}-{日}”
+    </div>
+</body>
+</html>

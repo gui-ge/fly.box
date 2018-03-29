@@ -1,0 +1,58 @@
+﻿<!DOCTYPE HTML>
+<html class='p-login' iPath="">
+<head>
+    <meta name="keywords" content="flybox,企业网盘,网络硬盘,网盘,大文件上传,断点续传,分享"/>
+    <meta name="description" content="Fly.Box企业网盘，支持多单位、多用户、断点续传、提取码、分享等" />
+    <link rel="icon" href="../favicon.ico" mce_href="../favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../favicon.ico" mce_href="../favicon.ico" type="image/x-icon">
+    <link href="themes/box-default/common.css?v2.4.0" rel="stylesheet" type="text/css" />
+    <link href="themes/box-default/login.css?v2.4.0" rel="stylesheet" type="text/css" />
+    <script src="../fly.common/fly/fly.js?v2.4.0" type="text/javascript"></script>
+    <script>window.needLogin = false</script>
+    <script src="local/langs/lang.js" type="text/javascript"></script>
+    <script src="common/common.js?v2.4.0" type="text/javascript"></script>
+    <script src="../fly.common/fly.ui/plugins/input/empty-box.js?v2.4.0" type="text/javascript"></script>
+    <script>$L('<title>{name} {ver}</title>')</script>
+</head>
+<body>
+    <div id="banner">
+    </div>
+    <div id="center-content">
+        <div id="feature-box">
+        </div>
+        <div id="login-box">
+            <form onsubmit="return false">
+                <div id="message-box"><script>$L('loginSlogan')</script></div>
+                <span id="account-box" class="empty-box">
+                    <input name="fly-account" emptyvalue="请输入帐号/手机/邮箱" />
+                </span><span id="password-box" class="empty-box">
+                    <input id="password" name="fly-password" type="password" cssBox='#password-box' emptyvalue="请输入您的密码" title="请输入您的密码">
+                </span>
+                <div id="login-buttons">
+                    <button type="submit" id="login">登录</button>
+                </div>
+                <div id="login-other">
+                    <input type="checkbox" name="auto-login" id="auto-login" /><label for="auto-login">记住密码</label>
+                    <a href="#" class="a-button" id="regist" >立即注册</a>
+                    <a href="#" class="a-button" id="forget-pwd">忘记密码</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="other-links">
+            <a id="to-share" href="../index.aspx" ><i></i>分享中心</a>&nbsp;
+            <a id="down-app" href="do/downapp.ashx" target="_blank"><i></i>手机客户端</a>&nbsp;
+            <a id="down-pc" href="client-pc/setup.exe" target="_blank"><i></i>PC客户端</a>
+        </div>
+        <div id="right-box">
+            <div>
+            </div>
+            <div>
+                <script>$L('copyLogin')</script>
+            </div>
+        </div>
+    </div>
+    <script src="js/login.js?v2.4.0" type="text/javascript"></script>
+</body>
+</html>

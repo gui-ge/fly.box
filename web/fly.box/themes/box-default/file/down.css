@@ -1,0 +1,21 @@
+﻿html, body
+{
+    font-size: 14px;
+}
+
+
+#down-status
+{
+    line-height:30px;
+}
+
+#start-down
+{
+    display:none;
+}
+
+#down-error
+{
+    display:none;
+    color:Red;
+}

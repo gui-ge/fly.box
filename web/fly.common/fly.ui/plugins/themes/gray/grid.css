@@ -1,0 +1,319 @@
+.f-grid-t ,.f-grid-wrap,.f-grid-hc,.f-grid-y-scroll .f-grid-h-wrap,.f-grid-c ,.f-grid-h-outer,.f-grid .f-pager,.f-grid-child-table
+{
+	border-style:dotted;
+	border-color:#cccccc;
+	border-width:0px;
+}
+
+.f-grid-ellipsis .f-grid-c
+{
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	-moz-text-overflow: ellipsis;
+}
+
+.f-grid
+{
+	overflow:hidden;
+}
+
+.f-grid-wrap
+{
+	position:relative;
+	border-width:1px;
+	border-style:solid;
+}
+
+.f-grid-t
+{
+	border-width:0px 1px 1px 0px;
+}
+
+.f-grid-h,.f-grid-t
+{
+	border-collapse:collapse;
+	table-layout:fixed;
+	width:100%;
+}
+
+.F-IE6 .f-grid-h-wrap,.F-IE6 .f-grid-body
+{
+	width:100%;
+}
+
+.f-grid-hc
+{
+	border-width:1px;
+	white-space:nowrap;
+	overflow:hidden;
+}
+
+body .f-grid-h-tr-empty
+{
+	height:0px;
+}
+
+.f-grid-h-tr-empty td
+{
+	border-width:0px;
+}
+
+.f-grid-h-tr-first td
+{
+	border-top-width:0px;
+}
+
+.f-grid-hc-col
+{
+	border-bottom-width:0px;
+}
+
+.f-grid-y-scroll .f-grid-h-wrap
+{
+	border-right-width:1px;
+}
+
+.f-grid-c 
+{
+	border-width:1px 0px 0px 1px;
+	overflow:hidden;
+}
+
+.f-grid-c-first
+{
+	border-left-width:0px;
+}
+
+.f-grid-r-first .f-grid-c 
+{
+	border-top-width:0px;
+}
+
+
+.f-grid-tr:hover, .f-grid-tree .f-node-el:hover,.f-grid .f-grid-row-editing
+{
+	background-color: #F2F9FD;
+}
+
+.f-grid-tree tr:hover
+{
+	background-color:transparent;
+}
+
+.f-grid-r-selected .f-grid-c
+{
+    color:Black;
+	background-color: #FDF8D0;
+}
+
+.f-grid-tr
+{
+    height:34px;
+}
+
+.f-grid-row-alt
+{
+	background-color: #FCFCFC;
+}
+
+.f-grid-h 
+{
+	height:28px;
+	font-weight:bold;
+	text-align:center;
+}
+
+
+.f-grid-col-resize
+{
+	float:right;
+	width:8px;
+	cursor:col-resize;
+	position:relative;
+}
+
+.f-grid-col-resize div
+{
+    width:100%;
+    height:100px;
+    top:-25px;
+    position:absolute;
+    background-color:white;
+    filter:alpha(opacity=1); 
+    opacity:0.01;
+}
+
+.F-Opera .f-grid-col-resize
+{
+     cursor: w-resize ;
+}
+
+.f-grid-resize-mark
+{
+    position: absolute;
+    border: 1px solid #B7B7B7;
+    background-color: gray;
+    width: 0px;
+    z-index:10;
+}
+
+.f-grid-col-sort-ico
+{
+	position:relative;
+	left:0px;
+	float:left;	
+}
+
+.f-grid-col-sort-ico div
+{
+	background-image:url(../common/imgs/blue-icons.png);
+	background-repeat:no-repeat;
+	background-position: 100px 100px;
+	position:absolute;
+	width:8px;	
+	height:6px;
+	
+	z-index:10;
+	left:3px;
+}
+
+.f-grid-col-sort-ico-asc div
+{
+	background-position: -4px -22px;
+}
+
+.f-grid-col-sort-ico-desc div
+{
+	background-position: -67px -22px;
+}
+
+.f-grid-body
+{
+	overflow:auto;
+	position:relative;
+}
+
+.f-grid-body .f-grid-body
+{
+	overflow-x:hidden;
+}
+
+.f-grid-h-wrap 
+{
+    position:relative;
+	overflow:hidden;
+}
+
+.f-grid-h-outer
+{
+	cursor:default;
+	background-color:#f9f9f9;
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr=#f9f9f9, endColorstr=#e8e8e8);
+	background: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#e8e8e8));
+	background: -moz-linear-gradient(top, #f9f9f9, #e8e8e8);
+	background-image: -o-linear-gradient(top, #f9f9f9, #e8e8e8);
+	zoom:1;
+	border-bottom-width:1px;
+	border-bottom-style:solid;
+	position:relative;
+}
+
+
+.f-grid-emptyTR
+{
+	height:10px;
+}
+
+.f-grid-wrap .f-pager
+{
+	position:relative;
+	zoom:1;
+}
+
+.f-grid-hc:hover
+{
+    background-color:#e8e8e8;
+    filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr=#e8e8e8, endColorstr=#f9f9f9);
+	background: -webkit-gradient(linear, left top, left bottom, from(#e8e8e8), to(#f9f9f9));
+	background: -moz-linear-gradient(top, #e8e8e8, #f9f9f9);
+	background-image: -o-linear-gradient(top, #e8e8e8, #f9f9f9);
+}
+
+
+
+.f-grid-ajax-status
+{
+    position:absolute;top:40%;left:45%;width:32px;height:32px
+}
+
+
+.f-grid-tree .f-icon
+{
+	background-image:url(../common/imgs/file.gif);
+}
+
+.f-grid-tree .f-node-parent .f-icon
+{
+	background-image:url(../common/imgs/folder.gif);
+}
+
+.f-grid-tree .f-node-expand .f-icon
+{
+	background-image:url(../common/imgs/folder-open.gif);
+}
+
+.f-grid-tree .f-toggle
+{
+    background-image:url(../common/imgs/arrows.gif);
+    background-position:100px center;
+}
+
+.f-grid-tree .f-node-expand .f-toggle
+{
+    background-position:-16px center;
+}
+.f-grid-tree .f-node-expand .f-toggle:hover, .f-grid-tree .f-node-expand .f-toggle-over
+{
+    background-position:-48px center;
+}
+
+
+.f-grid-tree .f-node-collapse .f-toggle
+{
+    background-position:0px center;
+}
+
+.f-grid-tree .f-node-collapse .f-toggle:hover, .f-grid-tree .f-node-collapse .f-toggle-over
+{
+    background-position:-32px center;
+}
+
+.f-grid-child-table
+{
+	border-top-width:1px;
+}
+
+.f-node-pad
+{
+	position:relative;
+}
+
+.f-node-cbox
+{
+	vertical-align:middle;
+}
+
+.f-grid .f-pager
+{
+    border-top-width:1px;
+    border-top-style:solid;;
+    padding-top:6px;
+    padding-bottom:6px;
+}
+
+.f-grid-editor-text,.f-grid-editor-select
+{
+    width:96%;
+    margin-left:0px;
+}
+

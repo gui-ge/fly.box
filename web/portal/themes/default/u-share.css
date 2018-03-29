@@ -1,0 +1,96 @@
+﻿#share
+{
+    margin-top:20px;
+}
+
+.user-infos
+{
+    display:inline-block;
+    height:128px;
+    vertical-align:middle;
+    margin-left:5px;
+    width:100%;
+}
+    
+.user-name
+{
+    font-size:15pt;
+    padding-top:8px;
+}
+
+.user-hot
+{
+    font-size:14pt;
+    font-weight:bold;
+    margin-top:20px;
+}
+
+.user-sign
+{
+    font-size:13pt;
+    margin-top:15px;
+    white-space:normal;
+}
+
+.user-sign a
+{
+    position:absolute;
+    margin-top:-5px;
+    display:none;
+}
+
+.user-sign:hover a
+{
+    display:inline;
+}
+
+#fetch-block
+{
+    position: absolute;
+    right: 0px;
+    margin-top: 120px;
+    z-index:100;
+}
+
+#user-shares
+{
+    width:96%;
+    margin-bottom:20px;
+}
+
+#user-shares tr
+{
+    height:40px;
+}
+
+#user-shares td
+{
+    border-bottom:1px dotted #ccc;
+}
+
+.user-share .title a
+{
+    display:list-item;
+    list-style-position:inside;
+    list-style-type:disc;
+    width:0px;
+    white-space:nowrap;
+}
+
+.page-disabled
+{
+    color:Gray;
+}
+
+.pager-above
+{
+    margin-right:40px;
+    margin-top:20px;
+    padding-bottom:5px;
+    border-bottom:1px dotted #ccc;
+}
+
+.pager-below
+{
+    margin-bottom:20px;
+}

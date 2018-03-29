@@ -1,0 +1,129 @@
+﻿.view-share #upload-btn,.view-share #new-menu,
+.with-share #menu-move,.with-share #menu-copy,.with-share #type-block,.with-share #mark-block
+.from-share #mark-block, 
+.from-share #menu-share,
+.share-to #only-share,.share-to #menu-share,
+.view-share #mark-block,.view-share #path-end,
+.view-share #menu-rename,.view-share #menu-delete,.view-share #menu-rename,.view-share #menu-share,
+.from-share #cmd-bar,.share-to #cmd-bar,
+.with-share #menu-send-ta,.with-share #menu-send-mail
+{
+    display: none;
+}
+
+.from-share #menu-delete, .from-share #menu-rename,
+.from-share .node-cmd-share,.from-share .node-cmd-open,.with-share .node-cmd-open,.with-share li .node-cmd-fix,
+.with-share .node-cmd-more,
+.share-to .node-cmd-share
+{
+    display: none;
+}
+
+.from-share #path-root
+{
+    background: url(../imgs/file/ico-operate.gif) -176px -16px no-repeat;
+}
+
+/*
+.node-commands .node-cmd-saveTo
+{
+    background-position: -420px 0px;
+}
+
+.node-commands .node-cmd-saveTo:hover
+{
+    background-position: -420px -20px;
+}
+*/
+
+.view-share #new-folder
+{
+    margin-top:-1px;
+    margin-left:-8px;
+}
+
+.view-share #cmd-bar
+{
+    margin-top:8px;
+}
+
+.view-share #path-bar
+{
+    background:none;
+    border-top:1px dotted #ccc;
+    padding:6px 0px 6px 0px;
+}
+
+.view-share #file-list
+{
+    top:70px;
+}
+
+.view-share #path-bar #path-root
+{
+    padding-left:0px;
+    margin-left:10px;
+}
+
+.view-share #path-bar a
+{
+    background:url(../imgs/icons/arrow-right.gif) no-repeat left center;
+}
+
+.view-share #path-bar a:hover
+{
+    background-position:left center;
+}
+
+.view-share #pager
+{
+    margin-top:9px;
+}
+
+.view-share #pager-buttons
+{
+    display:inline;
+}
+
+.view-share #file-list
+{
+    bottom:auto;
+}
+
+.share-to .node-cmd-edit
+{
+    display:inline-block;
+}
+
+.node-commands .node-cmd-saveTo
+{
+    background-position: -420px 0px;
+}
+
+.node-commands .node-cmd-saveTo:hover
+{
+    background-position: -420px -20px;
+}
+
+
+.s-power-upload #upload-btn,.s-power-dir #new-menu,
+.s-power-upload #menu-delete
+{
+    display:inline-block;
+}
+
+.with-share #cmds-menu
+{
+    top:42px;
+}
+
+.with-share #new-menu
+{
+    margin-top:-5px;    
+}
+
+.with-share #path-root:hover
+{
+    text-decoration:none;
+}
+

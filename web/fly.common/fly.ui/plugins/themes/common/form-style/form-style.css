@@ -1,0 +1,122 @@
+﻿/* form */
+.f-form
+{
+	width: 99%;
+	background-color:#E1F2FA;
+	display:inline-block;
+	padding:3px;
+	box-sizing:border-box;
+}
+
+.f-f-inner
+{
+	border: #b3ccdd 1px solid;
+	width:100%;
+	background-color:#F5FBFF;
+	border-collapse:collapse;
+	table-layout:fixed;
+}
+
+.f-f-inner *
+{
+	vertical-align:middle;
+}
+
+.f-f-inner td
+{
+    border-bottom: #DCE8F1 1px dotted;
+}
+
+.f-f-block-title
+{
+	font-weight:bold;
+	color: #069;
+	background-color: #E1F2FA;
+	padding: 10px;
+}
+
+.f-f-block-separate,.f-f-block-space
+{
+	height:10px;
+	background-color:White;
+}
+
+.f-f-label
+{
+	width:100px;
+	height:40px;
+	padding-left:10px;
+	white-space:nowrap;
+	text-align:right;
+}
+
+.f-f-input, .f-f-inner input,.f-f-inner select
+{
+    margin: 0px 10px;
+    height: 20px;
+    color: #333333;
+    border: 1px solid #A2A2A2;
+    border-radius: 4px;
+}
+
+.f-f-mast
+{
+	color:Red;
+}
+
+.f-f-comment
+{
+	color:Gray;
+	text-decoration:none;
+}
+
+.f-f-comment:hover
+{
+	color:Black;
+}
+
+.f-f-block-toggle-left
+{
+    float:left;
+    margin-right:5px;
+}
+
+.f-f-block-toggle-right
+{
+    float:right;
+}
+
+.f-f-block-toggle
+{
+	background-image:url(Imgs/f-block-collapse.gif);
+	background-position:center center;
+	background-repeat:no-repeat;
+	height:12px;
+	width:12px;
+	cursor:pointer;
+	border:1px solid transparent;
+	_margin-top:-20px;
+	+margin-top:-10px;
+}
+
+.f-f-block-toggle:hover
+{
+	border-color:gray;
+}
+
+.f-f-block-collapse .f-f-block-toggle
+{
+	background-image:url(Imgs/f-block-expand.gif);
+}
+
+.f-f-block-collapse tr
+{
+	display:none;
+}
+
+.f-f-button-save
+{
+    margin:10px 0px 20px 200px;
+    height:40px;
+    width:80px;
+}

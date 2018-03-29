@@ -1,0 +1,210 @@
+﻿body
+{
+    padding: 0px 20px;
+}
+
+
+#title-block
+{
+    font-weight:bold;
+    font-size: 140%;
+    color: White;
+    border: 1px dotted gray;
+    background-color: rgb(43, 129, 175);
+    border-radius: 5px;
+    padding: 5px 0px 5px 30px;
+    margin-top: 20px;
+    margin-bottom:20px;
+}
+
+#toolbar
+{
+    margin-left:30px;
+}
+
+#toolbar .simple-button
+{
+    line-height:24px;
+    height:24px;
+    border-width:0px;
+    background:none;
+}
+
+form
+{
+    min-width:380px;
+    display:inline-block;
+    _display:inline;
+    zoom:1;
+    margin-top:20px;
+    border: 1px dotted #B4B4B4;
+    border-radius: 5px;
+    padding:20px 20px 20px 0px;
+    margin-left:30px;
+}
+
+.form-no-border form
+{
+    border-width:0px;
+    margin-top:5px;
+}
+
+form dl,form .form-field
+{
+    display: block;
+    margin-top: 10px;
+    margin-left:0px;
+}
+
+dl label,.form-field label
+{
+    width: 100px;
+    display: inline-block;
+    text-align: right;
+    line-height:30px;
+    white-space:nowrap;
+    color:Gray;
+    padding-right:5px;
+}
+
+label.on-right
+{
+    width:auto;
+    color:Black;
+}
+
+dl input,.form-input,input.f-combo-text
+{
+    height:25px;
+    width: 200px;
+    border: 0px solid white;
+    border-bottom: 1px solid #9F9F9F;
+    vertical-align: middle;
+    line-height:25px;
+    background-color:transparent;
+}
+
+.form-field *
+{
+    vertical-align: middle;
+}
+
+dl textarea,.form-textarea
+{
+    height:100px;
+    width: 400px;
+    border:1px solid #CECECE;
+    border-bottom: 1px solid #9F9F9F;
+    vertical-align: top;
+    line-height:25px;
+}
+
+.field-split
+{
+    border-bottom:1px solid rgb(236, 236, 236);
+    margin:20px 0px;
+}
+
+#bottom-buttons
+{
+    margin: 30px 0px 20px 150px;
+}
+
+#bottom-buttons button
+{
+    border:1px solid gray;
+    border-radius:4px;
+    padding:8px 20px ;
+    *padding:5px 10px;
+    font-size:110%;
+    background:-webkit-gradient(linear,0% 0%, 0% 100%, from(#FAFAFA), to(#E0E0E0), color-stop(0.5,#F7F7F7));
+    filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#FAFAFA,endcolorstr=#E0E0E0,gradientType=0);    
+}
+
+.field-des
+{
+    color:Gray;
+}
+
+#root-container
+{
+    display: inline-block;
+    width: 100%;
+}
+
+
+form .f-v-error
+{
+    border-bottom:1px solid red;
+}
+
+.f-v-msgBox
+{
+    color: #FF9900;
+}
+
+.f-v-msgBox-error
+{
+    color:Red;
+}
+
+#form-submit
+{
+    position:absolute;
+    left:-10000px;
+    width:0px;
+}
+
+#top-empty
+{
+    display:inline-block;
+}
+
+.node-plugin
+{
+    background-image:url(imgs/plugin-16.gif);
+}
+
+.node-module
+{
+    background-image:url(imgs/module-16.gif);
+}
+
+.node-fun
+{
+    background-image:url(imgs/fun-16.gif);
+}
+
+.in-dialog #toolbar
+{
+    position:fixed;
+    _position:absolute;
+    bottom:0px;
+    background:rgb(246,246,246);
+    
+    left: 0px;
+    width: 100%;
+    border-top: 1px solid rgb(230, 230, 230);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 0px;
+    text-align: right;
+}
+
+.in-dialog #toolbar .tool-last
+{
+    margin-right:20px;
+}
+
+.in-dialog #content-block
+{
+    margin-left:0px;
+    margin-top:0px;
+    border-width:0px;
+    padding:0px;
+}
+
+.in-dialog #title-block
+{
+    display:none;
+}

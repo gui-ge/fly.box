@@ -1,0 +1,66 @@
+﻿.f-empty
+{
+	color: #afb0b0;
+}
+    
+.tags-editor
+{
+	height:130px;
+	overflow: auto; 
+	word-break: break-all;
+	padding:4px;
+}
+
+.tags-editor .tag
+{
+	border: 1px solid #9C9EA0;
+	background-color:#3D8A2A;
+	padding: 0px  0px 2px 5px;
+	border-radius: 2px;
+	display:inline-block;
+	margin:2px;
+	box-shadow:0px 1px 1px #b7b9bc;
+	cursor:pointer;
+	*float:left;
+}
+
+.tags-editor .tag a
+{
+    color: White;
+    text-decoration:none;
+}
+
+.tags-editor .tag a:hover
+{
+    text-decoration:underline;
+}
+
+.tags-editor .tag-delete
+{
+    visibility:hidden;
+    font-size: 15px;
+    color: #33FF00;
+    padding: 2px 3px 2px 6px;
+    font-family: 楷体, 华文细黑, Vrinda, Corbel;
+}
+
+.tag:hover .tag-delete
+{
+    visibility: visible;
+}
+
+.tag .tag-delete:hover
+{
+    color: #FF9900;
+}
+
+.tags-editor-input
+{
+    text-align:center;
+    margin-top:3px;
+	display:block;
+	border:none;
+	background-color:transparent;
+	width:100%;
+	outline:none;
+}

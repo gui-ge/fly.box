@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+<title></title>
+    <link href="css.css?v2.4.0" rel="stylesheet" type="text/css" />
+    <script src="../../../fly.common/fly/fly.js?v2.4.0" type="text/javascript"></script>
+</head>
+<body>
+<div id="player"></div>
+<div class="DreambackMusicPlayer">
+  <div id="MusicPlayer">
+    <div id="PlayBtn" class="pause" title="暂停"></div>
+    <div id="PrevBtn" title="上一曲"></div>
+    <div id="NextBtn" title="下一曲"></div>
+    <div id="TimeBar"> <span id="CurTime">00:00</span>/<span id="TotalTime">00:00</span> </div>
+    <div id="FullProgressBar">
+      <div id="LoadProgressBar" style="width:0;"></div>
+      <div id="PlayProgressBar" style="width:0;"></div>
+      <div id="CurrentPlay" style="top:-5px;left:-10px;"></div>
+    </div>
+    <div id="SoundBtn"></div>
+    <div id="SoundBar">
+      <div id="CurSoundBar" style="width:25px;"></div>
+      <div id="CurSound" style="top:-7px;left:15px;"></div>
+    </div>
+    <a href="" target="_blank" id="DownLoadBtn" title="下载"></a> </div>
+  <div id="MusicList">
+    <ul></ul>
+    <div id="ListScrollBar" style="top:0;left:479px;"></div>
+  </div>
+</div>
+<script type="text/javascript" src="MusicPlay.js?v2.4.0"></script> 
+<script type="text/javascript">
+
+    var current=$.getQuery('current')||parent.currentId;
+    var musics =parent.musics || $.getQuery('list').split('|').select(function (o) {
+        var parts = o.split(',', 2);
+        return { id: parts[0], name:decodeURI(parts[1]) }
+    })
+
+    var cur = 0;
+    var html = musics.select(function (music, i) {
+        if (music.id == current)
+            cur= i;
+        return '<li name="{name}"><a name="m-{0}" class="scroll-to"><a><a class=down href="../../d.ashx/id-{id}/{name}" target=_blank ></a><textarea>../../d.ashx/id-{id}/{name}</textarea><span>{name}</span></li>'.format(i, music);
+    }).join('')
+
+    $('#MusicList ul').html(html);
+    MusicPlay.create('player', 'MusicPlay.swf');
+    var h = setInterval(function () {
+        if (MusicPlay.player.jsPlay) {
+            MusicPlay.playerUI.curIndex = cur - 1;
+            MusicPlay.playerUI.uiNext();
+            clearInterval(h);
+        }
+    }, 10);
+</script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <link href="http://map.yanue.net/toLatLng/yanue.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div>
+        <table class="usertableborder" cellspacing="0" cellpadding="6"
+               border="0">
+            <tr>
+                <td>
+                    <div class='searchDiv'>
+                        请输入地点：<input id="address" type="textbox" value="" />
+                        <input type="button" class="input" value=" 解 析 " id="geocodeBtn" />
+                    </div>
+
+                    <div id="resArea" style="position: relative;">
+                        <div id="overTip" style="position: absolute;left: 0;top: 0;z-index: 99;display: none;background: #ffc;border: 1px solid #676767;font-family: arial, helvetica, sans-serif;font-size: 12px;padding: 4px;">
+                        </div>
+                        <div id="map_canvas" style="width: 720px; height: 600px;"></div>
+                    </div>
+                    <div id="infoPanel">
+                        <div style="line-height: 22px">
+                            <b style="color: #f00"> 当前纬度：</b><input id="lat" class='disabled' name="lat"
+                                                                    size=20 type="text" value="等待解析"
+                                                                    disabled="disabled"> <br /> <b style="color: #f00">
+                                当前经度：
+                            </b><input id="lng" class='disabled' name="lng" size=20
+                                       type="text" value="等待解析" disabled="disabled">
+                        </div>
+
+                        <div id="info" class="infoDiv" style="display: none"></div>
+                        <b>匹配地址：</b>
+
+                        <div class="infoDiv" id="endAddress">等待解析</div>
+                        <p>
+                            <b style="color: #f00">温馨提示：</b><br />
+
+
+                            <div class="infoDiv">
+                                1. 请输入你要解析的地理位置<br /> 2. 如果解析出来的位置有偏差 你可以拖动地图上的点进行重新解析
+                            </div>
+                        </p>
+                        <p>
+                            <b style="color: #f00">实现功能：</b><br />
+
+
+                            <div class="infoDiv">
+                                1. 鼠标经过提示经纬度<br /> 2. 自动填充地名地点名称<br /> 3. 输入完成后可直接点击enter键进行解析<br />
+                                4. 地理位置不准确，可以拖动重新解析<br /> 5. 解析后经纬度信息显示完整
+                            </div>
+                        </p>
+                    </div>
+                </td>
+
+            </tr>
+        </table>
+    </div>
+    <!--//先加载dom-->
+    <script src="jquery.last.js" type="text/javascript"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=CG8eakl6UTlEb1OakeWYvofh"></script>
+    <script type="text/javascript" src="toLatlng.baidu.js"></script>
+    <!--//地图上显示当前位置经纬度-->
+    <!-- map.yanue.net Baidu tongji analytics -->
+    <script type="text/javascript">
+        window.initToLatlng();
+//        var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+//        document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F2a1063cadb2ff3dbe7a08094b86840e7' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+</body>
+</html>
